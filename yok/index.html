@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Test layout</title>
+    <meta charset="UTF-8">
+    <meta content="Salavat Salahutdinov" name="author">
+    <meta content="Pug+SCSS layout" name="description">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="HandheldFriend" content="true">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,500,700,900" rel="stylesheet">
+    <link href="https://allfont.ru/allfont.css?fonts=chunkfive" rel="stylesheet">
+  <link href="./css/index.css" rel="stylesheet"></head>
+  <body>
+    <header class="header">
+      <div class="header__container">
+        <div class="header__lside">
+          <button class="header__burger btn"></button><a class="header__logo" href="#"><img src="images/logo.svg"></a>
+        </div>
+        <div class="header__rside">
+          <nav class="header__nav nav">
+            <ul class="nav__list">
+              <li class="nav__item"><a class="nav__item-link" href="#hero">Home</a></li>
+              <li class="nav__item"><a class="nav__item-link" href="#destination">Destination</a></li>
+              <li class="nav__item"><a class="nav__item-link" href="#itinerary">Itinerary</a></li>
+              <li class="nav__item"><a class="nav__item-link" href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+          <div class="header__profile profile" id="profile-btn"><img class="profile__icon" src="images/profile-icon.jpg">
+            <ul class="profile-menu">
+              <li class="profile-menu__item"><a class="profile-menu__item-link" href="#">Profile</a></li>
+              <li class="profile-menu__item"><a class="profile-menu__item-link" href="#">Settings</a></li>
+              <li class="profile-menu__item"><a class="profile-menu__item-link" href="#">Logout</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="hero" id="hero">
+        <div class="hero__layer hero__layer-0" id="hero-layer-0"></div>
+        <div class="promo" id="hero-layer-1">
+          <h1 class="promo__title">LETS GET <span class="accent">LOST</span></h1>
+          <p class="promo__text">Malang will never dissapointed you.<br>From every step you took you will be amazed and suddenly fallin love with Malang</p><a class="promo__btn btn" href="#itinerary">SET ITINERARY NOW</a>
+        </div>
+        <div class="hero__layer hero__layer-2" id="hero-layer-2"></div>
+      </section>
+<section class="city">
+  <div class="city__wrap">
+    <div class="city__content">
+      <div class="city__image"><img src="images/city.svg"></div>
+      <div class="city__text">
+        <h2 class="city__title">
+           City of <span class="accent">Love</span></h2>
+        <p class="city__description">
+          Malang is the second largest city in East Java province, Indonesia. 
+          It has a history dating back to the ancient Mataram Kingdom. 
+          The city is famous for its cool temperature. People in East Java sometimes call it "Paris of East Java.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+      <section class="destination" id="destination">
+        <div class="destination__container">
+          <div class="destination__top">
+            <h2 class="destination__title">Des<span class="accent">tination</span></h2><a class="destination__info" href="#">
+              <svg class="icon icon-info" viewBox="0 0 18.969 18.969">
+                <use xlink:href="sprites/icons-sprite.svg#info"></use>
+              </svg>see basic regulation</a>
+          </div>
+          <p class="destination__description">Being around by many mountain, Malang not only came with mountain vacation, but our beach, cultural spot, and Human Interest is worth to experienced.</p>
+          <div class="destination__controls">
+            <div class="destination-search">
+              <input class="destination-search__input" type="text" placeholder="search destination">
+              <svg class="destination-search__icon icon icon-search" viewBox="0 0 17.219 17.32">
+                <use xlink:href="sprites/icons-sprite.svg#search"></use>
+              </svg>
+            </div>
+            <div class="destination-sort"><a class="destination-sort__param destination-sort__param--active">All place</a><span class="destination-sort__separator">/</span><a class="destination-sort__param" href="#">Recomended place</a></div>
+          </div>
+        </div>
+        <div class="destination__wrap">
+          <div class="destination-list"><a class="destination-item destination-item--hero" style="background-image: url(images/destination-hero.jpg);" href="#">
+              <div class="destination-item-see-more">see more
+                <svg class="destination-item-see-more__icon icon" viewBox="0 0 12.563 10.97">
+                  <use xlink:href="sprites/icons-sprite.svg#arrow"></use>
+                </svg>
+              </div>
+              <div class="destination-item__info-block"><img src="images/carousel.svg" width="86">
+                <h3 class="destination-item__title">Batu</h3>
+                <p class="destination-item__text">
+                  is a city located in East Java Province of Indonesia. It is situated about 20 km to the northwest of Malang. 
+                  Formerly, it was a part of Malang Regency; but in 2001, Batu became an independent city. A population of 190,000 people, it lies on the southern slopes of Gunung Welirang. 
+                  Its population largely consists of Javanese.
+                </p>
+              </div></a><a class="destination-item destination-item--medium" style="background-image: url(images/mountains.jpg);" href="#">
+              <div class="destination-item__info-block"><img src="images/mountains.svg" width="107">
+                <h3 class="destination-item__title">Bromo</h3>
+                <p class="destination-item__text">
+                  Mount Bromo is an active volcano and part of the Tengger massif, in East Java, Indonesia. 
+                  At 2,329 metres (7,641 ft) it is not the highest peak of the massif, but is the most well known
+                </p>
+              </div>
+              <div class="destination-item-see-more">see more
+                <svg class="destination-item-see-more__icon icon" viewBox="0 0 12.563 10.97">
+                  <use xlink:href="sprites/icons-sprite.svg#arrow"></use>
+                </svg>
+              </div></a><a class="destination-item destination-item--small" style="background-image: url(images/island.jpg);" href="#">
+              <div class="destination-item__info-block"><img src="images/island.svg" width="84"></div>
+              <div class="destination-item-see-more">see more
+                <svg class="destination-item-see-more__icon icon" viewBox="0 0 12.563 10.97">
+                  <use xlink:href="sprites/icons-sprite.svg#arrow"></use>
+                </svg>
+              </div></a></div>
+          <div class="destination-pagination"><a class="destination-pagination__item destination-pagination__item--active">1</a><a class="destination-pagination__item" href="#">2</a><a class="destination-pagination__item" href="#">3</a><a class="destination-pagination__item" href="#">4</a><a class="destination-pagination__item" href="#">5</a><a class="destination-pagination__item" href="#">»</a></div>
+        </div>
+      </section>
+      <section class="itinerary" id="itinerary">
+        <h2 class="itinerary__title">
+           Set <span class="accent">Itinerary</span></h2>
+        <p class="itinerary__help">Simply drag and drop what you want to visit, and voila we make a itinerary and schedule for your vacation. <br>
+          have a great trip !
+        </p>
+        <div class="itinerary__interact-wrap">
+          <form class="itinerary-form">
+            <h3 class="itinerary-form__header">Your Itinerary Title Here</h3>
+            <div class="itinerary-form__main">
+              <div class="itinerary-form__group">
+                <div class="itinerary-form__legend">
+                  <div class="itinerary-form__legend-name">Day 1</div>
+                  <input class="itinerary-form__legend-date datepicker" type="text" placeholder="Choose a date">
+                </div>
+                <div class="itinerary-form__list"></div>
+              </div>
+              <div class="itinerary-form__group">
+                <div class="itinerary-form__legend">
+                  <div class="itinerary-form__legend-name">Day 2</div>
+                  <input class="itinerary-form__legend-date datepicker" type="text" placeholder="Choose a date">
+                </div>
+                <div class="itinerary-form__list"></div>
+              </div>
+            </div>
+            <div class="itinerary-form__buttons">
+              <button class="btn btn--big btn--secondary">
+                <svg class="icon" viewBox="0 0 16.875 19.25">
+                  <use xlink:href="sprites/icons-sprite.svg#book"></use>
+                </svg>Save as PDF
+              </button>
+              <button class="btn btn--big btn--primary">
+                <svg class="icon" viewBox="0 0 23.188 20.62">
+                  <use xlink:href="sprites/icons-sprite.svg#printer"></use>
+                </svg>Print
+              </button>
+            </div>
+          </form>
+          <div class="itinerary-list">
+            <h3 class="itinerary-list__header">List of Destination</h3>
+            <div class="itinerary-list__controlls"><span class="accent">sort by:</span>
+              <select class="itinerary-list__filter" id="itinerary-category" name="itinerary-category">
+                <option value="all">All</option>
+                <option value="mountain">Mountain</option>
+                <option value="carousel">Carousel</option>
+              </select>
+              <div class="itinerary-list__search">
+                <input class="itinerary-list__search-input" id="itinerary-search" type="text">
+                <svg class="itinerary-list__search-icon icon icon-search" viewBox="0 0 17.219 17.32">
+                  <use xlink:href="sprites/icons-sprite.svg#search"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="itinerary-list__main"><span class="itinerary-item" data-category="mountain" data-name="Mt. Bromo">
+                <div class="itinerary-item__info">
+                  <h5 class="itinerary-item__name">Mt. Bromo</h5>
+                  <div class="itinerary-item__time">
+                     estimated time: <span class="accent"><strong>5</strong> Hours</span></div>
+                </div>
+                <div class="itinerary-item__icon"><img src="images/mountains.svg" height="32"><a class="itinerary-item__view" href="#">view details</a></div></span><span class="itinerary-item" data-category="carousel" data-name="Batu">
+                <div class="itinerary-item__info">
+                  <h5 class="itinerary-item__name">Batu</h5>
+                  <div class="itinerary-item__time">
+                     estimated time: <span class="accent"><strong>5</strong> Hours</span></div>
+                </div>
+                <div class="itinerary-item__icon"><img src="images/carousel.svg" height="32"><a class="itinerary-item__view" href="#">view details</a></div></span><span class="itinerary-item" data-category="mountain" data-name="Mt. Semeru">
+                <div class="itinerary-item__info">
+                  <h5 class="itinerary-item__name">Mt. Semeru</h5>
+                  <div class="itinerary-item__time">
+                     estimated time: <span class="accent"><strong>5</strong> Hours</span></div>
+                </div>
+                <div class="itinerary-item__icon"><img src="images/mountains.svg" height="32"><a class="itinerary-item__view" href="#">view details</a></div></span><span class="itinerary-item" data-category="mountain" data-name="Mt. Panderman">
+                <div class="itinerary-item__info">
+                  <h5 class="itinerary-item__name">Mt. Panderman</h5>
+                  <div class="itinerary-item__time">
+                     estimated time: <span class="accent"><strong>5</strong> Hours</span></div>
+                </div>
+                <div class="itinerary-item__icon"><img src="images/mountains.svg" height="32"><a class="itinerary-item__view" href="#">view details</a></div></span></div>
+          </div>
+        </div>
+      </section>
+      <section class="contact" id="contact">
+        <h2 class="contact__title">Contact</h2>
+        <div class="contact__container">
+          <div class="contact__row">
+            <div class="contact-form">
+              <input class="contact-form__input contact-form__input--100" placeholder="Your Email" name="email">
+              <input class="contact-form__input contact-form__input--50" placeholder="Company" name="company">
+              <input class="contact-form__input contact-form__input--50" placeholder="Subject" name="subject">
+              <textarea class="contact-form__input contact-form__input--100" placeholder="Your Message" name="message"></textarea>
+              <button class="contact-form__btn btn btn--secondary btn--big">Send Message</button>
+            </div>
+            <div class="contact-or">OR</div>
+            <div class="contact-text">
+              <h3 class="contact-text__title">You Can Find Us Here</h3>
+              <ul class="contact-list">
+                <li class="contact-item">
+                  <svg class="contact-item__icon" viewBox="0 0 12.281 10.94">
+                    <use xlink:href="sprites/icons-sprite.svg#home"></use>
+                  </svg><span>Jl.Danau Bratan sekian nomer sekian, Sawojajar Malang
+                    <div class="accent">FIND ON MAPS</div></span>
+                </li>
+                <li class="contact-item">
+                  <svg class="contact-item__icon" viewBox="0 0 12.25 12.25">
+                    <use xlink:href="sprites/icons-sprite.svg#user"></use>
+                  </svg>(+62) 8816723812
+                </li>
+                <li class="contact-item">
+                  <svg class="contact-item__icon" viewBox="0 0 12.25 12.25">
+                    <use xlink:href="sprites/icons-sprite.svg#user"></use>
+                  </svg>(+62) 8512371632
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+<section class="keep" id="keep">
+  <div class="keep__container">
+    <div class="keep__text">
+      <h2 class="keep__title">Keep in Touch</h2>
+      <p class="keep__description">We Will Give you latest information about Malang</p>
+    </div>
+    <div class="keep__input-group">
+      <input class="keep__input" type="text" placeholder="Type Email Here for Subscribe">
+      <button class="keep__btn btn">></button>
+    </div>
+  </div>
+</section>
+      <footer class="footer" id="footer">
+        <div class="footer__container">
+          <ul class="footer-menu">
+            <li class="footer-menu-item"> <a class="footer-menu-item__link" href="#">Term & Condition</a></li>
+            <li class="footer-menu-item"> <a class="footer-menu-item__link" href="#">Policy</a></li>
+            <li class="footer-menu-item"> <a class="footer-menu-item__link" href="#">Privacy</a></li>
+          </ul>
+          <div class="footer-social"><a class="footer-social-item" href="#">
+              <svg class="footer-social-item__icon icon" viewBox="0 0 29.5 29.5">
+                <use xlink:href="sprites/icons-sprite.svg#fb"></use>
+              </svg></a><a class="footer-social-item" href="#">
+              <svg class="footer-social-item__icon icon" viewBox="0 0 27.56 27.56">
+                <use xlink:href="sprites/icons-sprite.svg#twitter"></use>
+              </svg></a><a class="footer-social-item" href="#">
+              <svg class="footer-social-item__icon icon" viewBox="0 0 29.6 29.59">
+                <use xlink:href="sprites/icons-sprite.svg#instagram"></use>
+              </svg></a></div>
+        </div>
+        <div class="footer-copyring">copyright@YokMalang. Allright Reserved. 2015</div>
+      </footer>
+    </main>
+  <script type="text/javascript" src="js/common.js"></script><script type="text/javascript" src="js/index.js"></script></body>
+</html>
