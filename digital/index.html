@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta content="Salahutdinov Salavat" name="author">
+    <meta name="description">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="HandheldFriend" content="true">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- links-->
+  <link href="./css/common.css" rel="stylesheet"><link href="./css/index.css" rel="stylesheet"></head>
+  <body>
+    <div id="page">
+<div class="overlay overlay--center" id="callback-overlay">
+  <div class="popup popup--small">
+    <div class="popup__header">
+      <div class="popup__title">Оставьте свои контактные данные и наш менеджер свяжется с вами.</div>
+      <button class="popup__close-btn btn"><i class="fa fa-times" aria-hidden="true"></i></button>
+    </div>
+    <div class="popup__content">
+      <form class="popup-form">
+        <input class="popup-form__input popup-form__input--text fname" type="text" placeholder="Ваше имя">
+        <input class="popup-form__input popup-form__input--text fmail" type="text" placeholder="Ваш E-mail">
+        <input class="popup-form__input popup-form__input--text fphone" type="text" placeholder="Ваш номер телефона">
+        <input class="popup-form__input popup-form__input--submit" type="submit" value="Отправить">
+      </form>
+    </div>
+  </div>
+</div>
+<div class="overlay overlay--center" id="city-overlay">
+  <div class="popup popup--small">
+    <div class="popup__header">
+      <div class="popup__title">Выберите город</div>
+      <button class="popup__close-btn btn"><i class="fa fa-times" aria-hidden="true"></i></button>
+    </div>
+    <div class="popup__content">
+      <ul class="choose-city">
+        <li data-city="0">Все города</li>
+        <li data-city="78">Санкт-Петербург</li>
+        <li data-city="39">Калининград</li>
+      </ul>
+    </div>
+  </div>
+</div>
+<header class="site-header" id="masthead" role="banner">
+  <div class="wrapper site-header__container"><a class="site-header__logo logo" href="#" title="Title" rel="home"><span class="logo__name">DigitalOutdoor</span><span class="logo__description">Реклама на видеоэкранах</span></a><a class="site-header__change-city change_city btn btn--primary" href="#"><span>Выбрать город</span></a>
+    <div class="site-header__info header-info" id="header-buttons">
+      <div class="header-info-block"><span class="header-info-block__icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span><span class="header-info-block__text">СПБ, проспект Стачек, 47</span></div>
+      <div class="header-info-block"><span class="header-info-block__icon"><i class="fa fa-envelope" aria-hidden="true"></i></span><a class="header-info-block__text" href="mailto:info@digitaloutdoor.ru">info@digitaloutdoor.ru</a></div>
+      <div class="header-info-block"><span class="header-info-block__icon"><i class="fa fa-phone-square" aria-hidden="true"></i></span><a class="header-info-block__text" href="tel:+7(812)702-05-07">+7(812)702-05-07</a></div><a class="btn btn--primary call_back"> <i class="fa fa-phone" aria-hidden="true"></i></a>
+    </div>
+  </div>
+</header>
+      <main class="site-main" id="main">
+<div class="wrapper">
+  <div class="search-form">
+    <select class="search-form__input search-form__input--select">
+      <option value="" disabled selected>Тип носителя</option>
+      <option value="0">Все типы</option>
+      <option value="1">inDoor</option>
+      <option value="2">outDoor</option>
+    </select>
+    <input class="search-form__input search-form__input--text" type="text" placeholder="Введите название улицы">
+    <select class="search-form__input search-form__input--select">
+      <option value="" disabled selected>Выбор района</option>
+      <option value="0">Все районы</option>
+      <option value="1">Адмиралтейский</option>
+      <option value="2">Василеостровский</option>
+    </select>
+    <input class="search-form__input search-form__input--submit btn btn--primary" type="submit" value="Найти">
+  </div>
+  <div class="main_items container container--h-center">
+    <div class="col col-12 col-6--sm col-4--lg col-3--xl">
+      <div class="item_search search-result"><a class="item_search search-result__image" href="#"><img src="https://digitaloutdoor.ru/wp-content/uploads/2017/09/гарден1.png" srcset="https://digitaloutdoor.ru/wp-content/uploads/2017/09/гарден1.png 1000w, https://digitaloutdoor.ru/wp-content/uploads/2017/09/гарден1-300x200.png 300w, https://digitaloutdoor.ru/wp-content/uploads/2017/09/гарден1-768x512.png 768w, https://digitaloutdoor.ru/wp-content/uploads/2017/09/гарден1-150x100.png 150w" sizes="(max-width: 1000px) 100vw, 1000px"></a>
+        <div class="search-result__text"><a class="search-result__title" href="#">Московский проспект, 66а</a>
+          <div class="search-result__main-info">
+            <div class="search-result__metro">
+              <svg class="search-result__metro-icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="95.334px" height="95.334px" viewBox="0 0 95.334 95.334" style="enable-background:new 0 0 95.334 95.334;" xml:space="preserve">
+                <g>
+                  <path style="fill: #197dce;" d="M47.784,0C21.447,0,0,21.449,0,47.904c0,26.215,21.447,47.43,47.784,47.43c26.337,0,47.55-21.098,47.55-47.43 C95.334,21.449,73.168,0,47.784,0z M47.784,89.011c-22.639,0-41.229-18.465-41.229-41.106c0-22.757,18.591-41.591,41.229-41.591 c22.526,0,40.995,18.95,40.995,41.591C88.779,70.309,70.311,89.011,47.784,89.011z"></path>
+                  <path style="fill: #197dce;" d="M66.139,22.644c-2.973,0-4.17,1.311-5.479,3.934L47.787,53.389H47.67L34.68,26.577c-1.313-2.624-2.502-3.934-5.482-3.934 c-3.932,0-5.244,2.502-5.244,4.884v41.587c0,2.27,1.791,3.575,3.932,3.575c1.906,0,4.051-1.306,4.051-3.575v-30.98h0.121 l11.797,24.071c0.835,1.668,1.91,2.626,3.816,2.626c1.901,0,2.979-0.958,3.813-2.626l11.795-24.071H63.4v30.98 c0,2.27,2.143,3.575,4.05,3.575c2.147,0,3.932-1.306,3.932-3.575V27.528C71.381,25.146,70.074,22.644,66.139,22.644z"></path>
+                </g>
+              </svg>
+              <div class="search-result__metro-text">Площадь Восстания</div>
+            </div>
+            <div class="search-result__price">от <span>400 руб.</span></div>
+          </div>
+          <div class="search-result__meta"><span class="search-result__meta-name">Город: </span><span class="search-result__meta-value">Санкт-Петербург</span></div>
+          <div class="search-result__meta"><span class="search-result__meta-name">Время работы экрана: </span><span class="search-result__meta-value">24/7</span></div>
+        </div>
+        <div class="search-result__buttons"><a class="search-result__button btn btn--secondary" href="#">Подробнее</a><a class="search-result__button btn btn--primary" href="#">Заказать</a></div>
+      </div>
+    </div>
+    <div class="col col-12 col-6--sm col-4--lg col-3--xl">
+      <div class="item_search search-result"><a class="item_search search-result__image" href="#"><img src="https://digitaloutdoor.ru/wp-content/uploads/2017/09/гарден1.png" srcset="https://digitaloutdoor.ru/wp-content/uploads/2017/09/гарден1.png 1000w, https://digitaloutdoor.ru/wp-content/uploads/2017/09/гарден1-300x200.png 300w, https://digitaloutdoor.ru/wp-content/uploads/2017/09/гарден1-768x512.png 768w, https://digitaloutdoor.ru/wp-content/uploads/2017/09/гарден1-150x100.png 150w" sizes="(max-width: 1000px) 100vw, 1000px"></a>
+        <div class="search-result__text"><a class="search-result__title" href="#">Московский проспект, 66а</a>
+          <div class="search-result__main-info">
+            <div class="search-result__metro">
+              <svg class="search-result__metro-icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="95.334px" height="95.334px" viewBox="0 0 95.334 95.334" style="enable-background:new 0 0 95.334 95.334;" xml:space="preserve">
+                <g>
+                  <path style="fill: #197dce;" d="M47.784,0C21.447,0,0,21.449,0,47.904c0,26.215,21.447,47.43,47.784,47.43c26.337,0,47.55-21.098,47.55-47.43 C95.334,21.449,73.168,0,47.784,0z M47.784,89.011c-22.639,0-41.229-18.465-41.229-41.106c0-22.757,18.591-41.591,41.229-41.591 c22.526,0,40.995,18.95,40.995,41.591C88.779,70.309,70.311,89.011,47.784,89.011z"></path>
+                  <path style="fill: #197dce;" d="M66.139,22.644c-2.973,0-4.17,1.311-5.479,3.934L47.787,53.389H47.67L34.68,26.577c-1.313-2.624-2.502-3.934-5.482-3.934 c-3.932,0-5.244,2.502-5.244,4.884v41.587c0,2.27,1.791,3.575,3.932,3.575c1.906,0,4.051-1.306,4.051-3.575v-30.98h0.121 l11.797,24.071c0.835,1.668,1.91,2.626,3.816,2.626c1.901,0,2.979-0.958,3.813-2.626l11.795-24.071H63.4v30.98 c0,2.27,2.143,3.575,4.05,3.575c2.147,0,3.932-1.306,3.932-3.575V27.528C71.381,25.146,70.074,22.644,66.139,22.644z"></path>
+                </g>
+              </svg>
+              <div class="search-result__metro-text">Площадь Восстания</div>
+            </div>
+            <div class="search-result__price">от <span>400 руб.</span></div>
+          </div>
+          <div class="search-result__meta"><span class="search-result__meta-name">Город: </span><span class="search-result__meta-value">Санкт-Петербург</span></div>
+          <div class="search-result__meta"><span class="search-result__meta-name">Время работы экрана: </span><span class="search-result__meta-value">24/7</span></div>
+        </div>
+        <div class="search-result__buttons"><a class="search-result__button btn btn--secondary" href="#">Подробнее</a><a class="search-result__button btn btn--primary" href="#">Заказать</a></div>
+      </div>
+    </div>
+    <div class="col col-12 col-6--sm col-4--lg col-3--xl">
+      <div class="item_search search-result"><a class="item_search search-result__image" href="#"><img src="https://digitaloutdoor.ru/wp-content/uploads/2017/09/гарден1.png" srcset="https://digitaloutdoor.ru/wp-content/uploads/2017/09/гарден1.png 1000w, https://digitaloutdoor.ru/wp-content/uploads/2017/09/гарден1-300x200.png 300w, https://digitaloutdoor.ru/wp-content/uploads/2017/09/гарден1-768x512.png 768w, https://digitaloutdoor.ru/wp-content/uploads/2017/09/гарден1-150x100.png 150w" sizes="(max-width: 1000px) 100vw, 1000px"></a>
+        <div class="search-result__text"><a class="search-result__title" href="#">Московский проспект, 66а</a>
+          <div class="search-result__main-info">
+            <div class="search-result__metro">
+              <svg class="search-result__metro-icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="95.334px" height="95.334px" viewBox="0 0 95.334 95.334" style="enable-background:new 0 0 95.334 95.334;" xml:space="preserve">
+                <g>
+                  <path style="fill: #197dce;" d="M47.784,0C21.447,0,0,21.449,0,47.904c0,26.215,21.447,47.43,47.784,47.43c26.337,0,47.55-21.098,47.55-47.43 C95.334,21.449,73.168,0,47.784,0z M47.784,89.011c-22.639,0-41.229-18.465-41.229-41.106c0-22.757,18.591-41.591,41.229-41.591 c22.526,0,40.995,18.95,40.995,41.591C88.779,70.309,70.311,89.011,47.784,89.011z"></path>
+                  <path style="fill: #197dce;" d="M66.139,22.644c-2.973,0-4.17,1.311-5.479,3.934L47.787,53.389H47.67L34.68,26.577c-1.313-2.624-2.502-3.934-5.482-3.934 c-3.932,0-5.244,2.502-5.244,4.884v41.587c0,2.27,1.791,3.575,3.932,3.575c1.906,0,4.051-1.306,4.051-3.575v-30.98h0.121 l11.797,24.071c0.835,1.668,1.91,2.626,3.816,2.626c1.901,0,2.979-0.958,3.813-2.626l11.795-24.071H63.4v30.98 c0,2.27,2.143,3.575,4.05,3.575c2.147,0,3.932-1.306,3.932-3.575V27.528C71.381,25.146,70.074,22.644,66.139,22.644z"></path>
+                </g>
+              </svg>
+              <div class="search-result__metro-text">Площадь Восстания</div>
+            </div>
+            <div class="search-result__price">от <span>400 руб.</span></div>
+          </div>
+          <div class="search-result__meta"><span class="search-result__meta-name">Город: </span><span class="search-result__meta-value">Санкт-Петербург</span></div>
+          <div class="search-result__meta"><span class="search-result__meta-name">Время работы экрана: </span><span class="search-result__meta-value">24/7</span></div>
+        </div>
+        <div class="search-result__buttons"><a class="search-result__button btn btn--secondary" href="#">Подробнее</a><a class="search-result__button btn btn--primary" href="#">Заказать</a></div>
+      </div>
+    </div>
+    <div class="col col-12 col-6--sm col-4--lg col-3--xl">
+      <div class="item_search search-result"><a class="item_search search-result__image" href="#"><img src="https://digitaloutdoor.ru/wp-content/uploads/2017/09/гарден1.png" srcset="https://digitaloutdoor.ru/wp-content/uploads/2017/09/гарден1.png 1000w, https://digitaloutdoor.ru/wp-content/uploads/2017/09/гарден1-300x200.png 300w, https://digitaloutdoor.ru/wp-content/uploads/2017/09/гарден1-768x512.png 768w, https://digitaloutdoor.ru/wp-content/uploads/2017/09/гарден1-150x100.png 150w" sizes="(max-width: 1000px) 100vw, 1000px"></a>
+        <div class="search-result__text"><a class="search-result__title" href="#">Московский проспект, 66а</a>
+          <div class="search-result__main-info">
+            <div class="search-result__metro">
+              <svg class="search-result__metro-icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="95.334px" height="95.334px" viewBox="0 0 95.334 95.334" style="enable-background:new 0 0 95.334 95.334;" xml:space="preserve">
+                <g>
+                  <path style="fill: #197dce;" d="M47.784,0C21.447,0,0,21.449,0,47.904c0,26.215,21.447,47.43,47.784,47.43c26.337,0,47.55-21.098,47.55-47.43 C95.334,21.449,73.168,0,47.784,0z M47.784,89.011c-22.639,0-41.229-18.465-41.229-41.106c0-22.757,18.591-41.591,41.229-41.591 c22.526,0,40.995,18.95,40.995,41.591C88.779,70.309,70.311,89.011,47.784,89.011z"></path>
+                  <path style="fill: #197dce;" d="M66.139,22.644c-2.973,0-4.17,1.311-5.479,3.934L47.787,53.389H47.67L34.68,26.577c-1.313-2.624-2.502-3.934-5.482-3.934 c-3.932,0-5.244,2.502-5.244,4.884v41.587c0,2.27,1.791,3.575,3.932,3.575c1.906,0,4.051-1.306,4.051-3.575v-30.98h0.121 l11.797,24.071c0.835,1.668,1.91,2.626,3.816,2.626c1.901,0,2.979-0.958,3.813-2.626l11.795-24.071H63.4v30.98 c0,2.27,2.143,3.575,4.05,3.575c2.147,0,3.932-1.306,3.932-3.575V27.528C71.381,25.146,70.074,22.644,66.139,22.644z"></path>
+                </g>
+              </svg>
+              <div class="search-result__metro-text">Площадь Восстания</div>
+            </div>
+            <div class="search-result__price">от <span>400 руб.</span></div>
+          </div>
+          <div class="search-result__meta"><span class="search-result__meta-name">Город: </span><span class="search-result__meta-value">Санкт-Петербург</span></div>
+          <div class="search-result__meta"><span class="search-result__meta-name">Время работы экрана: </span><span class="search-result__meta-value">24/7</span></div>
+        </div>
+        <div class="search-result__buttons"><a class="search-result__button btn btn--secondary" href="#">Подробнее</a><a class="search-result__button btn btn--primary" href="#">Заказать</a></div>
+      </div>
+    </div>
+    <div class="col col-12 col-6--sm col-4--lg col-3--xl">
+      <div class="item_search search-result"><a class="item_search search-result__image" href="#"><img src="https://digitaloutdoor.ru/wp-content/uploads/2017/09/гарден1.png" srcset="https://digitaloutdoor.ru/wp-content/uploads/2017/09/гарден1.png 1000w, https://digitaloutdoor.ru/wp-content/uploads/2017/09/гарден1-300x200.png 300w, https://digitaloutdoor.ru/wp-content/uploads/2017/09/гарден1-768x512.png 768w, https://digitaloutdoor.ru/wp-content/uploads/2017/09/гарден1-150x100.png 150w" sizes="(max-width: 1000px) 100vw, 1000px"></a>
+        <div class="search-result__text"><a class="search-result__title" href="#">Московский проспект, 66а</a>
+          <div class="search-result__main-info">
+            <div class="search-result__metro">
+              <svg class="search-result__metro-icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="95.334px" height="95.334px" viewBox="0 0 95.334 95.334" style="enable-background:new 0 0 95.334 95.334;" xml:space="preserve">
+                <g>
+                  <path style="fill: #197dce;" d="M47.784,0C21.447,0,0,21.449,0,47.904c0,26.215,21.447,47.43,47.784,47.43c26.337,0,47.55-21.098,47.55-47.43 C95.334,21.449,73.168,0,47.784,0z M47.784,89.011c-22.639,0-41.229-18.465-41.229-41.106c0-22.757,18.591-41.591,41.229-41.591 c22.526,0,40.995,18.95,40.995,41.591C88.779,70.309,70.311,89.011,47.784,89.011z"></path>
+                  <path style="fill: #197dce;" d="M66.139,22.644c-2.973,0-4.17,1.311-5.479,3.934L47.787,53.389H47.67L34.68,26.577c-1.313-2.624-2.502-3.934-5.482-3.934 c-3.932,0-5.244,2.502-5.244,4.884v41.587c0,2.27,1.791,3.575,3.932,3.575c1.906,0,4.051-1.306,4.051-3.575v-30.98h0.121 l11.797,24.071c0.835,1.668,1.91,2.626,3.816,2.626c1.901,0,2.979-0.958,3.813-2.626l11.795-24.071H63.4v30.98 c0,2.27,2.143,3.575,4.05,3.575c2.147,0,3.932-1.306,3.932-3.575V27.528C71.381,25.146,70.074,22.644,66.139,22.644z"></path>
+                </g>
+              </svg>
+              <div class="search-result__metro-text">Площадь Восстания</div>
+            </div>
+            <div class="search-result__price">от <span>400 руб.</span></div>
+          </div>
+          <div class="search-result__meta"><span class="search-result__meta-name">Город: </span><span class="search-result__meta-value">Санкт-Петербург</span></div>
+          <div class="search-result__meta"><span class="search-result__meta-name">Время работы экрана: </span><span class="search-result__meta-value">24/7</span></div>
+        </div>
+        <div class="search-result__buttons"><a class="search-result__button btn btn--secondary" href="#">Подробнее</a><a class="search-result__button btn btn--primary" href="#">Заказать</a></div>
+      </div>
+    </div>
+    <div class="col col-12 col-6--sm col-4--lg col-3--xl">
+      <div class="item_search search-result"><a class="item_search search-result__image" href="#"><img src="https://digitaloutdoor.ru/wp-content/uploads/2017/09/гарден1.png" srcset="https://digitaloutdoor.ru/wp-content/uploads/2017/09/гарден1.png 1000w, https://digitaloutdoor.ru/wp-content/uploads/2017/09/гарден1-300x200.png 300w, https://digitaloutdoor.ru/wp-content/uploads/2017/09/гарден1-768x512.png 768w, https://digitaloutdoor.ru/wp-content/uploads/2017/09/гарден1-150x100.png 150w" sizes="(max-width: 1000px) 100vw, 1000px"></a>
+        <div class="search-result__text"><a class="search-result__title" href="#">Московский проспект, 66а</a>
+          <div class="search-result__main-info">
+            <div class="search-result__metro">
+              <svg class="search-result__metro-icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="95.334px" height="95.334px" viewBox="0 0 95.334 95.334" style="enable-background:new 0 0 95.334 95.334;" xml:space="preserve">
+                <g>
+                  <path style="fill: #197dce;" d="M47.784,0C21.447,0,0,21.449,0,47.904c0,26.215,21.447,47.43,47.784,47.43c26.337,0,47.55-21.098,47.55-47.43 C95.334,21.449,73.168,0,47.784,0z M47.784,89.011c-22.639,0-41.229-18.465-41.229-41.106c0-22.757,18.591-41.591,41.229-41.591 c22.526,0,40.995,18.95,40.995,41.591C88.779,70.309,70.311,89.011,47.784,89.011z"></path>
+                  <path style="fill: #197dce;" d="M66.139,22.644c-2.973,0-4.17,1.311-5.479,3.934L47.787,53.389H47.67L34.68,26.577c-1.313-2.624-2.502-3.934-5.482-3.934 c-3.932,0-5.244,2.502-5.244,4.884v41.587c0,2.27,1.791,3.575,3.932,3.575c1.906,0,4.051-1.306,4.051-3.575v-30.98h0.121 l11.797,24.071c0.835,1.668,1.91,2.626,3.816,2.626c1.901,0,2.979-0.958,3.813-2.626l11.795-24.071H63.4v30.98 c0,2.27,2.143,3.575,4.05,3.575c2.147,0,3.932-1.306,3.932-3.575V27.528C71.381,25.146,70.074,22.644,66.139,22.644z"></path>
+                </g>
+              </svg>
+              <div class="search-result__metro-text">Площадь Восстания</div>
+            </div>
+            <div class="search-result__price">от <span>400 руб.</span></div>
+          </div>
+          <div class="search-result__meta"><span class="search-result__meta-name">Город: </span><span class="search-result__meta-value">Санкт-Петербург</span></div>
+          <div class="search-result__meta"><span class="search-result__meta-name">Время работы экрана: </span><span class="search-result__meta-value">24/7</span></div>
+        </div>
+        <div class="search-result__buttons"><a class="search-result__button btn btn--secondary" href="#">Подробнее</a><a class="search-result__button btn btn--primary" href="#">Заказать</a></div>
+      </div>
+    </div>
+    <div class="col col-12 col-6--sm col-4--lg col-3--xl">
+      <div class="item_search search-result"><a class="item_search search-result__image" href="#"><img src="https://digitaloutdoor.ru/wp-content/uploads/2017/09/гарден1.png" srcset="https://digitaloutdoor.ru/wp-content/uploads/2017/09/гарден1.png 1000w, https://digitaloutdoor.ru/wp-content/uploads/2017/09/гарден1-300x200.png 300w, https://digitaloutdoor.ru/wp-content/uploads/2017/09/гарден1-768x512.png 768w, https://digitaloutdoor.ru/wp-content/uploads/2017/09/гарден1-150x100.png 150w" sizes="(max-width: 1000px) 100vw, 1000px"></a>
+        <div class="search-result__text"><a class="search-result__title" href="#">Московский проспект, 66а</a>
+          <div class="search-result__main-info">
+            <div class="search-result__metro">
+              <svg class="search-result__metro-icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="95.334px" height="95.334px" viewBox="0 0 95.334 95.334" style="enable-background:new 0 0 95.334 95.334;" xml:space="preserve">
+                <g>
+                  <path style="fill: #197dce;" d="M47.784,0C21.447,0,0,21.449,0,47.904c0,26.215,21.447,47.43,47.784,47.43c26.337,0,47.55-21.098,47.55-47.43 C95.334,21.449,73.168,0,47.784,0z M47.784,89.011c-22.639,0-41.229-18.465-41.229-41.106c0-22.757,18.591-41.591,41.229-41.591 c22.526,0,40.995,18.95,40.995,41.591C88.779,70.309,70.311,89.011,47.784,89.011z"></path>
+                  <path style="fill: #197dce;" d="M66.139,22.644c-2.973,0-4.17,1.311-5.479,3.934L47.787,53.389H47.67L34.68,26.577c-1.313-2.624-2.502-3.934-5.482-3.934 c-3.932,0-5.244,2.502-5.244,4.884v41.587c0,2.27,1.791,3.575,3.932,3.575c1.906,0,4.051-1.306,4.051-3.575v-30.98h0.121 l11.797,24.071c0.835,1.668,1.91,2.626,3.816,2.626c1.901,0,2.979-0.958,3.813-2.626l11.795-24.071H63.4v30.98 c0,2.27,2.143,3.575,4.05,3.575c2.147,0,3.932-1.306,3.932-3.575V27.528C71.381,25.146,70.074,22.644,66.139,22.644z"></path>
+                </g>
+              </svg>
+              <div class="search-result__metro-text">Площадь Восстания</div>
+            </div>
+            <div class="search-result__price">от <span>400 руб.</span></div>
+          </div>
+          <div class="search-result__meta"><span class="search-result__meta-name">Город: </span><span class="search-result__meta-value">Санкт-Петербург</span></div>
+          <div class="search-result__meta"><span class="search-result__meta-name">Время работы экрана: </span><span class="search-result__meta-value">24/7</span></div>
+        </div>
+        <div class="search-result__buttons"><a class="search-result__button btn btn--secondary" href="#">Подробнее</a><a class="search-result__button btn btn--primary" href="#">Заказать</a></div>
+      </div>
+    </div>
+    <div class="col col-12 col-6--sm col-4--lg col-3--xl">
+      <div class="item_search search-result"><a class="item_search search-result__image" href="#"><img src="https://digitaloutdoor.ru/wp-content/uploads/2017/09/гарден1.png" srcset="https://digitaloutdoor.ru/wp-content/uploads/2017/09/гарден1.png 1000w, https://digitaloutdoor.ru/wp-content/uploads/2017/09/гарден1-300x200.png 300w, https://digitaloutdoor.ru/wp-content/uploads/2017/09/гарден1-768x512.png 768w, https://digitaloutdoor.ru/wp-content/uploads/2017/09/гарден1-150x100.png 150w" sizes="(max-width: 1000px) 100vw, 1000px"></a>
+        <div class="search-result__text"><a class="search-result__title" href="#">Московский проспект, 66а</a>
+          <div class="search-result__main-info">
+            <div class="search-result__metro">
+              <svg class="search-result__metro-icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="95.334px" height="95.334px" viewBox="0 0 95.334 95.334" style="enable-background:new 0 0 95.334 95.334;" xml:space="preserve">
+                <g>
+                  <path style="fill: #197dce;" d="M47.784,0C21.447,0,0,21.449,0,47.904c0,26.215,21.447,47.43,47.784,47.43c26.337,0,47.55-21.098,47.55-47.43 C95.334,21.449,73.168,0,47.784,0z M47.784,89.011c-22.639,0-41.229-18.465-41.229-41.106c0-22.757,18.591-41.591,41.229-41.591 c22.526,0,40.995,18.95,40.995,41.591C88.779,70.309,70.311,89.011,47.784,89.011z"></path>
+                  <path style="fill: #197dce;" d="M66.139,22.644c-2.973,0-4.17,1.311-5.479,3.934L47.787,53.389H47.67L34.68,26.577c-1.313-2.624-2.502-3.934-5.482-3.934 c-3.932,0-5.244,2.502-5.244,4.884v41.587c0,2.27,1.791,3.575,3.932,3.575c1.906,0,4.051-1.306,4.051-3.575v-30.98h0.121 l11.797,24.071c0.835,1.668,1.91,2.626,3.816,2.626c1.901,0,2.979-0.958,3.813-2.626l11.795-24.071H63.4v30.98 c0,2.27,2.143,3.575,4.05,3.575c2.147,0,3.932-1.306,3.932-3.575V27.528C71.381,25.146,70.074,22.644,66.139,22.644z"></path>
+                </g>
+              </svg>
+              <div class="search-result__metro-text">Площадь Восстания</div>
+            </div>
+            <div class="search-result__price">от <span>400 руб.</span></div>
+          </div>
+          <div class="search-result__meta"><span class="search-result__meta-name">Город: </span><span class="search-result__meta-value">Санкт-Петербург</span></div>
+          <div class="search-result__meta"><span class="search-result__meta-name">Время работы экрана: </span><span class="search-result__meta-value">24/7</span></div>
+        </div>
+        <div class="search-result__buttons"><a class="search-result__button btn btn--secondary" href="#">Подробнее</a><a class="search-result__button btn btn--primary" href="#">Заказать</a></div>
+      </div>
+    </div>
+    <div class="col col-12 col-6--sm col-4--lg col-3--xl">
+      <div class="item_search search-result"><a class="item_search search-result__image" href="#"><img src="https://digitaloutdoor.ru/wp-content/uploads/2017/09/гарден1.png" srcset="https://digitaloutdoor.ru/wp-content/uploads/2017/09/гарден1.png 1000w, https://digitaloutdoor.ru/wp-content/uploads/2017/09/гарден1-300x200.png 300w, https://digitaloutdoor.ru/wp-content/uploads/2017/09/гарден1-768x512.png 768w, https://digitaloutdoor.ru/wp-content/uploads/2017/09/гарден1-150x100.png 150w" sizes="(max-width: 1000px) 100vw, 1000px"></a>
+        <div class="search-result__text"><a class="search-result__title" href="#">Московский проспект, 66а</a>
+          <div class="search-result__main-info">
+            <div class="search-result__metro">
+              <svg class="search-result__metro-icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="95.334px" height="95.334px" viewBox="0 0 95.334 95.334" style="enable-background:new 0 0 95.334 95.334;" xml:space="preserve">
+                <g>
+                  <path style="fill: #197dce;" d="M47.784,0C21.447,0,0,21.449,0,47.904c0,26.215,21.447,47.43,47.784,47.43c26.337,0,47.55-21.098,47.55-47.43 C95.334,21.449,73.168,0,47.784,0z M47.784,89.011c-22.639,0-41.229-18.465-41.229-41.106c0-22.757,18.591-41.591,41.229-41.591 c22.526,0,40.995,18.95,40.995,41.591C88.779,70.309,70.311,89.011,47.784,89.011z"></path>
+                  <path style="fill: #197dce;" d="M66.139,22.644c-2.973,0-4.17,1.311-5.479,3.934L47.787,53.389H47.67L34.68,26.577c-1.313-2.624-2.502-3.934-5.482-3.934 c-3.932,0-5.244,2.502-5.244,4.884v41.587c0,2.27,1.791,3.575,3.932,3.575c1.906,0,4.051-1.306,4.051-3.575v-30.98h0.121 l11.797,24.071c0.835,1.668,1.91,2.626,3.816,2.626c1.901,0,2.979-0.958,3.813-2.626l11.795-24.071H63.4v30.98 c0,2.27,2.143,3.575,4.05,3.575c2.147,0,3.932-1.306,3.932-3.575V27.528C71.381,25.146,70.074,22.644,66.139,22.644z"></path>
+                </g>
+              </svg>
+              <div class="search-result__metro-text">Площадь Восстания</div>
+            </div>
+            <div class="search-result__price">от <span>400 руб.</span></div>
+          </div>
+          <div class="search-result__meta"><span class="search-result__meta-name">Город: </span><span class="search-result__meta-value">Санкт-Петербург</span></div>
+          <div class="search-result__meta"><span class="search-result__meta-name">Время работы экрана: </span><span class="search-result__meta-value">24/7</span></div>
+        </div>
+        <div class="search-result__buttons"><a class="search-result__button btn btn--secondary" href="#">Подробнее</a><a class="search-result__button btn btn--primary" href="#">Заказать</a></div>
+      </div>
+    </div>
+    <div class="col col-12 col-6--sm col-4--lg col-3--xl">
+      <div class="item_search search-result"><a class="item_search search-result__image" href="#"><img src="https://digitaloutdoor.ru/wp-content/uploads/2017/09/гарден1.png" srcset="https://digitaloutdoor.ru/wp-content/uploads/2017/09/гарден1.png 1000w, https://digitaloutdoor.ru/wp-content/uploads/2017/09/гарден1-300x200.png 300w, https://digitaloutdoor.ru/wp-content/uploads/2017/09/гарден1-768x512.png 768w, https://digitaloutdoor.ru/wp-content/uploads/2017/09/гарден1-150x100.png 150w" sizes="(max-width: 1000px) 100vw, 1000px"></a>
+        <div class="search-result__text"><a class="search-result__title" href="#">Московский проспект, 66а</a>
+          <div class="search-result__main-info">
+            <div class="search-result__metro">
+              <svg class="search-result__metro-icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="95.334px" height="95.334px" viewBox="0 0 95.334 95.334" style="enable-background:new 0 0 95.334 95.334;" xml:space="preserve">
+                <g>
+                  <path style="fill: #197dce;" d="M47.784,0C21.447,0,0,21.449,0,47.904c0,26.215,21.447,47.43,47.784,47.43c26.337,0,47.55-21.098,47.55-47.43 C95.334,21.449,73.168,0,47.784,0z M47.784,89.011c-22.639,0-41.229-18.465-41.229-41.106c0-22.757,18.591-41.591,41.229-41.591 c22.526,0,40.995,18.95,40.995,41.591C88.779,70.309,70.311,89.011,47.784,89.011z"></path>
+                  <path style="fill: #197dce;" d="M66.139,22.644c-2.973,0-4.17,1.311-5.479,3.934L47.787,53.389H47.67L34.68,26.577c-1.313-2.624-2.502-3.934-5.482-3.934 c-3.932,0-5.244,2.502-5.244,4.884v41.587c0,2.27,1.791,3.575,3.932,3.575c1.906,0,4.051-1.306,4.051-3.575v-30.98h0.121 l11.797,24.071c0.835,1.668,1.91,2.626,3.816,2.626c1.901,0,2.979-0.958,3.813-2.626l11.795-24.071H63.4v30.98 c0,2.27,2.143,3.575,4.05,3.575c2.147,0,3.932-1.306,3.932-3.575V27.528C71.381,25.146,70.074,22.644,66.139,22.644z"></path>
+                </g>
+              </svg>
+              <div class="search-result__metro-text">Площадь Восстания</div>
+            </div>
+            <div class="search-result__price">от <span>400 руб.</span></div>
+          </div>
+          <div class="search-result__meta"><span class="search-result__meta-name">Город: </span><span class="search-result__meta-value">Санкт-Петербург</span></div>
+          <div class="search-result__meta"><span class="search-result__meta-name">Время работы экрана: </span><span class="search-result__meta-value">24/7</span></div>
+        </div>
+        <div class="search-result__buttons"><a class="search-result__button btn btn--secondary" href="#">Подробнее</a><a class="search-result__button btn btn--primary" href="#">Заказать</a></div>
+      </div>
+    </div>
+    <div class="col col-12 col-6--sm col-4--lg col-3--xl">
+      <div class="item_search search-result"><a class="item_search search-result__image" href="#"><img src="https://digitaloutdoor.ru/wp-content/uploads/2017/09/гарден1.png" srcset="https://digitaloutdoor.ru/wp-content/uploads/2017/09/гарден1.png 1000w, https://digitaloutdoor.ru/wp-content/uploads/2017/09/гарден1-300x200.png 300w, https://digitaloutdoor.ru/wp-content/uploads/2017/09/гарден1-768x512.png 768w, https://digitaloutdoor.ru/wp-content/uploads/2017/09/гарден1-150x100.png 150w" sizes="(max-width: 1000px) 100vw, 1000px"></a>
+        <div class="search-result__text"><a class="search-result__title" href="#">Московский проспект, 66а</a>
+          <div class="search-result__main-info">
+            <div class="search-result__metro">
+              <svg class="search-result__metro-icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="95.334px" height="95.334px" viewBox="0 0 95.334 95.334" style="enable-background:new 0 0 95.334 95.334;" xml:space="preserve">
+                <g>
+                  <path style="fill: #197dce;" d="M47.784,0C21.447,0,0,21.449,0,47.904c0,26.215,21.447,47.43,47.784,47.43c26.337,0,47.55-21.098,47.55-47.43 C95.334,21.449,73.168,0,47.784,0z M47.784,89.011c-22.639,0-41.229-18.465-41.229-41.106c0-22.757,18.591-41.591,41.229-41.591 c22.526,0,40.995,18.95,40.995,41.591C88.779,70.309,70.311,89.011,47.784,89.011z"></path>
+                  <path style="fill: #197dce;" d="M66.139,22.644c-2.973,0-4.17,1.311-5.479,3.934L47.787,53.389H47.67L34.68,26.577c-1.313-2.624-2.502-3.934-5.482-3.934 c-3.932,0-5.244,2.502-5.244,4.884v41.587c0,2.27,1.791,3.575,3.932,3.575c1.906,0,4.051-1.306,4.051-3.575v-30.98h0.121 l11.797,24.071c0.835,1.668,1.91,2.626,3.816,2.626c1.901,0,2.979-0.958,3.813-2.626l11.795-24.071H63.4v30.98 c0,2.27,2.143,3.575,4.05,3.575c2.147,0,3.932-1.306,3.932-3.575V27.528C71.381,25.146,70.074,22.644,66.139,22.644z"></path>
+                </g>
+              </svg>
+              <div class="search-result__metro-text">Площадь Восстания</div>
+            </div>
+            <div class="search-result__price">от <span>400 руб.</span></div>
+          </div>
+          <div class="search-result__meta"><span class="search-result__meta-name">Город: </span><span class="search-result__meta-value">Санкт-Петербург</span></div>
+          <div class="search-result__meta"><span class="search-result__meta-name">Время работы экрана: </span><span class="search-result__meta-value">24/7</span></div>
+        </div>
+        <div class="search-result__buttons"><a class="search-result__button btn btn--secondary" href="#">Подробнее</a><a class="search-result__button btn btn--primary" href="#">Заказать</a></div>
+      </div>
+    </div>
+    <div class="col col-12 col-6--sm col-4--lg col-3--xl">
+      <div class="item_search search-result"><a class="item_search search-result__image" href="#"><img src="https://digitaloutdoor.ru/wp-content/uploads/2017/09/гарден1.png" srcset="https://digitaloutdoor.ru/wp-content/uploads/2017/09/гарден1.png 1000w, https://digitaloutdoor.ru/wp-content/uploads/2017/09/гарден1-300x200.png 300w, https://digitaloutdoor.ru/wp-content/uploads/2017/09/гарден1-768x512.png 768w, https://digitaloutdoor.ru/wp-content/uploads/2017/09/гарден1-150x100.png 150w" sizes="(max-width: 1000px) 100vw, 1000px"></a>
+        <div class="search-result__text"><a class="search-result__title" href="#">Московский проспект, 66а</a>
+          <div class="search-result__main-info">
+            <div class="search-result__metro">
+              <svg class="search-result__metro-icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="95.334px" height="95.334px" viewBox="0 0 95.334 95.334" style="enable-background:new 0 0 95.334 95.334;" xml:space="preserve">
+                <g>
+                  <path style="fill: #197dce;" d="M47.784,0C21.447,0,0,21.449,0,47.904c0,26.215,21.447,47.43,47.784,47.43c26.337,0,47.55-21.098,47.55-47.43 C95.334,21.449,73.168,0,47.784,0z M47.784,89.011c-22.639,0-41.229-18.465-41.229-41.106c0-22.757,18.591-41.591,41.229-41.591 c22.526,0,40.995,18.95,40.995,41.591C88.779,70.309,70.311,89.011,47.784,89.011z"></path>
+                  <path style="fill: #197dce;" d="M66.139,22.644c-2.973,0-4.17,1.311-5.479,3.934L47.787,53.389H47.67L34.68,26.577c-1.313-2.624-2.502-3.934-5.482-3.934 c-3.932,0-5.244,2.502-5.244,4.884v41.587c0,2.27,1.791,3.575,3.932,3.575c1.906,0,4.051-1.306,4.051-3.575v-30.98h0.121 l11.797,24.071c0.835,1.668,1.91,2.626,3.816,2.626c1.901,0,2.979-0.958,3.813-2.626l11.795-24.071H63.4v30.98 c0,2.27,2.143,3.575,4.05,3.575c2.147,0,3.932-1.306,3.932-3.575V27.528C71.381,25.146,70.074,22.644,66.139,22.644z"></path>
+                </g>
+              </svg>
+              <div class="search-result__metro-text">Площадь Восстания</div>
+            </div>
+            <div class="search-result__price">от <span>400 руб.</span></div>
+          </div>
+          <div class="search-result__meta"><span class="search-result__meta-name">Город: </span><span class="search-result__meta-value">Санкт-Петербург</span></div>
+          <div class="search-result__meta"><span class="search-result__meta-name">Время работы экрана: </span><span class="search-result__meta-value">24/7</span></div>
+        </div>
+        <div class="search-result__buttons"><a class="search-result__button btn btn--secondary" href="#">Подробнее</a><a class="search-result__button btn btn--primary" href="#">Заказать</a></div>
+      </div>
+    </div>
+    <div class="col col-12 col-6--sm col-4--lg col-3--xl">
+      <div class="item_search search-result"><a class="item_search search-result__image" href="#"><img src="https://digitaloutdoor.ru/wp-content/uploads/2017/09/гарден1.png" srcset="https://digitaloutdoor.ru/wp-content/uploads/2017/09/гарден1.png 1000w, https://digitaloutdoor.ru/wp-content/uploads/2017/09/гарден1-300x200.png 300w, https://digitaloutdoor.ru/wp-content/uploads/2017/09/гарден1-768x512.png 768w, https://digitaloutdoor.ru/wp-content/uploads/2017/09/гарден1-150x100.png 150w" sizes="(max-width: 1000px) 100vw, 1000px"></a>
+        <div class="search-result__text"><a class="search-result__title" href="#">Московский проспект, 66а</a>
+          <div class="search-result__main-info">
+            <div class="search-result__metro">
+              <svg class="search-result__metro-icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="95.334px" height="95.334px" viewBox="0 0 95.334 95.334" style="enable-background:new 0 0 95.334 95.334;" xml:space="preserve">
+                <g>
+                  <path style="fill: #197dce;" d="M47.784,0C21.447,0,0,21.449,0,47.904c0,26.215,21.447,47.43,47.784,47.43c26.337,0,47.55-21.098,47.55-47.43 C95.334,21.449,73.168,0,47.784,0z M47.784,89.011c-22.639,0-41.229-18.465-41.229-41.106c0-22.757,18.591-41.591,41.229-41.591 c22.526,0,40.995,18.95,40.995,41.591C88.779,70.309,70.311,89.011,47.784,89.011z"></path>
+                  <path style="fill: #197dce;" d="M66.139,22.644c-2.973,0-4.17,1.311-5.479,3.934L47.787,53.389H47.67L34.68,26.577c-1.313-2.624-2.502-3.934-5.482-3.934 c-3.932,0-5.244,2.502-5.244,4.884v41.587c0,2.27,1.791,3.575,3.932,3.575c1.906,0,4.051-1.306,4.051-3.575v-30.98h0.121 l11.797,24.071c0.835,1.668,1.91,2.626,3.816,2.626c1.901,0,2.979-0.958,3.813-2.626l11.795-24.071H63.4v30.98 c0,2.27,2.143,3.575,4.05,3.575c2.147,0,3.932-1.306,3.932-3.575V27.528C71.381,25.146,70.074,22.644,66.139,22.644z"></path>
+                </g>
+              </svg>
+              <div class="search-result__metro-text">Площадь Восстания</div>
+            </div>
+            <div class="search-result__price">от <span>400 руб.</span></div>
+          </div>
+          <div class="search-result__meta"><span class="search-result__meta-name">Город: </span><span class="search-result__meta-value">Санкт-Петербург</span></div>
+          <div class="search-result__meta"><span class="search-result__meta-name">Время работы экрана: </span><span class="search-result__meta-value">24/7</span></div>
+        </div>
+        <div class="search-result__buttons"><a class="search-result__button btn btn--secondary" href="#">Подробнее</a><a class="search-result__button btn btn--primary" href="#">Заказать</a></div>
+      </div>
+    </div>
+    <div class="col col-12 col-6--sm col-4--lg col-3--xl">
+      <div class="item_search search-result"><a class="item_search search-result__image" href="#"><img src="https://digitaloutdoor.ru/wp-content/uploads/2017/09/гарден1.png" srcset="https://digitaloutdoor.ru/wp-content/uploads/2017/09/гарден1.png 1000w, https://digitaloutdoor.ru/wp-content/uploads/2017/09/гарден1-300x200.png 300w, https://digitaloutdoor.ru/wp-content/uploads/2017/09/гарден1-768x512.png 768w, https://digitaloutdoor.ru/wp-content/uploads/2017/09/гарден1-150x100.png 150w" sizes="(max-width: 1000px) 100vw, 1000px"></a>
+        <div class="search-result__text"><a class="search-result__title" href="#">Московский проспект, 66а</a>
+          <div class="search-result__main-info">
+            <div class="search-result__metro">
+              <svg class="search-result__metro-icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="95.334px" height="95.334px" viewBox="0 0 95.334 95.334" style="enable-background:new 0 0 95.334 95.334;" xml:space="preserve">
+                <g>
+                  <path style="fill: #197dce;" d="M47.784,0C21.447,0,0,21.449,0,47.904c0,26.215,21.447,47.43,47.784,47.43c26.337,0,47.55-21.098,47.55-47.43 C95.334,21.449,73.168,0,47.784,0z M47.784,89.011c-22.639,0-41.229-18.465-41.229-41.106c0-22.757,18.591-41.591,41.229-41.591 c22.526,0,40.995,18.95,40.995,41.591C88.779,70.309,70.311,89.011,47.784,89.011z"></path>
+                  <path style="fill: #197dce;" d="M66.139,22.644c-2.973,0-4.17,1.311-5.479,3.934L47.787,53.389H47.67L34.68,26.577c-1.313-2.624-2.502-3.934-5.482-3.934 c-3.932,0-5.244,2.502-5.244,4.884v41.587c0,2.27,1.791,3.575,3.932,3.575c1.906,0,4.051-1.306,4.051-3.575v-30.98h0.121 l11.797,24.071c0.835,1.668,1.91,2.626,3.816,2.626c1.901,0,2.979-0.958,3.813-2.626l11.795-24.071H63.4v30.98 c0,2.27,2.143,3.575,4.05,3.575c2.147,0,3.932-1.306,3.932-3.575V27.528C71.381,25.146,70.074,22.644,66.139,22.644z"></path>
+                </g>
+              </svg>
+              <div class="search-result__metro-text">Площадь Восстания</div>
+            </div>
+            <div class="search-result__price">от <span>400 руб.</span></div>
+          </div>
+          <div class="search-result__meta"><span class="search-result__meta-name">Город: </span><span class="search-result__meta-value">Санкт-Петербург</span></div>
+          <div class="search-result__meta"><span class="search-result__meta-name">Время работы экрана: </span><span class="search-result__meta-value">24/7</span></div>
+        </div>
+        <div class="search-result__buttons"><a class="search-result__button btn btn--secondary" href="#">Подробнее</a><a class="search-result__button btn btn--primary" href="#">Заказать</a></div>
+      </div>
+    </div>
+    <div class="col col-12 col-6--sm col-4--lg col-3--xl">
+      <div class="item_search search-result"><a class="item_search search-result__image" href="#"><img src="https://digitaloutdoor.ru/wp-content/uploads/2017/09/гарден1.png" srcset="https://digitaloutdoor.ru/wp-content/uploads/2017/09/гарден1.png 1000w, https://digitaloutdoor.ru/wp-content/uploads/2017/09/гарден1-300x200.png 300w, https://digitaloutdoor.ru/wp-content/uploads/2017/09/гарден1-768x512.png 768w, https://digitaloutdoor.ru/wp-content/uploads/2017/09/гарден1-150x100.png 150w" sizes="(max-width: 1000px) 100vw, 1000px"></a>
+        <div class="search-result__text"><a class="search-result__title" href="#">Московский проспект, 66а</a>
+          <div class="search-result__main-info">
+            <div class="search-result__metro">
+              <svg class="search-result__metro-icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="95.334px" height="95.334px" viewBox="0 0 95.334 95.334" style="enable-background:new 0 0 95.334 95.334;" xml:space="preserve">
+                <g>
+                  <path style="fill: #197dce;" d="M47.784,0C21.447,0,0,21.449,0,47.904c0,26.215,21.447,47.43,47.784,47.43c26.337,0,47.55-21.098,47.55-47.43 C95.334,21.449,73.168,0,47.784,0z M47.784,89.011c-22.639,0-41.229-18.465-41.229-41.106c0-22.757,18.591-41.591,41.229-41.591 c22.526,0,40.995,18.95,40.995,41.591C88.779,70.309,70.311,89.011,47.784,89.011z"></path>
+                  <path style="fill: #197dce;" d="M66.139,22.644c-2.973,0-4.17,1.311-5.479,3.934L47.787,53.389H47.67L34.68,26.577c-1.313-2.624-2.502-3.934-5.482-3.934 c-3.932,0-5.244,2.502-5.244,4.884v41.587c0,2.27,1.791,3.575,3.932,3.575c1.906,0,4.051-1.306,4.051-3.575v-30.98h0.121 l11.797,24.071c0.835,1.668,1.91,2.626,3.816,2.626c1.901,0,2.979-0.958,3.813-2.626l11.795-24.071H63.4v30.98 c0,2.27,2.143,3.575,4.05,3.575c2.147,0,3.932-1.306,3.932-3.575V27.528C71.381,25.146,70.074,22.644,66.139,22.644z"></path>
+                </g>
+              </svg>
+              <div class="search-result__metro-text">Площадь Восстания</div>
+            </div>
+            <div class="search-result__price">от <span>400 руб.</span></div>
+          </div>
+          <div class="search-result__meta"><span class="search-result__meta-name">Город: </span><span class="search-result__meta-value">Санкт-Петербург</span></div>
+          <div class="search-result__meta"><span class="search-result__meta-name">Время работы экрана: </span><span class="search-result__meta-value">24/7</span></div>
+        </div>
+        <div class="search-result__buttons"><a class="search-result__button btn btn--secondary" href="#">Подробнее</a><a class="search-result__button btn btn--primary" href="#">Заказать</a></div>
+      </div>
+    </div>
+    <div class="col col-12 col-6--sm col-4--lg col-3--xl">
+      <div class="item_search search-result"><a class="item_search search-result__image" href="#"><img src="https://digitaloutdoor.ru/wp-content/uploads/2017/09/гарден1.png" srcset="https://digitaloutdoor.ru/wp-content/uploads/2017/09/гарден1.png 1000w, https://digitaloutdoor.ru/wp-content/uploads/2017/09/гарден1-300x200.png 300w, https://digitaloutdoor.ru/wp-content/uploads/2017/09/гарден1-768x512.png 768w, https://digitaloutdoor.ru/wp-content/uploads/2017/09/гарден1-150x100.png 150w" sizes="(max-width: 1000px) 100vw, 1000px"></a>
+        <div class="search-result__text"><a class="search-result__title" href="#">Московский проспект, 66а</a>
+          <div class="search-result__main-info">
+            <div class="search-result__metro">
+              <svg class="search-result__metro-icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="95.334px" height="95.334px" viewBox="0 0 95.334 95.334" style="enable-background:new 0 0 95.334 95.334;" xml:space="preserve">
+                <g>
+                  <path style="fill: #197dce;" d="M47.784,0C21.447,0,0,21.449,0,47.904c0,26.215,21.447,47.43,47.784,47.43c26.337,0,47.55-21.098,47.55-47.43 C95.334,21.449,73.168,0,47.784,0z M47.784,89.011c-22.639,0-41.229-18.465-41.229-41.106c0-22.757,18.591-41.591,41.229-41.591 c22.526,0,40.995,18.95,40.995,41.591C88.779,70.309,70.311,89.011,47.784,89.011z"></path>
+                  <path style="fill: #197dce;" d="M66.139,22.644c-2.973,0-4.17,1.311-5.479,3.934L47.787,53.389H47.67L34.68,26.577c-1.313-2.624-2.502-3.934-5.482-3.934 c-3.932,0-5.244,2.502-5.244,4.884v41.587c0,2.27,1.791,3.575,3.932,3.575c1.906,0,4.051-1.306,4.051-3.575v-30.98h0.121 l11.797,24.071c0.835,1.668,1.91,2.626,3.816,2.626c1.901,0,2.979-0.958,3.813-2.626l11.795-24.071H63.4v30.98 c0,2.27,2.143,3.575,4.05,3.575c2.147,0,3.932-1.306,3.932-3.575V27.528C71.381,25.146,70.074,22.644,66.139,22.644z"></path>
+                </g>
+              </svg>
+              <div class="search-result__metro-text">Площадь Восстания</div>
+            </div>
+            <div class="search-result__price">от <span>400 руб.</span></div>
+          </div>
+          <div class="search-result__meta"><span class="search-result__meta-name">Город: </span><span class="search-result__meta-value">Санкт-Петербург</span></div>
+          <div class="search-result__meta"><span class="search-result__meta-name">Время работы экрана: </span><span class="search-result__meta-value">24/7</span></div>
+        </div>
+        <div class="search-result__buttons"><a class="search-result__button btn btn--secondary" href="#">Подробнее</a><a class="search-result__button btn btn--primary" href="#">Заказать</a></div>
+      </div>
+    </div>
+  </div>
+  <form class="bottom-form">
+    <h2 class="bottom-form__title">Заказать консультацию</h2>
+    <div class="container bottom-form__container">
+      <input class="bottom-form__input bottom-form__input--text" type="text" placeholder="Ваше имя">
+      <input class="bottom-form__input bottom-form__input--text" type="text" placeholder="Номер телефона">
+      <input class="bottom-form__input bottom-form__input--submit btn btn--primary" type="submit" value="Заказать">
+    </div>
+    <p class="agree">
+       Нажимая кнопку "Отправить", вы соглашайтесь с <a>условиями обработки персональных данных.</a></p>
+  </form>
+</div>
+      </main>
+<footer class="site-footer" id="colophon" role="contentinfo">
+  <div class="wrapper">
+    <div>
+      <ul>
+        <li><a href="/">DigitalOutdoor — размещение рекламы на видеоэкранах</a><a href="#">О нас</a><a href="#">Размещение</a><a href="#">Контакты</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+    </div>
+  <script type="text/javascript" src="js/common.js"></script><script type="text/javascript" src="js/index.js"></script></body>
+</html>
