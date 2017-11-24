@@ -9,7 +9,7 @@
     <meta name="HandheldFriend" content="true">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- links-->
-  <link href="./css/index.42d3bf51cd25aafcf541.css" rel="stylesheet"></head>
+  <link href="./css/index.6a53659f8a305d656073.css" rel="stylesheet"></head>
   <body>
 <header class="header">
   <div class="header__wrapper grid-wrapper">
@@ -23,9 +23,33 @@
     </nav>
     <div class="header-info"><a class="header-info-block" href="tel:8(499)647-55-57">
         <div class="header-info-block__icon"><i class="icon-phone" aria-hidden="true"></i></div>
-        <div class="header-info-block__text">8(499)647-55-57</div></a><a class="header-info__button btn btn--secondary btn--medium" href="#">Перезвоните мне</a></div>
+        <div class="header-info-block__text">8(499)647-55-57</div></a><a class="header-info__button btn btn--secondary btn--medium" id="callback-btn">Перезвоните мне</a></div>
   </div>
 </header>
+<div class="overlay overlay--center" id="callback-overlay">
+  <div class="overlay__container">
+    <div class="popup popup--small">
+      <div class="popup__header">
+        <div class="popup__title">Оставьте свои контактные данные и наш менеджер свяжется с вами.</div>
+        <button class="popup__close-btn btn"><i class="icon-cancel" aria-hidden="true"></i></button>
+      </div>
+      <div class="popup__content">
+        <form class="popup__form">
+          <input class="input input--text input--fullwidth fname" type="text" placeholder="Ваше имя">
+          <input class="input input--text input--fullwidth fphone" type="text" placeholder="Ваш номер телефона">
+          <input class="input input--submit input--fullwidth btn btn--primary btn--big" type="submit" value="Отправить">
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="overlay overlay--center" id="project-overlay">
+  <div class="overlay__container">
+    <div class="popup popup--image">
+      <button class="popup__close-btn btn"><i class="icon-cancel" aria-hidden="true"></i></button><img class="popup__img" src="images/src/assets/images/projects/2.png">
+    </div>
+  </div>
+</div>
     <div id="page-wrap">
       <div id="scroll-wrap">
 <section class="section fullscreen start" id="start">
@@ -51,7 +75,7 @@
               <div class="start-content-icon-block__icon"><i class="icon-lightbulb" aria-hidden="true"></i></div>
               <div class="start-content-icon-block__text"><strong class="strong">Оригинально </strong>как подарок</div>
             </div>
-          </div><a class="start-content__button btn btn--primary btn--big">Оформить заказ прямо сейчас</a>
+          </div><a class="start-content__button btn btn--primary btn--big" id="to-contacts-btn" href="#contacts">Оформить заказ прямо сейчас</a>
         </div>
       </div>
     </div>
@@ -66,28 +90,28 @@
   </div>
   <div class="start__vscroll-list">
 <div class="vscroll-list" id="projects-list">
-  <div class="vscroll-list__wrap" id="projects-list-wrap"><a class="vscroll-list-item" style="background-image: url('images/src/assets/images/projects/1.png');" href="#">
+  <div class="vscroll-list__wrap" id="projects-list-wrap"><a class="vscroll-list-item" style="background-image: url('images/src/assets/images/projects/1.png');" data-img="images/src/assets/images/projects/1.png">
       <div class="vscroll-list-item__hover-content">
         <div class="vscroll-list-item__button btn btn--primary btn--medium">Проект</div>
-      </div></a><a class="vscroll-list-item" style="background-image: url('images/src/assets/images/projects/2.png');" href="#">
+      </div></a><a class="vscroll-list-item" style="background-image: url('images/src/assets/images/projects/2.png');" data-img="images/src/assets/images/projects/2.png">
       <div class="vscroll-list-item__hover-content">
         <div class="vscroll-list-item__button btn btn--primary btn--medium">Проект</div>
-      </div></a><a class="vscroll-list-item" style="background-image: url('images/src/assets/images/projects/3.png');" href="#">
+      </div></a><a class="vscroll-list-item" style="background-image: url('images/src/assets/images/projects/3.png');" data-img="images/src/assets/images/projects/3.png">
       <div class="vscroll-list-item__hover-content">
         <div class="vscroll-list-item__button btn btn--primary btn--medium">Проект</div>
-      </div></a><a class="vscroll-list-item" style="background-image: url('images/src/assets/images/projects/4.png');" href="#">
+      </div></a><a class="vscroll-list-item" style="background-image: url('images/src/assets/images/projects/4.png');" data-img="images/src/assets/images/projects/4.png">
       <div class="vscroll-list-item__hover-content">
         <div class="vscroll-list-item__button btn btn--primary btn--medium">Проект</div>
-      </div></a><a class="vscroll-list-item" style="background-image: url('images/src/assets/images/projects/1.png');" href="#">
+      </div></a><a class="vscroll-list-item" style="background-image: url('images/src/assets/images/projects/1.png');" data-img="images/src/assets/images/projects/1.png">
       <div class="vscroll-list-item__hover-content">
         <div class="vscroll-list-item__button btn btn--primary btn--medium">Проект</div>
-      </div></a><a class="vscroll-list-item" style="background-image: url('images/src/assets/images/projects/2.png');" href="#">
+      </div></a><a class="vscroll-list-item" style="background-image: url('images/src/assets/images/projects/2.png');" data-img="images/src/assets/images/projects/2.png">
       <div class="vscroll-list-item__hover-content">
         <div class="vscroll-list-item__button btn btn--primary btn--medium">Проект</div>
-      </div></a><a class="vscroll-list-item" style="background-image: url('images/src/assets/images/projects/3.png');" href="#">
+      </div></a><a class="vscroll-list-item" style="background-image: url('images/src/assets/images/projects/3.png');" data-img="images/src/assets/images/projects/3.png">
       <div class="vscroll-list-item__hover-content">
         <div class="vscroll-list-item__button btn btn--primary btn--medium">Проект</div>
-      </div></a><a class="vscroll-list-item" style="background-image: url('images/src/assets/images/projects/4.png');" href="#">
+      </div></a><a class="vscroll-list-item" style="background-image: url('images/src/assets/images/projects/4.png');" data-img="images/src/assets/images/projects/4.png">
       <div class="vscroll-list-item__hover-content">
         <div class="vscroll-list-item__button btn btn--primary btn--medium">Проект</div>
       </div></a>
@@ -296,7 +320,11 @@
       </div>
     </div>
   </div>
-  <div class="contacts__footer">
+  <div class="scene contacts-background" id="contacts-scene">
+    <div class="layer" data-depth="0.05"><img class="parallax-item contacts-background__footer-bg" src="images/src/assets/images/contacts/footer-bg.png"></div>
+    <div class="layer" data-depth="0.50"><img class="parallax-item contacts-background__mint" src="images/src/assets/images/contacts/mint.png"></div>
+  </div>
+</section>
 <footer class="footer">
   <div class="grid-wrapper">
     <div class="grid-container">
@@ -311,13 +339,7 @@
     </div>
   </div>
 </footer>
-  </div>
-  <div class="scene contacts-background" id="contacts-scene">
-    <div class="layer" data-depth="0.05"><img class="parallax-item contacts-background__footer-bg" src="images/src/assets/images/contacts/footer-bg.png"></div>
-    <div class="layer" data-depth="0.50"><img class="parallax-item contacts-background__mint" src="images/src/assets/images/contacts/mint.png"></div>
-  </div>
-</section>
       </div>
     </div>
-  <script type="text/javascript" src="js/common.42d3bf51cd25aafcf541.js"></script><script type="text/javascript" src="js/index.42d3bf51cd25aafcf541.js"></script></body>
+  <script type="text/javascript" src="js/common.6a53659f8a305d656073.js"></script><script type="text/javascript" src="js/index.6a53659f8a305d656073.js"></script></body>
 </html>
