@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Graffiti | Печать на холсте</title>
+    <meta charset="UTF-8">
+    <meta content="Salahutdinov Salavat" name="author">
+    <meta content="Graffiti | Печать на холсте" name="description">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="HandheldFriend" content="true">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- links-->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,500,700,900" rel="stylesheet">
+  <link href="./css/index.35631cccc4001eb2e148.css" rel="stylesheet"></head>
+  <body>
+        <div class="overlay overlay--center" id="city-choice">
+          <div class="overlay__container">
+            <div class="popup popup--large">
+              <div class="popup__header">
+                <div class="popup__title">Выберите город</div>
+                <button class="popup__close-btn btn"><i class="icon-cancel" aria-hidden="true"></i></button>
+              </div>
+              <div class="popup__content">
+                <div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="overlay overlay--center" id="order">
+          <div class="overlay__container">
+            <div class="popup popup--large">
+              <div class="popup__header">
+                <div class="popup__title">Заказ</div>
+                <button class="popup__close-btn btn"><i class="icon-cancel" aria-hidden="true"></i></button>
+              </div>
+              <div class="popup__content">
+                <div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+    <div class="header" id="header">
+      <div class="header-top">
+        <div class="wrapper">
+          <div class="header-top__container grid-container grid-container--x-between grid-container--y-center">
+            <div class="header-top__left grid-column">
+              <button class="city-choice-btn">Санкт-Петербург</button>
+            </div>
+            <div class="header-top__right grid-column scrollable-horizontal"><a class="header-top-email" href="mailto:zakaz@печатьнахолсте.рф">
+                <div class="header-top-email__text">zakaz@печатьнахолсте.рф</div>
+                <div class="header-top-email__icon"><i class="fa fa-envelope" aria-hidden="true"></i></div></a><a class="header-top-social" href="#"><i class="fa fa-vk" aria-hidden="true"></i></a><a class="header-top-social" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a><a class="header-top-social" href="#"><i class="fa fa-odnoklassniki" aria-hidden="true"></i></a><a class="header-top-social" href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></div>
+          </div>
+        </div>
+      </div>
+      <div class="header-bottom">
+        <div class="wrapper">
+          <div class="header-bottom__container grid-container grid-container--y-center">
+            <button class="burger-btn grid-column visible hidden--lg"></button><a class="header-bottom__logo grid-column" href="#">
+              <div class="logo" style="background-image: url(images/logo.png);"></div></a>
+            <div class="header-bottom__nav scrollable-horizontal hidden visible--lg">
+                  <nav class="header-nav">
+                    <ul class="header-nav__ul">
+                      <li class="header-nav__item"><a class="header-nav__link" href="#">Главная</a></li>
+                      <li class="header-nav__item"><a class="header-nav__link" href="#">Доставка</a></li>
+                      <li class="header-nav__item"><a class="header-nav__link" href="#">Контакты</a></li>
+                    </ul>
+                  </nav>
+            </div>
+            <div class="header-bottom__order grid-column hidden visible--md"><a class="header-bottom-order-btn btn btn--primary">Заказать</a></div>
+            <div class="header-bottom__phone grid-column hidden visible--md"><a class="header-bottom-phone btn" href="tel:8(800)707-75-31">
+                <div class="header-bottom-phone__icon"><i class="fa fa-mobile" aria-hidden="true"></i></div>
+                <div class="header-bottom-phone__text">
+                  <div class="header-bottom-phone__top-text">Звоните сейчас!</div>
+                  <div class="header-bottom-phone__bottom-text">8(800)707-75-31</div>
+                </div></a></div>
+            <div class="header-bottom__cart grid-column"><a class="header-bottom-cart btn">
+                <div class="header-bottom-cart__icon"><i class="fa fa-shopping-cart" aria-hidden="true"></i></div>
+                <div class="header-bottom-cart__count">0</div></a></div>
+          </div>
+        </div>
+        <div class="header-bottom-mobile visible hidden--md">
+          <div class="wrapper">
+            <div class="grid-container grid-container--x-between grid-container--y-center"><a class="header-bottom-mobile__phone grid-column" href="tel:8(800)707-75-31">8(800)707-75-31</a>
+              <div class="grid-column"><a class="header-bottom-order-btn btn btn--primary">Заказать</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<section class="start">
+  <div class="start__wrapper wrapper">
+    <div class="start__container grid-container grid-container--x-between grid-container--y-start">
+      <div class="start__form">
+        <form class="start-form" action="#"> 
+          <h2 class="start-form__title">Печать на холсте </h2>
+          <div class="start-form__subtitle">с вашим изображением</div>
+          <div class="start-form__group start-form__container grid-container">
+            <div class="start-form-check start-form__column grid-column grid-column-4">
+              <input type="radio" name="shape" value="rectangle" id="shape-rectangle" checked>
+              <label for="shape-rectangle">
+                <div class="start-form-check__icon start-form-check__icon--rectangle"></div>
+                <div class="start-form-check__text">Прямоуг.</div>
+              </label>
+            </div>
+            <div class="start-form-check start-form__column grid-column grid-column-4">
+              <input type="radio" name="shape" value="square" id="shape-square">
+              <label for="shape-square">
+                <div class="start-form-check__icon start-form-check__icon--square"></div>
+                <div class="start-form-check__text">Квадрат</div>
+              </label>
+            </div>
+            <div class="start-form-check start-form__column grid-column grid-column-4">
+              <input type="radio" name="shape" value="panorama" id="shape-panorama">
+              <label for="shape-panorama">
+                <div class="start-form-check__icon start-form-check__icon--panorama"></div>
+                <div class="start-form-check__text">Панорама</div>
+              </label>
+            </div>
+          </div>
+          <div class="start-form__group">
+            <div class="start-form-select">
+              <label class="start-form-select__label">Размер:</label>
+              <select class="start-form-select__input" name="size">
+                <option value="80x120">80x120</option>
+                <option value="90x430">90x430</option>
+                <option value="20x150">280x150</option>
+              </select>
+            </div>
+          </div>
+          <div class="start-form__group">
+            <div class="start-form-upload" id="start-form-upload-dropzone">
+              <input class="start-form-upload__input" id="start-form-upload" type="file" name="image" accept="image/jpeg,image/png,image/gif">
+              <label class="start-form-upload__label" for="start-form-upload">
+                <div class="start-form__container grid-container grid-container--y-center">
+                  <div class="start-form-upload__label-icon grid-column grid-column-3 start-form__column"><i class="fa fa-upload" aria-hidden="true"></i></div>
+                  <div class="start-form-upload__label-text grid-column grid-column-9 start-form__column">
+                    <div class="start-form-upload__label-filename"></div>
+                    <div class="start-form-upload__label-title">Перетащите сюда изображение</div>
+                    <div class="start-form-upload__label-subtitle">Или нажмите и выберете файл</div>
+                  </div>
+                </div>
+              </label>
+            </div>
+          </div>
+          <div class="start-form__buttons grid-container start-form__container">
+            <div class="grid-column grid-column-7 start-form__column">
+              <button class="start-form__order-btn btn btn--secondary">
+                <div class="start-form__order-btn-price">1000<span class="start-form__order-btn-price-currency">руб.</span></div>
+                <div class="start-form__order-btn-icon"><i class="fa fa-shopping-cart" aria-hidden="true"></i></div>
+              </button>
+            </div>
+            <div class="grid-column grid-column-5 start-form__column">
+              <button class="start-form__submit btn btn--primary">Заказать</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="start__image-preview-container">
+        <div class="start-image-preview">
+          <div class="start-image-preview__img empty" id="start-image-preview"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="promo">
+  <div class="wrapper">
+    <div class="promo__container grid-container grid-container--x-between grid-container--y-center">
+      <div class="promo__column grid-column">Мы уже готовы сделать вам бесплатный макет </div>
+      <div class="promo__column grid-column"><a class="btn btn--medium btn--secondary" href="#">Оставить заявку</a></div>
+    </div>
+  </div>
+</section>
+<section class="included">
+  <div class="wrapper">
+    <div class="included-header grid-container grid-container--x-between">
+      <div class="included-header__left grid-column">
+        <h2 class="included-header__title">Входит в стоимость</h2>
+        <p class="included-header__description">Прародителем текста-рыбы является известный "Lorem Ipsum" – латинский текст, ноги которого растут</p>
+      </div>
+      <div class="included-header__right hidden visible--lg grid-column">
+        <div class="included-header-menu">
+          <label class="included-header-menu__item" for="included-canvas">Холст</label>
+          <label class="included-header-menu__item" for="included-back">Задник из картона</label>
+          <label class="included-header-menu__item" for="included-fixture">Крепежи</label>
+          <label class="included-header-menu__item" for="included-package">Упаковка</label>
+          <label class="included-header-menu__item" for="included-delivery">Доставка</label>
+        </div>
+      </div>
+    </div>
+    <div class="included-grid grid-container">
+      <div class="grid-column grid-column-12 grid-column-6--md">
+        <div class="included-grid__row">
+          <div class="grid-container">
+            <div class="grid-column grid-column-6">
+              <div class="included-grid__item included-grid__item--high" id="included-canvas" style="background-color: #f8f6e9; background-image: url(images/canvas.png);">
+                <div class="hover-content">Холст</div>
+              </div>
+            </div>
+            <div class="grid-column grid-column-6">
+              <div class="included-grid__item included-grid__item--high" id="included-back" style="background-color: #e5f4f7; background-image: url(images/back.png);">
+                <div class="hover-content">Задник из картона</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="included-grid__row">
+          <div class="included-grid__item included-grid__item--short" id="included-fixture" style="background-color: #ebebeb; background-image: url(images/fixture.png); background-position: 50% 100%;">
+            <div class="hover-content">Упаковка</div>
+          </div>
+        </div>
+      </div>
+      <div class="grid-column grid-column-12 grid-column-6--md">
+        <div class="included-grid__row">
+          <div class="included-grid__item included-grid__item--short" id="included-package" style="background-color: #f2efc9; background-image: url(images/package.png);">
+            <div class="hover-content">Крепежи</div>
+          </div>
+        </div>
+        <div class="included-grid__row">
+          <div class="included-grid__item included-grid__item--high" id="included-delivery" style="background-color: #eeeadf; background-image: url(images/delivery.png);">
+            <div class="hover-content">Доставка</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="included__button-container"><a class="btn btn--medium btn--primary" href="#">Заказать</a></div>
+  </div>
+</section>
+<section class="features">
+  <div class="features-cards" style="background-image: url(images/features-bg.jpg);">
+    <div class="wrapper">
+      <div class="features-cards__container grid-container grid-container--y-stretch">
+        <div class="features-cards__item grid-column-12 grid-column-6--sm">
+          <div class="features-card">
+            <div class="features-card__icon"><img src="images/icon-back.png"></div>
+            <div class="features-card__text">
+              <div class="features-card__title">Картонный задник</div>
+              <div class="features-card__description">Прародителем текста-рыбы является известный "Lorem Ipsum" – латинский текст, ноги которого растут аж из 45 года до нашей эры.</div>
+            </div>
+          </div>
+        </div>
+        <div class="features-cards__item grid-column-12 grid-column-6--sm">
+          <div class="features-card">
+            <div class="features-card__icon"><img src="images/icon-delivery.png"></div>
+            <div class="features-card__text">
+              <div class="features-card__title">Воспользуйтесь доставкой</div>
+              <div class="features-card__description">Прародителем текста-рыбы является известный "Lorem Ipsum" – латинский текст, ноги которого растут аж из 45 года до нашей эры.</div>
+            </div>
+          </div>
+        </div>
+        <div class="features-cards__item grid-column-12 grid-column-6--sm">
+          <div class="features-card">
+            <div class="features-card__icon"><img src="images/icon-varnish.png"></div>
+            <div class="features-card__text">
+              <div class="features-card__title">Холст покрывается лаком</div>
+              <div class="features-card__description">Прародителем текста-рыбы является известный "Lorem Ipsum" – латинский текст, ноги которого растут аж из 45 года до нашей эры.</div>
+            </div>
+          </div>
+        </div>
+        <div class="features-cards__item grid-column-12 grid-column-6--sm">
+          <div class="features-card">
+            <div class="features-card__icon"><img src="images/icon-eco.png"></div>
+            <div class="features-card__text">
+              <div class="features-card__title">ЭКО материалы</div>
+              <div class="features-card__description">Прародителем текста-рыбы является известный "Lorem Ipsum" – латинский текст, ноги которого растут аж из 45 года до нашей эры.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="features-gallery">
+    <div class="features-gallery-list" id="gallery-list">
+      <div class="features-gallery-list__wrap" id="gallery-list-wrap"><a class="features-gallery-item" data-fancybox="gallery" href="images/project-1.jpg"><img class="features-gallery-item__img" src="images/project-1.jpg">
+          <div class="features-gallery-item__hover-content"><i class="fa fa-search" aria-hidden="true"></i></div></a><a class="features-gallery-item" data-fancybox="gallery" href="images/project-2.jpg"><img class="features-gallery-item__img" src="images/project-2.jpg">
+          <div class="features-gallery-item__hover-content"><i class="fa fa-search" aria-hidden="true"></i></div></a><a class="features-gallery-item" data-fancybox="gallery" href="images/project-3.jpg"><img class="features-gallery-item__img" src="images/project-3.jpg">
+          <div class="features-gallery-item__hover-content"><i class="fa fa-search" aria-hidden="true"></i></div></a><a class="features-gallery-item" data-fancybox="gallery" href="images/project-4.jpg"><img class="features-gallery-item__img" src="images/project-4.jpg">
+          <div class="features-gallery-item__hover-content"><i class="fa fa-search" aria-hidden="true"></i></div></a><a class="features-gallery-item" data-fancybox="gallery" href="images/project-5.jpg"><img class="features-gallery-item__img" src="images/project-5.jpg">
+          <div class="features-gallery-item__hover-content"><i class="fa fa-search" aria-hidden="true"></i></div></a><a class="features-gallery-item" data-fancybox="gallery" href="images/project-6.jpg"><img class="features-gallery-item__img" src="images/project-6.jpg">
+          <div class="features-gallery-item__hover-content"><i class="fa fa-search" aria-hidden="true"></i></div></a><a class="features-gallery-item" data-fancybox="gallery" href="images/project-7.jpg"><img class="features-gallery-item__img" src="images/project-7.jpg">
+          <div class="features-gallery-item__hover-content"><i class="fa fa-search" aria-hidden="true"></i></div></a><a class="features-gallery-item" data-fancybox="gallery" href="images/project-1.jpg"><img class="features-gallery-item__img" src="images/project-1.jpg">
+          <div class="features-gallery-item__hover-content"><i class="fa fa-search" aria-hidden="true"></i></div></a><a class="features-gallery-item" data-fancybox="gallery" href="images/project-2.jpg"><img class="features-gallery-item__img" src="images/project-2.jpg">
+          <div class="features-gallery-item__hover-content"><i class="fa fa-search" aria-hidden="true"></i></div></a><a class="features-gallery-item" data-fancybox="gallery" href="images/project-3.jpg"><img class="features-gallery-item__img" src="images/project-3.jpg">
+          <div class="features-gallery-item__hover-content"><i class="fa fa-search" aria-hidden="true"></i></div></a><a class="features-gallery-item" data-fancybox="gallery" href="images/project-4.jpg"><img class="features-gallery-item__img" src="images/project-4.jpg">
+          <div class="features-gallery-item__hover-content"><i class="fa fa-search" aria-hidden="true"></i></div></a><a class="features-gallery-item" data-fancybox="gallery" href="images/project-5.jpg"><img class="features-gallery-item__img" src="images/project-5.jpg">
+          <div class="features-gallery-item__hover-content"><i class="fa fa-search" aria-hidden="true"></i></div></a><a class="features-gallery-item" data-fancybox="gallery" href="images/project-6.jpg"><img class="features-gallery-item__img" src="images/project-6.jpg">
+          <div class="features-gallery-item__hover-content"><i class="fa fa-search" aria-hidden="true"></i></div></a><a class="features-gallery-item" data-fancybox="gallery" href="images/project-7.jpg"><img class="features-gallery-item__img" src="images/project-7.jpg">
+          <div class="features-gallery-item__hover-content"><i class="fa fa-search" aria-hidden="true"></i></div></a>
+      </div>
+    </div>
+    <div class="features-gallery-scrollbar" id="gallery-scrollbar">
+      <div class="handle"></div>
+    </div>
+  </div>
+</section>
+<section class="stats">
+  <div class="wrapper">
+    <div class="stats__container grid-container grid-container--x-start">
+      <div class="stats-item grid-column grid-column-6 grid-column-2--md">
+        <div class="stats-item__number">26</div>
+        <div class="stats-item__text">городов</div>
+      </div>
+      <div class="stats-item grid-column grid-column-6 grid-column-2--md">
+        <div class="stats-item__number">37</div>
+        <div class="stats-item__text">пунктов выдачи</div>
+      </div>
+      <div class="stats-item grid-column grid-column-6 grid-column-2--md">
+        <div class="stats-item__number">51</div>
+        <div class="stats-item__text">размеров холстов</div>
+      </div>
+      <div class="stats-item grid-column grid-column-6 grid-column-2--md">
+        <div class="stats-item__number">1000+</div>
+        <div class="stats-item__text">выполненных работ</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="check">
+  <div class="wrapper">
+    <div class="grid-container grid-container--y-stretch">
+      <div class="grid-column grid-column-12 grid-column-5--lg">
+        <div class="check-form">
+          <h3 class="check-form__title">Отправьте фото на проверку</h3>
+          <input class="check-form__input check-form__input--text" type="text" name="name" placeholder="Ваше имя">
+          <input class="check-form__input check-form__input--text" type="text" name="phone" placeholder="Телефон">
+          <input class="check-form__input check-form__input--text" type="email" name="email" placeholder="Email">
+          <div class="check-form-upload">
+            <input class="check-form-upload__input" id="check-form-upload" type="file" name="image" accept="image/jpeg,image/png,image/gif">
+            <label class="check-form-upload__label" for="check-form-upload">
+              <div class="check-form-upload__label-icon"><i class="fa fa-upload" aria-hidden="true"></i></div>
+              <div class="check-form-upload__label-text">
+                <div class="check-form-upload__label-filename" id="check-form-upload-filename-container"></div>
+                <div class="check-form-upload__label-title">Загрузите изображение</div>
+              </div>
+            </label>
+          </div>
+          <div class="check-form__btn-container">
+            <button class="btn btn--primary btn--medium" type="submit">Отправить</button>
+          </div>
+        </div>
+      </div>
+      <div class="grid-column grid-column-12 grid-column-7--lg">
+        <div class="grid-container check-shapes">
+          <div class="check-shapes__item grid-column grid-column-12 grid-column-6--sm">
+            <div class="check-shape" style="background-image: url(images/check-square.png);">
+              <div class="check-shape__content grid-container grid-container--x-center grid-container--y-center">
+                <div class="grid-column"><a class="check-shape__add-btn btn btn--secondary" href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></div>
+                <div class="grid-column"><a class="check-shape__buy-btn btn btn--secondary" href="#">Заказать</a></div>
+              </div>
+              <div class="check-shape__label">Квадратный</div>
+            </div>
+          </div>
+          <div class="check-shapes__item grid-column grid-column-12 grid-column-6--sm">
+            <div class="check-shape" style="background-image: url(images/check-rectangle.png);">
+              <div class="check-shape__content grid-container grid-container--x-center grid-container--y-center">
+                <div class="grid-column"><a class="check-shape__add-btn btn btn--secondary" href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></div>
+                <div class="grid-column"><a class="check-shape__buy-btn btn btn--secondary" href="#">Заказать</a></div>
+              </div>
+              <div class="check-shape__label">Прямоугольный</div>
+            </div>
+          </div>
+          <div class="check-shapes__item grid-column grid-column-12">
+            <div class="check-shape" style="background-image: url(images/check-panorama.png);">
+              <div class="check-shape__content grid-container grid-container--x-center grid-container--y-center">
+                <div class="grid-column"><a class="check-shape__add-btn btn btn--secondary" href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></div>
+                <div class="grid-column"><a class="check-shape__buy-btn btn btn--secondary" href="#">Заказать</a></div>
+              </div>
+              <div class="check-shape__label">Панорамный</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="seo">
+  <div class="wrapper">
+    <div class="grid-container">
+      <div class="grid-column grid-column-12 grid-column-6--md">
+        Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. 
+        Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. 
+        В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. 
+        Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. 
+        Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и,
+        в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.
+      </div>
+      <div class="grid-column grid-column-12 grid-column-6--md">
+        Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. 
+        Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. 
+        В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. 
+        Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. 
+        Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и,
+        в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.
+      </div>
+    </div>
+  </div>
+</section>
+<footer class="footer">
+  <div class="footer-top">
+    <div class="wrapper">
+      <div class="grid-container">
+        <section class="footer-top-section grid-column grid-column-12 grid-column-6--sm grid-column-3--lg">
+          <h3 class="footer-top-section__title">Печать на холсте</h3>
+          <div class="footer-top-section__content">Широкий выбор размера и формата печати:
+            <ul class="footer-top-section__list">
+              <li>Квадратные</li>
+              <li>Прямоугольные</li>
+              <li>Панорамные</li>
+            </ul>
+          </div>
+        </section>
+        <section class="footer-top-section grid-column grid-column-12 grid-column-6--sm grid-column-3--lg">
+          <h3 class="footer-top-section__title">Информация</h3>
+          <div class="footer-top-section__content"></div>
+        </section>
+        <section class="footer-top-section grid-column grid-column-12 grid-column-6--sm grid-column-3--lg">
+          <h3 class="footer-top-section__title">Контакты</h3>
+          <div class="footer-top-section__content">
+            <div class="footer-top-section__contact">Санкт-Петербург, пр. Стачек, 47</div><a class="footer-top-section__contact" href="mailto:zakaz@печатьнахолсте.рф">zakaz@печатьнахолсте.рф </a><a class="footer-top-section__contact" href="tel:8-800-770-75-31">8-800-770-75-31</a>
+          </div>
+        </section>
+        <section class="footer-top-section grid-column grid-column-12 grid-column-6--sm grid-column-3--lg">
+          <h3 class="footer-top-section__title">Есть вопросы?</h3>
+          <div class="footer-top-section__content">Напишите нам, и наши специалисты свяжусться с вами в ближайшее время
+            <div class="footer-contact-form">
+              <input class="footer-contact-form__input footer-contact-form__input--text" type="text" placeholder="Ваше имя">
+              <input class="footer-contact-form__input footer-contact-form__input--text" type="email" placeholder="Ваш email">
+              <textarea class="footer-contact-form__input footer-contact-form__input--text" placeholder="Ваше сообщение"></textarea>
+              <button class="footer-contact-form__input btn btn--primary btn--medium">Отправить</button>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="wrapper">
+      <div class="grid-container grid-container--x-between grid-container--y-start">
+        <div class="footer-copyright grid-column">Все права защищены © 2017.<br>
+          Данный сайт является информационным, и не является публичной офертой, определяемой положениями ст. 437(2) ГК РФ.
+        </div>
+        <div class="footer-socials grid-column"><a class="footer-socials__item" href="#"><i class="fa fa-vk" aria-hidden="true"></i></a><a class="footer-socials__item" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a><a class="footer-socials__item" href="#"><i class="fa fa-odnoklassniki" aria-hidden="true"></i></a><a class="footer-socials__item" href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></div>
+      </div>
+    </div>
+  </div>
+</footer>
+  <script type="text/javascript" src="js/common.35631cccc4001eb2e148.js"></script><script type="text/javascript" src="js/index.35631cccc4001eb2e148.js"></script></body>
+</html>
