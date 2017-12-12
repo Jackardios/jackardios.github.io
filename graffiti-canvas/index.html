@@ -10,30 +10,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- links-->
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,500,700,900" rel="stylesheet">
-  <link href="./css/index.35631cccc4001eb2e148.css" rel="stylesheet"></head>
+  <link href="./css/index.302b462d5d8310f9288a.css" rel="stylesheet"></head>
   <body>
-        <div class="overlay overlay--center" id="city-choice">
-          <div class="overlay__container">
-            <div class="popup popup--large">
-              <div class="popup__header">
-                <div class="popup__title">Выберите город</div>
-                <button class="popup__close-btn btn"><i class="icon-cancel" aria-hidden="true"></i></button>
-              </div>
-              <div class="popup__content">
-                <div></div>
-              </div>
-            </div>
-          </div>
-        </div>
         <div class="overlay overlay--center" id="order">
           <div class="overlay__container">
-            <div class="popup popup--large">
+            <div class="popup popup--small">
               <div class="popup__header">
                 <div class="popup__title">Заказ</div>
-                <button class="popup__close-btn btn"><i class="icon-cancel" aria-hidden="true"></i></button>
+                <button class="popup__close-btn btn"><i class="fa fa-times" aria-hidden="true"></i></button>
               </div>
               <div class="popup__content">
-                <div></div>
+                <form class="popup-form" action="#">
+                  <input type="hidden" name="shape">
+                  <input type="hidden" name="size">
+                  <input type="hidden" name="image">
+                  <input class="popup-form__input popup-form__input popup-form__input--text" type="text" name="name" placeholder="Ваше имя">
+                  <input class="popup-form__input popup-form__input popup-form__input--text" type="text" name="phone" placeholder="Ваш номер телефона">
+                  <input class="popup-form__input popup-form__input popup-form__input--text" type="email" name="email" placeholder="Ваше email">
+                  <button class="popup-form__input popup-form__input btn btn--primary btn--medium" type="submit">Отправить</button>
+                </form>
               </div>
             </div>
           </div>
@@ -54,7 +49,14 @@
       <div class="header-bottom">
         <div class="wrapper">
           <div class="header-bottom__container grid-container grid-container--y-center">
-            <button class="burger-btn grid-column visible hidden--lg"></button><a class="header-bottom__logo grid-column" href="#">
+            <button class="burger-btn grid-column visible hidden--lg" id="burger-btn">
+              <div class="burger-btn__box"><span class="burger-btn__line"></span><span class="burger-btn__line"></span><span class="burger-btn__line"></span></div>
+              <ul class="burger-btn__menu">
+                <li><a href="#" title="Главная">Главная</a></li>
+                <li><a href="#" title="Доставка">Доставка</a></li>
+                <li><a href="#" title="Контакты">Контакты</a></li>
+              </ul>
+            </button><a class="header-bottom__logo grid-column" href="#">
               <div class="logo" style="background-image: url(images/logo.png);"></div></a>
             <div class="header-bottom__nav scrollable-horizontal hidden visible--lg">
                   <nav class="header-nav">
@@ -65,7 +67,7 @@
                     </ul>
                   </nav>
             </div>
-            <div class="header-bottom__order grid-column hidden visible--md"><a class="header-bottom-order-btn btn btn--primary">Заказать</a></div>
+            <div class="header-bottom__order grid-column hidden visible--md"><a class="header-bottom-order-btn btn btn--primary open-popup-order">Заказать</a></div>
             <div class="header-bottom__phone grid-column hidden visible--md"><a class="header-bottom-phone btn" href="tel:8(800)707-75-31">
                 <div class="header-bottom-phone__icon"><i class="fa fa-mobile" aria-hidden="true"></i></div>
                 <div class="header-bottom-phone__text">
@@ -80,7 +82,7 @@
         <div class="header-bottom-mobile visible hidden--md">
           <div class="wrapper">
             <div class="grid-container grid-container--x-between grid-container--y-center"><a class="header-bottom-mobile__phone grid-column" href="tel:8(800)707-75-31">8(800)707-75-31</a>
-              <div class="grid-column"><a class="header-bottom-order-btn btn btn--primary">Заказать</a></div>
+              <div class="grid-column"><a class="header-bottom-order-btn btn btn--primary open-popup-order">Заказать</a></div>
             </div>
           </div>
         </div>
@@ -166,7 +168,7 @@
   <div class="wrapper">
     <div class="promo__container grid-container grid-container--x-between grid-container--y-center">
       <div class="promo__column grid-column">Мы уже готовы сделать вам бесплатный макет </div>
-      <div class="promo__column grid-column"><a class="btn btn--medium btn--secondary" href="#">Оставить заявку</a></div>
+      <div class="promo__column grid-column"><a class="btn btn--medium btn--secondary open-popup-order" href="#">Оставить заявку</a></div>
     </div>
   </div>
 </section>
@@ -222,7 +224,7 @@
         </div>
       </div>
     </div>
-    <div class="included__button-container"><a class="btn btn--medium btn--primary" href="#">Заказать</a></div>
+    <div class="included__button-container"><a class="btn btn--medium btn--primary open-popup-order" href="#">Заказать</a></div>
   </div>
 </section>
 <section class="features">
@@ -318,7 +320,7 @@
   <div class="wrapper">
     <div class="grid-container grid-container--y-stretch">
       <div class="grid-column grid-column-12 grid-column-5--lg">
-        <div class="check-form">
+        <form class="check-form" action="#">
           <h3 class="check-form__title">Отправьте фото на проверку</h3>
           <input class="check-form__input check-form__input--text" type="text" name="name" placeholder="Ваше имя">
           <input class="check-form__input check-form__input--text" type="text" name="phone" placeholder="Телефон">
@@ -336,7 +338,7 @@
           <div class="check-form__btn-container">
             <button class="btn btn--primary btn--medium" type="submit">Отправить</button>
           </div>
-        </div>
+        </form>
       </div>
       <div class="grid-column grid-column-12 grid-column-7--lg">
         <div class="grid-container check-shapes">
@@ -443,5 +445,5 @@
     </div>
   </div>
 </footer>
-  <script type="text/javascript" src="js/common.35631cccc4001eb2e148.js"></script><script type="text/javascript" src="js/index.35631cccc4001eb2e148.js"></script></body>
+  <script type="text/javascript" src="js/common.302b462d5d8310f9288a.js"></script><script type="text/javascript" src="js/index.302b462d5d8310f9288a.js"></script></body>
 </html>
