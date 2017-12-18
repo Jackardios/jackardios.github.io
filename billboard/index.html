@@ -9,17 +9,35 @@
     <meta name="HandheldFriend" content="true">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- links-->
-  <link href="./css/index.a3fd4085bae15dadc4c3.css" rel="stylesheet"></head>
+  <link href="./css/index.9a7b0bbce0685448d91f.css" rel="stylesheet"></head>
   <body>
+        <div class="overlay overlay--center" id="callback">
+          <div class="overlay__container">
+            <div class="popup popup--small">
+              <div class="popup__header">
+                <div class="popup__title">Заказ</div>
+                <button class="popup__close-btn btn"><i class="fa fa-times" aria-hidden="true"></i></button>
+              </div>
+              <div class="popup__content">
+                <form class="popup-form" action="#">
+                  <input class="input input--full-width input--text" type="text" name="name" placeholder="Ваше имя" required>
+                  <input class="input input--full-width input--text" type="text" name="phone" placeholder="Ваш номер телефона" required>
+                  <input class="input input--full-width input--text" type="email" name="email" placeholder="Ваше email" required>
+                  <button class="input input--full-width btn btn--primary btn--medium" type="submit">Отправить</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
 <header class="header">
   <div class="wrapper">
     <div class="grid-container grid-container--x-between grid-container--y-start">
       <div class="grid-column"><a class="header-icon-link" href="mailto:info@dooh.ru">
           <div class="header-icon-link__icon"><i class="fa fa-envelope" aria-hidden="true"></i></div>
-          <div class="header-icon-link__text">info@dooh.ru</div></a></div>
+          <div class="header-icon-link__text hidden--mobile">info@dooh.ru</div></a></div>
       <div class="grid-column text-align-right"><a class="header-icon-link" href="tel:+7(812)702-05-07">
           <div class="header-icon-link__icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
-          <div class="header-icon-link__text header-icon-link__text--bold">+7(812)702-05-07</div></a><a class="btn header-btn-underlined">Заказать консультацию</a></div>
+          <div class="header-icon-link__text header-icon-link__text--bold">+7(812)702-05-07</div></a><a class="btn header-btn-underlined callback-btn">Заказать консультацию</a></div>
     </div>
   </div>
 </header>
@@ -304,5 +322,5 @@
     </ul>
   </div>
 </footer>
-  <script type="text/javascript" src="js/common.a3fd4085bae15dadc4c3.js"></script><script type="text/javascript" src="js/index.a3fd4085bae15dadc4c3.js"></script></body>
+  <script type="text/javascript" src="js/common.9a7b0bbce0685448d91f.js"></script><script type="text/javascript" src="js/index.9a7b0bbce0685448d91f.js"></script></body>
 </html>
