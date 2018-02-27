@@ -3,15 +3,35 @@
   <head>
     <title></title>
     <meta charset="UTF-8">
-    <meta content="Salahutdinov Salavat" name="author">
+    <meta name="author">
     <meta name="description">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <meta name="HandheldFriend" content="true">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- links-->
-  <link href="./css/index.d05fd7f52cc1f4b38b3d.css" rel="stylesheet"></head>
-  <body>
+    <link href="dns-prefetch" rel="//code.jquery.com">
+  <link href="./css/index.2ade67dc5e2c2d0ef868.css" rel="stylesheet"></head>
+  <body><div id="global-loading" class="loading loading--fixed loading--not-transparent" style="display: block;">
+<div class="loading__container">
+<div class="ball-scale-multiple">
+<div></div>
+<div></div>
+<div></div>
+</div>
+</div>
+</div>
     <header class="header" id="main-header">
+      <div class="burger-menu" id="burger-menu">
+        <div class="wrapper">
+          <ul>
+            <li><a href="#context-adversing">Контекстная реклама</a></li>
+            <li><a href="#steps">Этапы</a></li>
+            <li><a href="#prices">Стоимость</a></li>
+            <li><a href="#about">О сервисе</a></li>
+            <li><a href="#projects">Кейсы</a></li>
+          </ul>
+        </div>
+      </div>
       <div class="wrapper wrapper--large">
         <div class="header__container grid-container grid-container--x-between grid-container--y-center">
           <div class="grid-column grid-column-flex hidden--xl"><a class="burger-btn btn" id="burger-btn"><span class="burger-btn__box">
@@ -29,14 +49,14 @@
               </ul>
             </nav>
           </div>
-          <div class="grid-column"><a class="header__phone hidden--before-md" href="tel:+3(975)877-87-57"><i class="fa fa-phone" aria-hidden="true"></i><span>+3(975)877-87-57</span></a><a class="callback-btn btn btn--primary btn--medium" href="#"><i class="fa fa-share" aria-hidden="true"></i><span>Перезвоните мне</span></a></div>
+          <div class="grid-column"><a class="header__phone hidden--before-md" href="tel:+3(975)877-87-57"><i class="fa fa-phone" aria-hidden="true"></i><span>+3(975)877-87-57</span></a><a class="callback-btn btn btn--primary btn--medium" href="#contact-form-section"><i class="fa fa-share" aria-hidden="true"></i><span>Перезвоните мне</span></a></div>
         </div>
       </div>
     </header>
     <section class="start section" id="start">
       <div class="start__bg-layer-back" id="start-back-layer">
         <div class="start__adwords-text">Google AdWords</div>
-        <div class="start__adwords-logo"><img src="data:image/svg+xml;base64,PHN2ZyBpZD0iZmY2MWMzNWQtZGMxZS00NmMwLWFiMTMtZTc0Njg1NGUxNTQ3IiBkYXRhLW5hbWU9ImU1MjRkNGQ5LTUzZTAtNGUzNi04ZTI2LTI5N2YxZWFiYTg3MiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgNzMuNiA3My42Ij48ZGVmcz48c3R5bGU+LmNhYTk0NmI4LTAzYmItNDYwNy1iNDAyLTUyNDNmNzZlZmRkM3tmaWxsOiMwZjlkNTl9LlwzNyBkMzE0OTA1LWRjNWQtNDY1YS04MTJmLTVjZDZmMjZkMjg4Y3tmaWxsOiMwYTZlM2R9LlwzNSA1ZGVhMWRiLTY3MDctNDJlZC1iMjg3LTlhMmIwM2Y4Y2Y2Y3tmaWxsOiM0Mjg0ZjR9PC9zdHlsZT48L2RlZnM+PHRpdGxlPmFkd29yZHM8L3RpdGxlPjxwYXRoIGNsYXNzPSJjYWE5NDZiOC0wM2JiLTQ2MDctYjQwMi01MjQzZjc2ZWZkZDMiIGQ9Ik01NS43IDczLjZoMTcuOUw0OS4xIDB2NzAuOGE5LjI5IDkuMjkgMCAwIDAgNi42IDIuOCIvPjxwYXRoIGNsYXNzPSI3ZDMxNDkwNS1kYzVkLTQ2NWEtODEyZi01Y2Q2ZjI2ZDI4OGMiIGQ9Ik0zNi44IDM2Ljg1TDQ3IDY3LjVhOC4xMiA4LjEyIDAgMCAwIDIuMDggMy4zVjBMMzYuOCAzNi44NSIvPjxwYXRoIGNsYXNzPSI1NWRlYTFkYi02NzA3LTQyZWQtYjI4Ny05YTJiMDNmOGNmNmMiIGQ9Ik0yNC41IDBMMCA3My41aDE3LjlhOS4zNyA5LjM3IDAgMCAwIDguNy02LjFMNDkuMSAwSDI0LjUiLz48L3N2Zz4=" alt="Google AdWords Логотип"></div>
+        <div class="start__adwords-logo"><img src="assets/images/adwords_bfd22f13dfdc0a7d1fb8ad07c9590f3c.svg" alt="Google AdWords Логотип"></div>
       </div>
       <div class="start__bg-layer-front" id="start-front-layer">
         <div class="start__bottom-content">
@@ -51,16 +71,21 @@
 <section class="context-adversing section" id="context-adversing">
   <div class="context-adversing__wrapper wrapper wrapper--large">
     <div class="context-adversing__content-wrapper">
-      <h2 class="section__title">Контекстная реклама</h2>
+      <h2 class="section__title">Контекстная реклама в Google Adwords</h2>
       <div class="section__content">
-        Наиболее эффективный вид рекламы в сети, известный каждому преуспевшему проекту.
-        Это текстовые или интегрированные с изображением объявления, которые напрявлены лишь на целевую аудиторию.
-        Глубокий анализ рынка ваших услуг и конкурентнов позволяет сделать точное попадание
-        на заинтересованных клиентов и выдаёт им нужное предложение.
-        Поэтому большинству компаний выгодна именно эта реклама, ведь она дает максимальные результаты
-        конверсии и исколючает пустые затраты на продвижение.
+        Вы наверное много раз встречались с контекстной рекламой в гугле, но не придавали этому значения. Так, давайте по порядку
+        разберемся с тем, что такое реклама в Google Adwords - это текстовые или интегрированные с изображением рекламные
+        объявления, которые охватывают лишь заинтересованную, а значит целевую аудиторию! Благодаря тому, что реклама
+        в google постоянно и динамично развивается, специалистам приходится ежедневно оттачивать свои навыки и знания,
+        доводя их до совершенства. Мы же со времен динозавров работаем с рекламой в гугл адвордс (Google Adwords), уверенно
+        стоя на ногах даже с проектами, которые находятся в высоко-конкурентных нишах и имеют в большинстве своем, а
+        иногда и вовсе полностью состоят из низкочастотных запросов. Главная наша задача - привести клиента. Да, мы настраиваем
+        рекламные кампании, которые имеют хороший CTR и низкий процент отказов, но главная составляющая нашей политики
+        - конверсия. Мы боремся за то, чтобы ваши посетители конвертировались в клиентов. Действительно, хорошие показатели
+        рекламной кампании это важная часть понимания того, насколько хорошо настроена кампания, но если она имеет низкий
+        процент конверсий, то и говорить тут не о чем.
       </div>
-      <div class="context-adversing__bottom-buttons text-align-center"><a class="callback-btn btn btn--primary btn--medium" href="#">Заказать бесплатный анализ проекта</a></div>
+      <div class="context-adversing__bottom-buttons text-align-center"><a class="callback-btn btn btn--primary btn--medium" href="#contact-form-section">Заказать бесплатный анализ проекта</a></div>
     </div>
   </div>
 </section>
@@ -71,14 +96,15 @@
               <div class="step-progress__line"></div><a class="step-progress__active-circle" href="#step-1"></a>
             </div>
             <div class="grid-container grid-container--y-center">
-              <div class="step__image-column"><img src="assets/images/step-1_41f46e867dead425f37a558bf28af01b.png" alt="Этап 1"></div>
+              <div class="step__image-column"><img src="assets/images/step-1_41f46e867dead425f37a558bf28af01b.png" alt="1 этап: Знакомство с Вами и Вашими конкурентами."></div>
               <div class="step__content-column">
-                <h2 class="section__title">Основные этапы успешной работы</h2>
-                <h3 class="step__title"><span>Этап 1.</span></h3>
+                <h2 class="section__title">ЭТАПЫ НАСТРОЙКИ GOOGLE ADWORDS</h2>
+                <h3 class="step__title"><span>1 этап: Знакомство с Вами и Вашими конкурентами.</span></h3>
                 <div class="section__content">
-                  Запуск инструментов аналитики вашего продукта и рынка аналогичных услуг,
-                  подключение к анализу специалистов и сервисов для ручной обработки результатов.
-                  Отслеживание целей, установка звонков  Call-Tracking, составление плана по привлечению клиентов.
+                  На первом этапе настройки контекстной рекламы в Google Adwords проводится анализ ниши клиента. Просчитывается примерный бюджет,
+                  подбираются ключевые фразы. Проводится анализ конкурентов, уровень сложности борьбы за клик и его примерная
+                  цена. Самый быстрый и простой этап, который помогает наладить контакт и привести клиенту удаленное понимание
+                  того, насколько его реклама в Google будет эффективна.
                 </div>
               </div>
             </div>
@@ -89,15 +115,17 @@
             </div>
             <div class="grid-container grid-container--y-center">
               <div class="step__content-column">
-                <h3 class="step__title"><span>Этап 2.</span></h3>
+                <h3 class="step__title"><span>2 этап: Настройка кампании в Google Adwords.</span></h3>
                 <div class="section__content">
-                  С этого этапа вы начинаете получать заявки и клиентов с контекстной рекламы.
-                  Мы запускаем ранее согласованный план и исправляем самые масштабные ошибки в посадочных страницах.
-                  Мы «с головой» уходим в ваш бизнес и работаем с вашим проектом.
-                  Тем не менее, вы всегда можете внести свои корректировки или обсудить с нами ход работы.
+                  С этого этапа начинается верхушка настройки Google Adwords. На основе согласованных начальных данных для рекламной кампании,
+                  мы приступаем непосредственно к работе. Разрабатывая индивидуальный подход, собираем сердце кампании, а именно:
+                  собираем начальный пак минус-слов, прорабатываем продающие титульники и описания, расширяем объявления путем
+                  добавления различных вспомогательных расширений (цены, контактная информация, быстрые ссылки, уточнения,
+                  смс сообщения и т.д), прорабатываем подбор аудитории, закрепляем гео-таргетинг, устанавливаем инструменты
+                  анализа, фильтруем показ на различных устройствах, устанавливаем цели и маркеры, отслеживающие конверсии.
                 </div>
               </div>
-              <div class="step__image-column"><img src="assets/images/step-2_40ef49e43ec53334fd7c47512d4e5b93.png" alt="Этап 2"></div>
+              <div class="step__image-column"><img src="assets/images/step-2_40ef49e43ec53334fd7c47512d4e5b93.png" alt="2 этап: Настройка кампании в Google Adwords."></div>
             </div>
           </section>
           <section class="step" id="step-3">
@@ -105,14 +133,14 @@
               <div class="step-progress__line"></div><a class="step-progress__active-circle" href="#step-3"></a>
             </div>
             <div class="grid-container grid-container--y-center">
-              <div class="step__image-column"><img src="assets/images/step-3_2ca00018dd2f4769337a10f71e6e0de1.png" alt="Этап 3"></div>
+              <div class="step__image-column"><img src="assets/images/step-3_2ca00018dd2f4769337a10f71e6e0de1.png" alt="3 этап: Проведение работ на основе полученных данных."></div>
               <div class="step__content-column">
-                <h3 class="step__title"><span>Этап 3.</span></h3>
+                <h3 class="step__title"><span>3 этап: Проведение работ на основе полученных данных.</span></h3>
                 <div class="section__content">
-                  Анализ результатов и оптимизация готовых решений, а также тестовые эксперименты
-                  по улучшению уже реализованных стратегий. Меняем ставки с учетом времени,
-                  мест размещения и устройств пользователей.
-                  Подключаем SEO-специалистов.
+                  На основе полученных данных, спустя некоторое время работы рекламной кампании в гугле, мы вносим правки, тем самым: повышаем
+                  продуктивность, снижаем лишние расходы, выравниваем вес конверсионных запросов в соотношении с менее рентабельными,
+                  поднимаем уровень конверсии, аккуратно наполняем пакет минус-слов. Вносим множество корректировок в структуру,
+                  собирая различные предложения по улучшению не только рекламной кампании, но и сайта в целом.
                 </div>
               </div>
             </div>
@@ -123,20 +151,256 @@
             </div>
             <div class="grid-container grid-container--y-center">
               <div class="step__content-column">
-                <h3 class="step__title"><span>Этап 4.</span></h3>
+                <h3 class="step__title"><span>4 этап: Ведение и отчетность.</span></h3>
                 <div class="section__content">
-                  Предоставляем отчеты за каждый период, составляем документацию по проделанной работе.
-                  Согласовываем дальнейшие цели и составляем план на следующий отчетный период.
-                  Предлагаем возможные типы расширения инструментов.
+                  Любой рекламной кампании нужно грамотное сопровождение. На одной лишь настройке прогресс развития не оканчивается. Различные
+                  изменения, дополнения могут в итоге вырасти в увеличение клиентского потока, а различные внешние казусы,
+                  которые приходят на плечи рекламных кампаний, обреченных на учесть работы без специалистов, появляются повсеместно
+                  и решаются до их появления еще в зародыше. Параллельно на ведении проводится А/Б тестирование различных объявлений
+                  с целью выявления самых эффективных вариантов работы. Ведется сражение на ценовом аукционе в ручную, чтобы
+                  не проигрывать позиции и не переплачивать лишние деньги за них. Так же, есть множество факторов, которые
+                  могут повлиять на дальнейшее развитие рекламной кампании.
                 </div>
               </div>
-              <div class="step__image-column"><img src="assets/images/step-4_5e2e87088fd1dac6ef6bb951853a49d9.png" alt="Этап 4"></div>
+              <div class="step__image-column"><img src="assets/images/step-4_5e2e87088fd1dac6ef6bb951853a49d9.png" alt="4 этап: Ведение и отчетность."></div>
             </div>
           </section>
         </div><a class="section__next" href="#prices">
           <div class="section__next-btn"><i class="fa fa-chevron-down" aria-hidden="true"></i>
           </div></a>
       </section>
+<section class="prices section--big" id="prices">
+  <div class="wrapper wrapper--small">
+    <h2 class="section__title">Стоимость настройки Google Adwords</h2>
+    <div class="section__description">
+      Чтобы рассчитать итоговую стоимость работ и бюджет рекламной кампании по Google Adwords нужно провести оценку индивидуально,
+      опираясь на ваши характеристика сайта. Так же, бюджет будет рассчитываться от географического охвата аудитории,
+      предполагаемого ассортимента и качества вашего контента.
     </div>
-  <script type="text/javascript" src="js/common.d05fd7f52cc1f4b38b3d.js"></script><script type="text/javascript" src="js/index.d05fd7f52cc1f4b38b3d.js"></script></body>
+    <div class="prices__features grid-container grid-container--x-center grid-container--y-center">
+      <div class="prices-feature grid-column grid-column-4--md">
+        <div class="grid-container grid-container--no-gutter grid-container--y-center"><img class="prices-feature__icon" src="data:image/svg+xml;base64,PHN2ZyBpZD0iNmU4YmNiYWEtOTE4NS00YzAzLWIwNTQtOTc2ZTA0MDQxMDM2IiBkYXRhLW5hbWU9ItCh0LvQvtC5IDEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDQwNyA0NjMiPjxkZWZzPjxzdHlsZT4uXDM3IGE4ODQ1M2UtMjNlMy00MTQyLTkwZmQtYzc1MWRkMzIwM2E5e2ZpbGw6I2ZmZn08L3N0eWxlPjwvZGVmcz48dGl0bGU+d29ybGR3aWRlPC90aXRsZT48cGF0aCBjbGFzcz0iN2E4ODQ1M2UtMjNlMy00MTQyLTkwZmQtYzc1MWRkMzIwM2E5IiBkPSJNMjc1IDI0Ny43OWwxLTE1LjQ4QTExOS41MiAxMTkuNTIgMCAxIDAgMTk2LjI0IDExMmgtMzcuMTNhNjMuNSA2My41IDAgMCAwLTYzLjM4IDY3LjQ2bDQuMjcgNjguMzNjLjA4IDI5LjU3IDEyLjUzIDU2IDMyIDczLjQ5djEyTDExOC44MiAzNTNsLTYxLjcxIDE2LjgzQTM5LjU5IDM5LjU5IDAgMCAwIDI4IDQwNy45NHYzMS41NkEyMy41MyAyMy41MyAwIDAgMCA1MS41IDQ2M2gyNzJhMjMuNTMgMjMuNTMgMCAwIDAgMjMuNS0yMy41di0zMS41NmEzOS41OCAzOS41OCAwIDAgMC0yOS4xMS0zOC4xMUwyNTYuMTggMzUzIDI0MyAzMzMuMjN2LTEyYzE5LjQ2LTE3LjQzIDMxLjkyLTQzLjg3IDMyLTczLjQ0em0tODcuNSAxMTcuOTVsLTM5LjkzLTMzLjI3YTgwLjkyIDgwLjkyIDAgMCAwIDc5Ljg2IDB6bS00Ni4zOS0xOS4xNGwzNS4yOCAyOS40LTE5LjI5IDE5LjI5YS40OS40OSAwIDAgMS0uNC4xNC40Ni40NiAwIDAgMS0uMzctLjIybC0yMy44Mi0zNS43MSA4LjYtMTIuOXpNMTg3LjUgNDIzYy42MyAwIDEuMjUgMCAxLjg3LS4wOGw1LjE0IDI1LjA4aC0xNGw1LjE1LTI1LjA4Yy41OS4wOCAxLjIxLjA4IDEuODQuMDh6bTguNS0yMy41YTguNSA4LjUgMCAwIDEtMTcgMHYtNC44OWw4LjUtOC41IDguNSA4LjV6bTIuNjEtMjMuNWwzNS4yOC0yOS40IDguNiAxMi45LTIzLjgxIDM1LjcyYS40Ni40NiAwIDAgMS0uMzcuMjIuNDkuNDkgMCAwIDEtLjQtLjE0bC0xOS4zLTE5LjN6bTgwLTE4Ni4yN2ExMDMuMTcgMTAzLjE3IDAgMCAxIDI5LjM5LTYuNDZWMjIzYy0xMC45NC0yLjgtMjEuMy0xMS42Ny0yOS44NS0yNS43MWwuNDctNy42em05MC45NCA4LjQ1cTQuMDkgMi40OSA4IDUuMzZhMTA0LjU2IDEwNC41NiAwIDAgMS0xOC4xOCAxMC43OSAxMDMgMTAzIDAgMCAwIDcuOTItMTEuOTJxMS4xNi0yLjA3IDIuMjgtNC4yMnpNMzIzIDIyM3YtMzkuN2ExMDMuOTIgMTAzLjkyIDAgMCAxIDMzLjEzIDhjLTguNyAxNi44LTIwLjMxIDI4LjQyLTMzLjEzIDMxLjd6bTAtNTQuNzlWMTI3aDQ4Ljg1YTE2Ni42NSAxNjYuNjUgMCAwIDEtOS42OCA1MC41NSAxMTguOSAxMTguOSAwIDAgMC0zOS4xNy05LjMxem0wLTU2LjIxVjcwLjc2YTExOC45MyAxMTguOTMgMCAwIDAgMzkuMTYtOS4zMSAxNjYuNjggMTY2LjY4IDAgMCAxIDkuNjkgNTAuNTVIMzIzem0wLTU2LjNWMTZjMTIuODIgMy4zMSAyNC40MyAxNC45MyAzMy4xMyAzMS43M0ExMDMuOTIgMTAzLjkyIDAgMCAxIDMyMyA1NS43em00NC4yNy0xOS4xMmExMDIuOTIgMTAyLjkyIDAgMCAwLTcuOTItMTEuOTIgMTA0LjU5IDEwNC41OSAwIDAgMSAxOC4xOCAxMC44cS0zLjg3IDIuODctOCA1LjM2LTEuMDgtMi4xNi0yLjI2LTQuMjR6bS0xMDUuODQgNC4yM3EtNC4wOS0yLjQ5LTgtNS4zNWExMDQuNjYgMTA0LjY2IDAgMCAxIDE4LjE4LTEwLjggMTAzIDEwMyAwIDAgMC03LjkyIDExLjkycS0xLjE0IDIuMDgtMi4yNiA0LjIzek0zMDggMTZ2MzkuN2ExMDMuOTMgMTAzLjkzIDAgMCAxLTMzLjEzLThjOC43LTE2LjggMjAuMzEtMjguNDIgMzMuMTMtMzEuN3ptMCA1NC43OVYxMTJoLTQ4Ljg1YTE2Ni42OCAxNjYuNjggMCAwIDEgOS42OC01MC41NUExMTguOTEgMTE4LjkxIDAgMCAwIDMwOCA3MC43NnpNMjU5LjEgMTI5di0ySDMwOHY0MS4yNGExMTguMTEgMTE4LjExIDAgMCAwLTI4LjY0IDUuMzYgNjIuNzkgNjIuNzkgMCAwIDAtMTcuMTktNDEuNmMtLjk5LTEtMi4wMi0yLTMuMDctM3ptMTMwLjA2IDY0LjU2YTEyMC4xMiAxMjAuMTIgMCAwIDAtMTMuNDItOS4xNWM2LjU0LTE3LjA3IDEwLjM2LTM2Ljc1IDExLjExLTU3LjRoMzIuODhhMTA0LjIxIDEwNC4yMSAwIDAgMS0zMC41NyA2Ni41NHpNNDE5LjczIDExMmgtMzIuODhjLS43NS0yMC42NS00LjU3LTQwLjMzLTExLjExLTU3LjRhMTIwIDEyMCAwIDAgMCAxMy40Mi05LjE1QTEwNC4yIDEwNC4yIDAgMCAxIDQxOS43MyAxMTJ6TTI0MS44NCA0NS40NWExMjAuMTIgMTIwLjEyIDAgMCAwIDEzLjQyIDkuMTVjLTYuNTQgMTcuMDctMTAuMzYgMzYuNzUtMTEuMTEgNTcuNGgtMzIuODhhMTA0LjIxIDEwNC4yMSAwIDAgMSAzMC41Ny02Ni41NXptLTExOC4wOCA5Ni44NEE0OCA0OCAwIDAgMSAxNTkuMTEgMTI3aDU2Ljc4YTQ4LjUgNDguNSAwIDAgMSA0OC40MSA1MS41MmwtMS40MSAyMi41N2ExNDAuNjggMTQwLjY4IDAgMCAwLTEzLjQ2LTIyLjE5IDcuNSA3LjUgMCAwIDAtOC43NS0yLjM2QzIwMyAxOTEuODEgMTMyLjIxIDE5MiAxMzEuNSAxOTJhNy40OSA3LjQ5IDAgMCAwLTQuNjMgMS42IDcwLjggNzAuOCAwIDAgMC0xNC4xOSAxNi40OGwtMi0zMS41NmE0OCA0OCAwIDAgMSAxMy4wOC0zNi4yM3pNMTE1IDI0Ny44M0E2Ny4xOSA2Ny4xOSAwIDAgMSAxMzQuMzkgMjA3YzEzLjQ5LS4xNyA2OS41OS0xLjY1IDEwNi4zMS0xNC40MiA2LjE3IDkuMyAxOS4zIDMxLjgxIDE5LjMgNTQuOTQgMCA0NC4zOS0zMi41MiA4MC41LTcyLjUgODAuNXMtNzIuMzMtMzUuOTUtNzIuNS04MC4xOXpNNDMgNDM5LjV2LTMxLjU2YTI0LjU1IDI0LjU1IDAgMCAxIDE4LjA1LTIzLjY0bDU5LjItMTYuMTUgMjMuNTkgMzUuMzhhMTUuNDUgMTUuNDUgMCAwIDAgMTEuMzcgNi44M3EuNzguMDggMS41NC4wOGExNS40MSAxNS40MSAwIDAgMCA4LjczLTIuNzEgMjMuNTcgMjMuNTcgMCAwIDAgNi4wOSA5TDE2NS4xOCA0NDhIOTl2LTI0LjVhNy41IDcuNSAwIDAgMC0xNSAwVjQ0OEg1MS41YTguNTEgOC41MSAwIDAgMS04LjUtOC41em0yODktMzEuNTZ2MzEuNTZhOC41MSA4LjUxIDAgMCAxLTguNSA4LjVIMjkxdi0yNC41YTcuNSA3LjUgMCAwIDAtMTUgMFY0NDhoLTY2LjE4bC02LjQxLTMxLjIzYTIzLjU4IDIzLjU4IDAgMCAwIDYuMDktOSAxNS40MSAxNS40MSAwIDAgMCA4LjczIDIuNzFxLjc3IDAgMS41NC0uMDhhMTUuNDUgMTUuNDUgMCAwIDAgMTEuMzctNi44M2wyMy41OS0zNS4zOCA1OS4yIDE2LjE1YTI0LjU1IDI0LjU1IDAgMCAxIDE4LjA3IDIzLjZ6IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMjgpIi8+PC9zdmc+">
+          <div class="prices-feature__text grid-column--flex">Географический масштаб охвата клиентов</div>
+        </div>
+      </div>
+      <div class="prices-feature grid-column grid-column-4--md">
+        <div class="grid-container grid-container--no-gutter grid-container--y-center"><img class="prices-feature__icon" src="data:image/svg+xml;base64,PHN2ZyBpZD0iOGY4YmY3YzgtZjMyYy00MzZkLThmMTctYTc1ZGQxZGRkNjJmIiBkYXRhLW5hbWU9IkNhcGEgMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgMzQ5LjU4IDQzNC4wNSI+PGRlZnM+PHN0eWxlPi5cMzAgMGMxNWU3YS1kMTNkLTQ1MzQtOWUxMy1iMTkyMDAyMTJiYWF7ZmlsbDojZmZmfTwvc3R5bGU+PC9kZWZzPjx0aXRsZT5jaG9pY2VzPC90aXRsZT48cGF0aCBjbGFzcz0iMDBjMTVlN2EtZDEzZC00NTM0LTllMTMtYjE5MjAwMjEyYmFhIiBkPSJNMjQ1LjM4IDI0OC4xN2E0MS43NiA0MS43NiAwIDEgMC01Ni43MiAwIDU1LjI4IDU1LjI4IDAgMCAwLTI2LjkgNDcuNDF2NDJhMjMgMjMgMCAwIDAgMTMuNSAyMC45NXY1Ni43NkExOC44MSAxOC44MSAwIDAgMCAxOTQuMDUgNDM0SDI0MGExOC44MSAxOC44MSAwIDAgMCAxOC43OS0xOC43OXYtNTYuNzJhMjMgMjMgMCAwIDAgMTMuNS0yMC45NXYtNDJhNTUuMjggNTUuMjggMCAwIDAtMjYuOTEtNDcuMzd6TTIxNyAxOTQuNzlhMjIuNzYgMjIuNzYgMCAxIDEtMjIuNzYgMjIuNzZBMjIuNzkgMjIuNzkgMCAwIDEgMjE3IDE5NC43OXptMzYuMjYgMTQyLjc2YTQgNCAwIDAgMS00IDQgOS41IDkuNSAwIDAgMC05LjUgOS41djY0aC0xMy4yNHYtNTQuOTRhOS41IDkuNSAwIDAgMC0xOSAwVjQxNWgtMTMuMjZ2LTY0YTkuNSA5LjUgMCAwIDAtOS41LTkuNSA0IDQgMCAwIDEtNC00di00MmEzNi4yNiAzNi4yNiAwIDAgMSA3Mi41MiAwek0xNzguNDUgODUuODJoMTQuNjdWMTM0YTkuNSA5LjUgMCAwIDAgOS41IDkuNWgyOC44MmE5LjUgOS41IDAgMCAwIDkuNS05LjVWODUuODJoMTQuNjZhOS41IDkuNSAwIDAgMCA4LjIzLTE0LjI1TDIyNS4yNSA0Ljc1YTkuNSA5LjUgMCAwIDAtMTYuNDUgMGwtMzguNTggNjYuODJhOS41IDkuNSAwIDAgMCA4LjIzIDE0LjI1ek0yMTcgMjguNWwyMi4xMiAzOC4zMmgtNy43MWE5LjUgOS41IDAgMCAwLTkuNSA5LjV2NDguMjNoLTkuODJWNzYuMzJhOS41IDkuNSAwIDAgMC05LjUtOS41aC03LjY5em0xNzIgNDIuNzVhOS41IDkuNSAwIDAgMC05LjE4LTIuNDZsLTc0LjUzIDIwYTkuNSA5LjUgMCAwIDAtNC4yNiAxNS44OUwzMTEuNDQgMTE1bC0zNC4xIDM0LjFhOS41IDkuNSAwIDAgMCAwIDEzLjQ0bDIwLjM4IDIwLjM4YTkuNSA5LjUgMCAwIDAgMTMuNDMgMGwzNC4xLTM0LjEgMTAuMzcgMTAuMzdhOS41IDkuNSAwIDAgMCAxNS45LTQuMTlsMjAtNzQuNTNhOS41IDkuNSAwIDAgMC0yLjUyLTkuMjJ6bS0zMS42IDYyLjg5bC01LjQtNS40NmE5LjUgOS41IDAgMCAwLTEzLjQzIDBsLTM0LjEgMzQuMS02Ljk0LTYuOTQgMzQuMS0zNC4xYTkuNSA5LjUgMCAwIDAgMC0xMy40M2wtNS40Ni01LjQ2IDQyLjcxLTExLjQ1ek0xMjIuNiAxMTVsMTAuNC0xMC4zNWE5LjUgOS41IDAgMCAwLTQuMjYtMTUuODlsLTc0LjUzLTIwYTkuNSA5LjUgMCAwIDAtMTEuNjUgMTEuNjdsMjAgNzQuNTNhOS41IDkuNSAwIDAgMCAxNS44OSA0LjI2bDEwLjM3LTEwLjM3IDM0LjEgMzQuMWE5LjUgOS41IDAgMCAwIDEzLjQzIDBsMjAuMzgtMjAuMzdhOS41IDkuNSAwIDAgMCAwLTEzLjQ0em03IDQ3Ljc2bC0zNC4xLTM0LjFhOS41IDkuNSAwIDAgMC0xMy40NCAwbC01LjQ2IDUuNDZMNjUuMTcgOTEuNGw0Mi43NCAxMS40NS01LjQ2IDUuNDZhOS41IDkuNSAwIDAgMCAwIDEzLjQzbDM0LjEgMzQuMXoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC00Mi4yMykiLz48L3N2Zz4=">
+          <div class="prices-feature__text grid-column--flex">Предоставляемый ассортимент товара</div>
+        </div>
+      </div>
+      <div class="prices-feature grid-column grid-column-4--md">
+        <div class="grid-container grid-container--no-gutter grid-container--y-center"><img class="prices-feature__icon" src="data:image/svg+xml;base64,PHN2ZyBpZD0iM2Q1OWFhYjItMGI4My00MTU0LWI1YjgtMGNmODkyODlmZDU1IiBkYXRhLW5hbWU9IkNhcGEgMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgMjk5LjQzIDIxMS4wMSI+PGRlZnM+PHN0eWxlPi5cMzMgNjc1MDNjNC05N2UxLTRiZWEtYmRmMy05YzU5NzZjYzBlODF7ZmlsbDojZmZmfTwvc3R5bGU+PC9kZWZzPjx0aXRsZT5kaWFtb25kPC90aXRsZT48cGF0aCBjbGFzcz0iMzY3NTAzYzQtOTdlMS00YmVhLWJkZjMtOWM1OTc2Y2MwZTgxIiBkPSJNMjQ1LjE4IDQ0LjIxSDU0LjI0TDAgMTE2LjUzbDE0OS43MSAxMzguNjkgMTQ5LjcyLTEzOC42OHptLTM4LjQ0IDc3LjU3bC01NyAxMTIuMS01Ni41My0xMTIuMXpNOTguNDggMTA5Ljg0bDUxLjIzLTUxLjIzIDUxLjIzIDUxLjIzem02NS42NC01My43aDY5LjMybC0xOS41NiA0OS43NnptLTc3LjgxIDQ5TDcwIDU2LjE0aDY1LjMzem0tNi40NiAxNi42NGw0OS42MyA5OC40My0xMDYuMjYtOTguNDN6bTE0MC4yOSAwaDU2LjA3bC0xMDYgOTguMnptNS0xMS45M2wxOC42OS00Ny41NCAzNS42NSA0Ny41NHpNNTguMjcgNTguNzRsMTcgNTEuMTFIMTkuOTN6IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwIC00NC4yMSkiLz48L3N2Zz4=">
+          <div class="prices-feature__text grid-column--flex">Качество вашего контента</div>
+        </div>
+      </div>
+    </div>
+    <ul class="prices-list">
+      <li class="prices-list-item grid-container grid-container--y-center">
+        <div class="prices-list-item__text grid-column grid-column--flex">Минимальная стоимость ведения проекта</div>
+        <div class="prices-list-item__price grid-column">5 500руб.</div>
+      </li>
+      <li class="prices-list-item grid-container grid-container--y-center">
+        <div class="prices-list-item__text grid-column grid-column--flex">Минимальная рекламный бюджет</div>
+        <div class="prices-list-item__price grid-column">20 000руб.</div>
+      </li>
+    </ul>
+  </div>
+</section>
+      <section class="about section section--big section--light" id="about">
+        <div class="wrapper wrapper--small">
+          <div class="swiper-container" id="about-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="about__title">Доверьтесь профессионалам!</div>
+                <div class="about__content">
+                  Мы являемся сертифицированными партнёрами Google Adwords. В нашей практике более 100 проектов.
+                  Работаем как с большим, так и с малым бизнесом.
+                  При этом каждой категории клиентов соотвествует своя команда экспертов, специализирующихся именно в вашем секторе. Таким образом и крупные. и лишь начинающие компании получают все привилегии и лучшие результаты.
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="about__title">Почему Google?</div>
+                <div class="about__content">
+                  Google - самая популярная поисковая система мирового масштаба, охватывающая десятки дочерних сайтов. На данный момент настройки
+                  контекстной рекламы в этой платформе проработаны лучшими программистами со всемго мира до самых мелочей.
+                  Выбор узкого геотаргетинга, библиотеки расширений, контроль над расходами, сплит-тестирование, выбор типа
+                  рекламы и устройств и другие. Это новый, достаточно сложный инструментарий, который помогает хорошему специалисту
+                  разработать наболее эффективный метод скриптовой автоматизации, отвечающий требованиям конкретного сайта.
+                  Плохому специалисту не помогает ничем, поэтому важно довериться профессионалам.
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div><a class="section__next" href="#projects">
+          <div class="section__next-btn"><i class="fa fa-chevron-down" aria-hidden="true"></i>
+          </div></a>
+      </section>
+      <section class="projects section section--big" id="projects">
+        <div class="wrapper wrapper--large">
+          <h2 class="section__title">Наши кейсы</h2>
+          <p class="projects__description">
+            Посмотрите отчетные данные о наших проектах, чтобы убедиться в эффективности наших методов.
+            Сотни клиентов уже доверили нам настройку и сопровождение контекстной рекламы.
+            
+          </p>
+          <div class="projects__swiper swiper-container" id="projects-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide project-block" style="background-image: url('assets/images/projects/1_a6499db2d21076c890ebfe41ac749b23.jpg');">
+                <div class="project-block__content">
+                  <div class="project-block__title">TravelFrog inc.</div>
+                </div>
+                <div class="project-block__hover-content">
+            <p class="project-feature">
+                <span class="project-feature__title">В 16 раз</span>
+                <span class="project-feature__description">увеличили количество активных клиентов</span>
+            </p>
+            <p class="project-feature">
+                <span class="project-feature__title">> на 24%</span>
+                <span class="project-feature__description">увеличение процента продаж</span>
+            </p>
+            <p class="project-feature">
+                <span class="project-feature__title">7365</span>
+                <span class="project-feature__description">просмотров в день</span>
+            </p>
+        </div>
+              </div>
+              <div class="swiper-slide project-block" style="background-image: url('assets/images/projects/2_9bd3dd27f4e9312949e90d17a07e9768.jpg');">
+                <div class="project-block__content">
+                  <div class="project-block__title">TravelFrog inc.</div>
+                </div>
+                <div class="project-block__hover-content">
+            <p class="project-feature">
+                <span class="project-feature__title">В 16 раз</span>
+                <span class="project-feature__description">увеличили количество активных клиентов</span>
+            </p>
+            <p class="project-feature">
+                <span class="project-feature__title">> на 24%</span>
+                <span class="project-feature__description">увеличение процента продаж</span>
+            </p>
+            <p class="project-feature">
+                <span class="project-feature__title">7365</span>
+                <span class="project-feature__description">просмотров в день</span>
+            </p>
+        </div>
+              </div>
+              <div class="swiper-slide project-block" style="background-image: url('assets/images/projects/3_ff762a717f2dcb4822cc875f22dc209b.jpg');">
+                <div class="project-block__content">
+                  <div class="project-block__title">ToyBoy.ru</div>
+                </div>
+                <div class="project-block__hover-content">
+            <p class="project-feature">
+                <span class="project-feature__title">В 16 раз</span>
+                <span class="project-feature__description">увеличили количество активных клиентов</span>
+            </p>
+            <p class="project-feature">
+                <span class="project-feature__title">> на 24%</span>
+                <span class="project-feature__description">увеличение процента продаж</span>
+            </p>
+            <p class="project-feature">
+                <span class="project-feature__title">7365</span>
+                <span class="project-feature__description">просмотров в день</span>
+            </p>
+        </div>
+              </div>
+              <div class="swiper-slide project-block" style="background-image: url('assets/images/projects/4_a4bacc2921f87bca3586bd42d3a351d0.jpg');">
+                <div class="project-block__content">
+                  <div class="project-block__title">Sportacus-apple.com</div>
+                </div>
+                <div class="project-block__hover-content">
+            <p class="project-feature">
+                <span class="project-feature__title">В 16 раз</span>
+                <span class="project-feature__description">увеличили количество активных клиентов</span>
+            </p>
+            <p class="project-feature">
+                <span class="project-feature__title">> на 24%</span>
+                <span class="project-feature__description">увеличение процента продаж</span>
+            </p>
+            <p class="project-feature">
+                <span class="project-feature__title">7365</span>
+                <span class="project-feature__description">просмотров в день</span>
+            </p>
+        </div>
+              </div>
+              <div class="swiper-slide project-block" style="background-image: url('assets/images/projects/2_9bd3dd27f4e9312949e90d17a07e9768.jpg');">
+                <div class="project-block__content">
+                  <div class="project-block__title">Колесо.рф</div>
+                </div>
+                <div class="project-block__hover-content">
+            <p class="project-feature">
+                <span class="project-feature__title">В 16 раз</span>
+                <span class="project-feature__description">увеличили количество активных клиентов</span>
+            </p>
+            <p class="project-feature">
+                <span class="project-feature__title">> на 24%</span>
+                <span class="project-feature__description">увеличение процента продаж</span>
+            </p>
+            <p class="project-feature">
+                <span class="project-feature__title">7365</span>
+                <span class="project-feature__description">просмотров в день</span>
+            </p>
+        </div>
+              </div>
+            </div>
+            <div class="swiper-scrollbar"></div>
+          </div>
+        </div><a class="section__next" href="#contact-form-section">
+          <div class="section__next-btn"><i class="fa fa-chevron-down" aria-hidden="true"></i>
+          </div></a>
+      </section>
+<section class="contact-form section section--big" id="contact-form-section">
+  <div class="wrapper wrapper--small">
+    <h2 class="contact-form__title section__title">Хотите заказать настройку Google Adwords?</h2>
+    <div class="contact-form__content section__content">
+      Воспользуйтесь формой обратной связи. Наши специалисты свяжутся с вами в течение пяти минут и проконсультируют по любому
+      вопросу. Чтобы заказать настройку контекстной рекламы не нужно лишних усилий. Мы все за вас сделаем, от вас лишь
+      нужно желание начать увеличивать прибыль!
+    </div>
+    <form class="contact-form__form" action="/callback-request.php" id="contact-form">
+      <div class="grid-container grid-container--y-start">
+        <div class="contact-form__form-column grid-column grid-column-4--md">
+          <div class="input input--text input--fullwidth">
+            <input type="text" name="user_site" id="contact-form-user_site" required>
+            <label class="input__label" for="contact-form-user_site">Ваш сайт</label>
+          </div>
+        </div>
+        <div class="contact-form__form-column grid-column grid-column-4--md">
+          <div class="input input--text input--fullwidth">
+            <input type="text" name="user_name" id="contact-form-user_name" required>
+            <label class="input__label" for="contact-form-user_name">Ваше имя</label>
+          </div>
+        </div>
+        <div class="contact-form__form-column grid-column grid-column-4--md">
+          <div class="input input--text input--fullwidth">
+            <input type="tel" name="user_phone" id="contact-form-user_phone" required>
+            <label class="input__label" for="contact-form-user_phone">Контактный телефон</label>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form__button-container">
+        <button class="btn btn--primary btn--medium" type="submit">Отправить</button>
+      </div>
+    </form>
+  </div>
+</section>
+    </div>
+<footer class="footer">
+  <div class="wrapper">
+    <div class="footer__content">
+      <div class="footer__title">Google  adwords</div>
+      <div class="footer__description">Настройка контекстной рекламы Goggle Adwords</div>
+      <div class="footer__nav">
+        <ul>
+          <li><a href="#">Google Adwords</a></li>
+          <li><a href="#">Яндекс.Диррект</a></li>
+          <li><a href="#">Веб-разработка</a></li>
+          <li><a href="#">Рекламное агенство полного цикла</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__copyright">Copyrights © 2018 All Rights Reserved.</div>
+  </div>
+</footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="js/index.2ade67dc5e2c2d0ef868.js"></script></body>
 </html>
