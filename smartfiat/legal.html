@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="author">
+    <meta name="description">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="HandheldFriend" content="true">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- links-->
+    <link href="dns-prefetch" rel="//code.jquery.com"><!--[if IE]>
+    <style>
+      .gradient-text {
+          background: none !important;
+      }
+    </style><![endif]-->
+  <link href="./css/index.b6cd6f8fa6b608257161.css" rel="stylesheet"></head>
+  <body>
+<header class="header" id="main-header">
+  <div class="header__bg"></div>
+  <div class="header__wrapper wrapper">
+    <div class="header__container grid-container grid-container--h-between grid-container--v-center">
+      <div class="grid-col grid-col-auto">
+        <div class="header__burger-btn burger-btn burger-btn--without-text hidden-lg" id="burger-btn">
+          <div class="burger-btn__box">
+            <div class="burger-btn__line"></div>
+            <div class="burger-btn__line"></div>
+            <div class="burger-btn__line"></div>
+          </div>
+        </div><a class="header-logo" href="/" title="Home"><img class="header-logo__sign" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAuMTkgMTAwLjE5Ij48ZGVmcz48c3R5bGU+LmF7ZmlsbDojZmZmfS5ie2ZpbGw6I2ZmNGI0Yn0uY3tmaWxsOiMwMGM3ZmZ9PC9zdHlsZT48L2RlZnM+PHRpdGxlPmxvZ29fc2lnbl9saWdodDwvdGl0bGU+PHBhdGggY2xhc3M9ImEiIGQ9Ik00MC4yMiA2NS4zN3YtMzBoMjEuMjRWNDFINDYuNjF2Ni4zNEg2MS4xdjUuNjJINDYuNjF2MTIuNDF6Ii8+PHBhdGggY2xhc3M9ImIiIGQ9Ik0xMC4xIDI4LjFWMTEuOTNjMC0uOTQuNTUtMy40OS0uNTYtMi4zOHMxLjQ0LjU2IDIuMzguNTZIMjguMWM2LjQzIDAgNi40NS0xMCAwLTEwSDE2LjI5QzExLjc4LjEgNi4yMS0uNzcgMi43MiAyLjcyUy4xIDExLjQ0LjEgMTUuODVWMjguMWMwIDYuNDMgMTAgNi40NSAxMCAweiIvPjxwYXRoIGNsYXNzPSJjIiBkPSJNNzIuMSAxMC4xaDE2LjE3Yy45NCAwIDMuNDkuNTUgMi4zOC0uNTZzLS41NSAxLjQ1LS41NSAyLjM5VjI4LjFjMCA2LjQzIDEwIDYuNDUgMTAgMFYxNi4yOWMwLTQuNTEuODctMTAuMDgtMi42Mi0xMy41N1M4OC43Ni4xIDg0LjM1LjFINzIuMWMtNi40MyAwLTYuNDUgMTAgMCAxMHptLTQ0IDgwSDExLjkzYy0uOTQgMC0zLjQ5LS41NS0yLjM4LjU2cy41Ni0xLjQ0LjU2LTIuMzhWNzIuMWMwLTYuNDMtMTAtNi40NS0xMCAwdjExLjgxYzAgNC41MS0uODcgMTAuMDggMi42MiAxMy41N3M4LjcxIDIuNjIgMTMuMTIgMi42MkgyOC4xYzYuNDMgMCA2LjQ1LTEwIDAtMTB6Ii8+PHBhdGggY2xhc3M9ImIiIGQ9Ik05MC4xIDcyLjF2MTYuMTdjMCAuOTQtLjU1IDMuNDkuNTYgMi4zOHMtMS40NS0uNTUtMi4zOS0uNTVINzIuMWMtNi40MyAwLTYuNDUgMTAgMCAxMGgxMS44MWM0LjUxIDAgMTAuMDguODcgMTMuNTctMi42MnMyLjYyLTguNzIgMi42Mi0xMy4xM1Y3Mi4xYzAtNi40My0xMC02LjQ1LTEwIDB6Ii8+PC9zdmc+"><img class="header-logo__text hidden-before-sm" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNjUuNzMgMjcuNTYiPjxkZWZzPjxzdHlsZT4uYXtpc29sYXRpb246aXNvbGF0ZX0uYntmaWxsOiM2N2M2ZmZ9LmN7ZmlsbDojZjA0YzRjfTwvc3R5bGU+PC9kZWZzPjx0aXRsZT5sb2dvX3RleHQ8L3RpdGxlPjxnIGNsYXNzPSJhIj48cGF0aCBjbGFzcz0iYiIgZD0iTTAgMjMuMzJMMy4wOCAxOWExMS43IDExLjcgMCAwIDAgOC40OCAzLjYxYzMuMTIgMCA0LjYtMS40NSA0LjYtM0MxNi4xNiAxNC45Mi44NCAxOC4xNi44NCA4LjEyLjg0IDMuNjggNC42OCAwIDEwLjk2IDBhMTQuODQgMTQuODQgMCAwIDEgMTAuNCAzLjcybC0zLjIgNC4xNmExMS40NiAxMS40NiAwIDAgMC03Ljc2LTIuOTJjLTIuNDQgMC0zLjggMS4wOC0zLjggMi42OCAwIDQuMjQgMTUuMzIgMS40IDE1LjMyIDExLjM2IDAgNC44OC0zLjQ4IDguNTYtMTAuNjggOC41Ni01LjA4LS4wMS04Ljc2LTEuNzMtMTEuMjQtNC4yNHptNTUgMy43NVY4LjRsLTcuNTIgMTguNjdINDVMMzcuNDggOC40djE4LjY3SDMxLjhWLjRoOGw2LjQ4IDE2LjEyTDUyLjcyLjRoOHYyNi42N3ptMzUuNCAwbC0xLjY0LTQuNTFINzcuMzJsLTEuNjggNC41MmgtNi40OEw3OS40OC40aDcuMTJsMTAuMjggMjYuNjd6bS03LjM2LTIxbC00LjE2IDExLjQ5aDguMjh6bTM3LjQgMjFsLTUuMjgtOS40NkgxMTF2OS40OGgtNS42NFYuNGgxMi40OGM1LjU2IDAgOSAzLjY0IDkgOC42IDAgNC43Mi0zIDcuMjQtNS44NCA3LjkybDYgMTAuMTZ6TTEyMSA4Ljk5YzAtMi4yNC0xLjcyLTMuNi00LTMuNmgtNnY3LjIyaDZjMi4yOCAwIDQtMS4zNyA0LTMuNjF6bTIyLjI0IDE4LjA4VjUuNGgtNy44di01aDIxLjI4djVoLTcuNzZ2MjEuNjd6Ii8+PC9nPjxnIGNsYXNzPSJhIj48cGF0aCBjbGFzcz0iYyIgZD0iTTE2Ni45NCAyNy4wN1YuNGgxOC44OHY1aC0xMy4ydjUuNjRoMTIuOTJ2NWgtMTIuOTJ2MTF6bTI4Ljg0IDBWLjRoNS42OHYyNi42N3ptMzUuMzggMGwtMS42NC00LjUyaC0xMS40NmwtMS42OCA0LjUyaC02LjQ4TDIyMC4yMi40aDcuMTJsMTAuMjggMjYuNjh6bS03LjM2LTIxbC00LjE2IDExLjQ4aDguMzJ6bTI4LjQ2IDIxVjUuNGgtNy44di01aDIxLjI4djVoLTcuNzZ2MjEuNjd6Ii8+PC9nPjwvc3ZnPg=="></a>
+      </div>
+      <nav class="header__nav grid-col grid-col-auto hidden-before-lg">
+        <ul>
+          <li><a href="/" title="Home">Home</a></li>
+          <li><a href="/whyusesmartfiat.html" title="Why use SmartFiat">Why use SmartFiat</a></li>
+          <li class="has-dropdown"><a title="Resources">Resources</a>
+            <ul>
+              <li><a href="/faq.html">FAQs</a></li>
+              <li><a href="/api.html">API</a></li>
+              <li><a href="/whitepaper.html">Whitepaper</a></li>
+              <li><a href="/transparency.html">Transparency</a></li>
+              <li><a href="/rich-list.html">Rich List</a></li>
+              <li><a href="/legal.html">Legal</a></li>
+              <li><a href="/fees.html">Fees</a></li>
+            </ul>
+          </li>
+          <li><a href="/team.html" title="Team">Team</a></li>
+        </ul>
+      </nav>
+      <div class="grid-col grid-col-auto"><a class="header__btn btn btn--medium btn--secondary" href="/private-office.html">Sign Up</a></div>
+    </div>
+  </div>
+</header>
+<div class="burger-menu hidden-lg" id="burger-menu">
+  <div class="burger-menu__wrapper wrapper">
+    <ul class="burger-menu__list">
+      <li><a href="/" title="Home">Home</a></li>
+      <li><a href="/whyusesmartfiat.html" title="Why use SmartFiat">Why use SmartFiat</a></li>
+      <li class="has-dropdown"><a title="Resources">Resources</a>
+        <ul>
+          <li><a href="/faq.html">FAQs</a></li>
+          <li><a href="/api.html">API</a></li>
+          <li><a href="/whitepaper.html">Whitepaper</a></li>
+          <li><a href="/transparency.html">Transparency</a></li>
+          <li><a href="/rich-list.html">Rich List</a></li>
+          <li><a href="/legal.html">Legal</a></li>
+          <li><a href="/fees.html">Fees</a></li>
+        </ul>
+      </li>
+      <li><a href="/team.html" title="Team">Team</a></li>
+    </ul>
+  </div>
+</div>
+    <main class="page-main">
+      <section class="page-intro bg-secondary">
+        <div class="wrapper">
+          <div class="page-intro__container grid-container grid-container--v-center">
+            <div class="page-intro__text-col grid-col grid-col-flex">
+              <ul class="page-intro__breadcrumbs">
+                <li><a href="/">Home</a></li>
+                <li><a>Legal</a></li>
+              </ul>
+              <h1 class="page-intro__title">Legal</h1>
+              <div class="page-intro__description">Smartfiat converts cash into digital currency, to anchor or tether the value to the price of national currencies like the US dollar, the Euro, and the Yen.
+              </div>
+            </div>
+            <div class="page-intro__image-col phone-scheme grid-col grid-col-5 grid-col-6-lg hidden-before-lg"></div>
+          </div>
+        </div>
+      </section>
+      <section class="section section--blocks">
+        <div class="wrapper">
+          <div class="spoiler-block">
+            <div class="spoiler-block__header">Terms of service</div>
+            <div class="spoiler-block__content">
+              <p>Last updated: January 3, 2018</p>
+              <p>International anti-spam legislation and best practices in the industry require informed, opt-in consent to receiving commercial electronic messages; a meaningful unsubscribe option for recipients; and, proper identification of message senders.</p>
+              <p>Tether needs your consent to communicate with you electronically to establish and maintain a responsible commercial relationship with you; to understand your needs and your eligibility for products and services; to recommend particular products, services, and opportunities to you; to inform you about trading and financing features; to provide information to you about developments and new products, including changes and enhancements to the Site; to develop, enhance, and market products and services, and provide products and services to you; to process billing and collection of any fees; to conduct surveys and get feedback from you; to deliver products and services to you; to provide you with news and other matters of general interest to you as a customer; and, to meet Tether’s legal and regulatory requirements.</p>
+            </div>
+          </div>
+          <div class="spoiler-block">
+            <div class="spoiler-block__header">Privacy policy</div>
+            <div class="spoiler-block__content">
+              <p>Last updated: January 3, 2018</p>
+              <p>International anti-spam legislation and best practices in the industry require informed, opt-in consent to receiving commercial electronic messages; a meaningful unsubscribe option for recipients; and, proper identification of message senders.</p>
+              <p>Tether needs your consent to communicate with you electronically to establish and maintain a responsible commercial relationship with you; to understand your needs and your eligibility for products and services; to recommend particular products, services, and opportunities to you; to inform you about trading and financing features; to provide information to you about developments and new products, including changes and enhancements to the Site; to develop, enhance, and market products and services, and provide products and services to you; to process billing and collection of any fees; to conduct surveys and get feedback from you; to deliver products and services to you; to provide you with news and other matters of general interest to you as a customer; and, to meet Tether’s legal and regulatory requirements.</p>
+            </div>
+          </div>
+          <div class="spoiler-block">
+            <div class="spoiler-block__header">Anti-spam policy</div>
+            <div class="spoiler-block__content">
+              <p>Last updated: January 3, 2018</p>
+              <p>International anti-spam legislation and best practices in the industry require informed, opt-in consent to receiving commercial electronic messages; a meaningful unsubscribe option for recipients; and, proper identification of message senders.</p>
+              <p>Tether needs your consent to communicate with you electronically to establish and maintain a responsible commercial relationship with you; to understand your needs and your eligibility for products and services; to recommend particular products, services, and opportunities to you; to inform you about trading and financing features; to provide information to you about developments and new products, including changes and enhancements to the Site; to develop, enhance, and market products and services, and provide products and services to you; to process billing and collection of any fees; to conduct surveys and get feedback from you; to deliver products and services to you; to provide you with news and other matters of general interest to you as a customer; and, to meet Tether’s legal and regulatory requirements.</p>
+            </div>
+          </div>
+          <div class="spoiler-block">
+            <div class="spoiler-block__header">Law Enforcement Requests</div>
+            <div class="spoiler-block__content">
+              <p>Last updated: January 3, 2018</p>
+              <p>International anti-spam legislation and best practices in the industry require informed, opt-in consent to receiving commercial electronic messages; a meaningful unsubscribe option for recipients; and, proper identification of message senders.</p>
+              <p>Tether needs your consent to communicate with you electronically to establish and maintain a responsible commercial relationship with you; to understand your needs and your eligibility for products and services; to recommend particular products, services, and opportunities to you; to inform you about trading and financing features; to provide information to you about developments and new products, including changes and enhancements to the Site; to develop, enhance, and market products and services, and provide products and services to you; to process billing and collection of any fees; to conduct surveys and get feedback from you; to deliver products and services to you; to provide you with news and other matters of general interest to you as a customer; and, to meet Tether’s legal and regulatory requirements.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="appeal-block section section--light bg-secondary">
+        <div class="wrapper">
+          <div class="grid-container grid-container--v-center">
+            <div class="appeal-block__text-col grid-col grid-col-flex">
+              <h2 class="appeal-block__title">Join the modern movement of money</h2>
+              <div class="appeal-block__btn-container"><a class="open-popup-btn btn btn--medium btn--primary sign-up-btn" href="#" data-popup-id="sign-up">Sign Up</a>
+              </div>
+            </div>
+            <div class="appeal-block__image-col phone-scheme grid-col grid-col-6 hidden-before-lg"></div>
+          </div>
+        </div>
+      </section>
+<footer class="footer">
+  <div class="wrapper">
+    <div class="grid-container grid-container--v-start">
+      <div class="footer__logo-col grid-col grid-col-auto">
+        <div class="footer-logo grid-container grid-container--nowrap grid-container--h-center grid-container--v-start">
+          <div class="grid-col grid-col-auto"><img class="footer-logo__sign" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAuMTkgMTAwLjE5Ij48ZGVmcz48c3R5bGU+LmF7ZmlsbDojZmY0YjRifS5ie2ZpbGw6IzAwYzdmZn08L3N0eWxlPjwvZGVmcz48dGl0bGU+bG9nb19zaWduX2Rhcms8L3RpdGxlPjxwYXRoIGQ9Ik00MC4yMiA2NS4zN3YtMzBoMjEuMjRWNDFINDYuNjF2Ni4zNEg2MS4xdjUuNjJINDYuNjF2MTIuNDF6Ii8+PHBhdGggY2xhc3M9ImEiIGQ9Ik0xMC4xIDI4LjFWMTEuOTNjMC0uOTQuNTUtMy40OS0uNTYtMi4zOHMxLjQ0LjU2IDIuMzguNTZIMjguMWM2LjQzIDAgNi40NS0xMCAwLTEwSDE2LjI5QzExLjc4LjEgNi4yMS0uNzcgMi43MiAyLjcyUy4xIDExLjQ0LjEgMTUuODVWMjguMWMwIDYuNDMgMTAgNi40NSAxMCAweiIvPjxwYXRoIGNsYXNzPSJiIiBkPSJNNzIuMSAxMC4xaDE2LjE3Yy45NCAwIDMuNDkuNTUgMi4zOC0uNTZzLS41NSAxLjQ1LS41NSAyLjM5VjI4LjFjMCA2LjQzIDEwIDYuNDUgMTAgMFYxNi4yOWMwLTQuNTEuODctMTAuMDgtMi42Mi0xMy41N1M4OC43Ni4xIDg0LjM1LjFINzIuMWMtNi40MyAwLTYuNDUgMTAgMCAxMHptLTQ0IDgwSDExLjkzYy0uOTQgMC0zLjQ5LS41NS0yLjM4LjU2cy41Ni0xLjQ0LjU2LTIuMzhWNzIuMWMwLTYuNDMtMTAtNi40NS0xMCAwdjExLjgxYzAgNC41MS0uODcgMTAuMDggMi42MiAxMy41N3M4LjcxIDIuNjIgMTMuMTIgMi42MkgyOC4xYzYuNDMgMCA2LjQ1LTEwIDAtMTB6Ii8+PHBhdGggY2xhc3M9ImEiIGQ9Ik05MC4xIDcyLjF2MTYuMTdjMCAuOTQtLjU1IDMuNDkuNTYgMi4zOHMtMS40NS0uNTUtMi4zOS0uNTVINzIuMWMtNi40MyAwLTYuNDUgMTAgMCAxMGgxMS44MWM0LjUxIDAgMTAuMDguODcgMTMuNTctMi42MnMyLjYyLTguNzIgMi42Mi0xMy4xM1Y3Mi4xYzAtNi40My0xMC02LjQ1LTEwIDB6Ii8+PC9zdmc+"></div>
+          <div class="grid-col grid-col-auto"><img class="footer-logo__text" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNjUuNzMgMjcuNTYiPjxkZWZzPjxzdHlsZT4uYXtpc29sYXRpb246aXNvbGF0ZX0uYntmaWxsOiM2N2M2ZmZ9LmN7ZmlsbDojZjA0YzRjfTwvc3R5bGU+PC9kZWZzPjx0aXRsZT5sb2dvX3RleHQ8L3RpdGxlPjxnIGNsYXNzPSJhIj48cGF0aCBjbGFzcz0iYiIgZD0iTTAgMjMuMzJMMy4wOCAxOWExMS43IDExLjcgMCAwIDAgOC40OCAzLjYxYzMuMTIgMCA0LjYtMS40NSA0LjYtM0MxNi4xNiAxNC45Mi44NCAxOC4xNi44NCA4LjEyLjg0IDMuNjggNC42OCAwIDEwLjk2IDBhMTQuODQgMTQuODQgMCAwIDEgMTAuNCAzLjcybC0zLjIgNC4xNmExMS40NiAxMS40NiAwIDAgMC03Ljc2LTIuOTJjLTIuNDQgMC0zLjggMS4wOC0zLjggMi42OCAwIDQuMjQgMTUuMzIgMS40IDE1LjMyIDExLjM2IDAgNC44OC0zLjQ4IDguNTYtMTAuNjggOC41Ni01LjA4LS4wMS04Ljc2LTEuNzMtMTEuMjQtNC4yNHptNTUgMy43NVY4LjRsLTcuNTIgMTguNjdINDVMMzcuNDggOC40djE4LjY3SDMxLjhWLjRoOGw2LjQ4IDE2LjEyTDUyLjcyLjRoOHYyNi42N3ptMzUuNCAwbC0xLjY0LTQuNTFINzcuMzJsLTEuNjggNC41MmgtNi40OEw3OS40OC40aDcuMTJsMTAuMjggMjYuNjd6bS03LjM2LTIxbC00LjE2IDExLjQ5aDguMjh6bTM3LjQgMjFsLTUuMjgtOS40NkgxMTF2OS40OGgtNS42NFYuNGgxMi40OGM1LjU2IDAgOSAzLjY0IDkgOC42IDAgNC43Mi0zIDcuMjQtNS44NCA3LjkybDYgMTAuMTZ6TTEyMSA4Ljk5YzAtMi4yNC0xLjcyLTMuNi00LTMuNmgtNnY3LjIyaDZjMi4yOCAwIDQtMS4zNyA0LTMuNjF6bTIyLjI0IDE4LjA4VjUuNGgtNy44di01aDIxLjI4djVoLTcuNzZ2MjEuNjd6Ii8+PC9nPjxnIGNsYXNzPSJhIj48cGF0aCBjbGFzcz0iYyIgZD0iTTE2Ni45NCAyNy4wN1YuNGgxOC44OHY1aC0xMy4ydjUuNjRoMTIuOTJ2NWgtMTIuOTJ2MTF6bTI4Ljg0IDBWLjRoNS42OHYyNi42N3ptMzUuMzggMGwtMS42NC00LjUyaC0xMS40NmwtMS42OCA0LjUyaC02LjQ4TDIyMC4yMi40aDcuMTJsMTAuMjggMjYuNjh6bS03LjM2LTIxbC00LjE2IDExLjQ4aDguMzJ6bTI4LjQ2IDIxVjUuNGgtNy44di01aDIxLjI4djVoLTcuNzZ2MjEuNjd6Ii8+PC9nPjwvc3ZnPg==">
+            <div class="footer-logo__copyright">2018. All rights reserved</div>
+          </div>
+        </div>
+        <div class="footer-socials"><a class="footer-social footer-social--facebook" href="#" title="Facebook"><i class="fa fa-facebook"></i></a><a class="footer-social footer-social--twitter" href="#" title="Twitter"><i class="fa fa-twitter"></i></a><a class="footer-social footer-social--linkedin" href="#" title="LinkedIn"><i class="fa fa-linkedin"></i></a></div>
+      </div>
+      <div class="footer__info-col grid-col grid-col-flex">
+        <div class="grid-container">
+          <div class="grid-col grid-col-4-sm">
+            <div class="footer-menu">
+              <div class="footer-menu__title">Resources</div>
+              <ul> 
+                <li><a href="/faq.html">FAQs</a></li>
+                <li><a href="/whitepaper.html">Whitepaper</a></li>
+                <li><a href="/transparency.html">Transparency</a></li>
+                <li><a href="/api.html">API</a></li>
+                <li><a href="/fees.html">Fees</a></li>
+                <li><a href="/legal.html">Legal</a></li>
+                <li><a href="/rich-list.html">Rich List</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="grid-col grid-col-4-sm">
+            <div class="footer-menu">
+              <div class="footer-menu__title">About</div>
+              <ul> 
+                <li><a href="/whyusesmartfiat.html">Why use Smartfiat</a></li>
+                <li><a href="/individuals.html">Tether for Individuals</a></li>
+                <li><a href="/press.html">Press</a></li>
+                <li><a href="/about.html">About us</a></li>
+                <li><a href="/branding.html">Branding</a></li>
+                <li><a href="/announcements.html">Announcements</a></li>
+                <li><a href="/team.html">Team</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="grid-col grid-col-4-sm">
+            <div class="footer-menu">
+              <div class="footer-menu__title">Connect</div>
+              <ul> 
+                <li><a href="/contact.html">Contact Us</a></li>
+                <li><a href="/media.html">Media Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+    </main>
+<div class="overlay overlay--center" id="sign-up">
+  <div class="overlay__container">
+    <div class="popup popup--small">
+      <div class="popup__container"><a class="popup__close-btn btn" href="#">X</a>
+        <div class="popup__title gradient-text">Sign up</div>
+        <form class="popup-form">
+          <div class="popup-form__input input input--text input--fullwidth">
+            <input type="text" name="user_name" id="sign_up_username" required>
+            <label class="input__label" for="sign_up_username">Username</label>
+            <div class="input__error"></div>
+          </div>
+          <div class="popup-form__input input input--text input--fullwidth">
+            <input type="email" name="user_email" id="sign_up_email" required>
+            <label class="input__label" for="sign_up_email">E-mail</label>
+            <div class="input__error"></div>
+          </div>
+          <div class="popup-form__input input input--text input--fullwidth">
+            <input type="password" name="user_password" id="sign_up_password" required>
+            <label class="input__label" for="sign_up_password">Password</label>
+            <div class="input__error"></div>
+          </div>
+          <div class="popup-form__input input input--text input--fullwidth">
+            <input type="password" name="user_confirm_password" id="sign_up_confirm_password" required>
+            <label class="input__label" for="sign_up_confirm_password">Confirm password</label>
+            <div class="input__error"></div>
+          </div>
+          <div class="popup-form__additional"><a class="open-popup-btn link" href="#" data-popup-id="login">Login</a></div>
+          <div class="popup-form__btn-container">
+            <button class="open-popup-btn btn btn--medium btn--primary" type="submit" data-popup-id="success-popup">Sign Up</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="overlay overlay--center" id="login">
+  <div class="overlay__container">
+    <div class="popup popup--small">
+      <div class="popup__container"><a class="popup__close-btn btn" href="#">X</a>
+        <div class="popup__title gradient-text">Log in to your account</div>
+        <form class="popup-form" action="/private-office.html">
+          <div class="popup-form__input input input--text input--fullwidth">
+            <input type="text" name="user_login" id="login_user_login" required>
+            <label class="input__label" for="login_user_login">Username or e-mail</label>
+            <div class="input__error"></div>
+          </div>
+          <div class="popup-form__input input input--text input--fullwidth">
+            <input type="password" name="user_password" id="login_user_password" required>
+            <label class="input__label" for="login_user_password">Password</label>
+            <div class="input__error"></div>
+          </div>
+          <div class="popup-form__additional grid-container grid-container--h-between">
+            <div class="grid-col grid-col-auto"><a class="open-popup-btn link" href="#" data-popup-id="sign-up">Sign up</a></div>
+            <div class="grid-col grid-col-auto"><a class="open-popup-btn link" href="#" data-popup-id="forgot-password">Forgot your password?</a></div>
+          </div>
+          <div class="popup-form__btn-container">
+            <button class="btn btn--medium btn--primary" type="submit">Log In</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="overlay overlay--center" id="success-popup">
+  <div class="overlay__container">
+    <div class="popup popup--small">
+      <div class="popup__container"><a class="popup__close-btn btn" href="#">X</a><img class="popup__image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKQAAACkCAMAAAAua3VzAAADAFBMVEVMaXFKfsg3gtSya4g7gtSdb5Uohd4+gdJlebeGc6Qbh+YjhuEmhd8khuDrYGS4aoRzd68fhuMch+XmYWhRfcTvYGLwX2HjYmnlYWiGc6OEdKS/aIAZiOfxX2Fee7zSZXXcY24bh+Yah+apbY6ab5fvYGJae77gY2vQZnXWZHKkbpG+aYEnhd5teLNueLJueLLNZnftYGPxX2F8dap5dqvBaH/qYWWYcJgbh+XrYGXqYWVpebXJZ3lHf8tbe75Ff8xLfsjtYGPPZna3aoWwa4keh+SPcZ3xX2FqeLVqeLXxX2FueLJUfMLkYmk4gtPqYWVherolhd+CdKUihuG9aYEeh+Qfh+Mbh+aOcp6Fc6SGc6PoYWbKZ3lLfshJf8ntYGQyg9c3gtTmYWigbpQohd4jhuElhuAhhuK4aoTAaH+za4isbIxnebeacJfwYGKcb5Wbb5ZBgM45gtNEf8zCaH7dY20dh+WGc6N5dqzUZXOpbY0bh+ava4qkbpGdb5VTfMNLfsfqYWVJfsmPcZ5YfMA2gtQ8gdFZfL83gtTrYGTSZXTzX18thNorhNu0aofYZHCPcZ5reLRvd7HOZnZ7das8gdHWZHHhYmvOZncghuOacJelbZCUcZtae75wd7HNZncwg9hXfMC3aoWya4ilbZBLfsjwYGIah+YYiOgbh+UhhuLsYGQohd7zX2Afh+PqYWUyg9fnYWfWZHFPfcY6gdJMfsjOZnY+gdC+aYHxX2FZe7/lYWhSfcTHZ3teerx3dq0lhd+qbY24aoWza4iwa4p0d6+WcJqeb5VJf8lWfMFCgM3BaH/uYGPjYmmQcZ3gY2therqobY+jbpJmebd6dauNcp+KcqGGc6OAdKiDdKUphNwdh+TcY21wd7Gbb5ftYGPEaH3aZG9Gf8svhNk1gtXSZXQeh+TLZnjoYWYjhuC6aoNUfcJce70thNq1aoalbZCtbIy7aYJkeriTcZugbpNpebVreLRseLPhYmt9daneY22YcJhueLI3gtTTZXMrhNvbqTNcAAAApnRSTlMAJx8YBx8ZAyYXsSs6TjISHXljCOjbz6wqydNI58TnHUi8pYKBvnUMVj3c3lhvgtwlSnnigTM/3dcSYA7nTWvwc52lgd3wgfdMs5Q2Pe12WKQzwNKwEpCB44HeumazP2nRh86ivUKf5JXFxEDqTejxOLJj16LjyLWiiOX6crZnulnwo/WRvOrZl47Squnza/egZPKy9KBwcnD7xotwu8/18/Tt7Fy8fQUeLAAACedJREFUeNrV3WdcFEcUAPA5wOOQoygoKIgIBIwCNgQVBewg2MXee0TU2HuLsaWarqZ3DfZubLGXmKJGU9RY04tppsfsTtnbO/butszs7s1X7vb352Znd3bmvbcAUGnhhflpGdOnT+vWrVr16tWqdZv26KPtni0tqQDM0bIL09IL6j125Mj+/efO/fnxx598cuHC+fMfffTee78cPTo+a9XquRPCjAUWpReM/e327/9cuiSN/Pvy5WPHfh0/Z3WpQVBbTkHcBz+fPesdeebMjx/OnDO7vv7C577bt+8D+cgP37l1a4yezuz5807s3q0cefjwoTEP69PvlkWR356QRD7xRCNuaHMDvFr13vfdJ4k89MPLoxszJw5cuGXPHlfkY89PT0/Lt4UHBZCPBQZVsJXOTRq2arwr8uDBb3rEsCUO2LbFBVmvS1phkPtvhE2YO6yOC/KnnffEMCQe3+aEXNJlhU3OFyu8OqyOE3LnKUZMy8Jrx8XIJYuKAhR8vSSxjRh56koP+udmwJCT10TIl7rkByo+RsnoV0TIK3snUx7pLSadFCGXJIerO0zYw2NEyL3Na1MkWp/ccdKBnNdCy7FiejiQe798nNrlPXXxDgdyQJHWwzWe7EB++UJ/Omfjk1t3CMgBA2kcsnEPAbl9eysKZ6Z98FYBOakFrc6JuUdAbm9+t9ajTfx3K0Hm5tEciv2bE+TNm09pO9TSGwLyXj+6F4ywyQLyv1ZaTsf7bxBk7kT6t4fazQly8/Kmag/iN3gjQdL+GVHzb0WQm6dEqztE8IMbCbITq+lAf4Lc/Iiq4WN/cSNGLm4BmLXGyzHy6tV4Fcbr1zHyfivL2V/K4wR5sbMKI0YuZT2PnkGQFxXeyu3ff4+RQ9g/kDxDkBcV9XjwQ3cwshPQodUmyPczFcx6HryDkROBLi2eIN+XfSUK7P4pRobo9ZR89yMYOUXuVX14GUbqZuSUGPnHUHmf71mGkal6ronEY+TpKFlT3DKM7AR0bbUx8vTTMgb2AYwcAnRuT2Pkaa9DPKAJRo7Uf51uBkZ2TPHywZEHEHKwEauJUQj5tpfTMuRrhHzIagQyYgpCbhrk6VPFbTFyBDCkRWPkJk9PuglrEbISMKg1w8i73H9kxFqEHA4Ma1EI+ZXbaVvgKIS8YzUOGdERIRe4G+G91iJkZWBgi0fIDS3dzH3WI+RwYGiLQsgN0vOhBIQssxqLTOmIkJJjJ3g9QlYCBrfOCPlWA4m/VUTIUcDwNhQhq5b/S9cvEDLEeGQoQkr8lLUQciowQeuHkFXK/ZCfIaTdDMhQhPzc9adMQMhawBQtCiFdBrj1M4S0mwNZHyHfDXW+2ayByKnAJK0fQjrddgJjETLVLMhMhGwvfsBNXQORowJ1MsSMHu1lpW8oRL4unv3WQki9bjat+S2SZzxPLBFSdEG3vgGRK616GeE+Tk2Pd/AFEPm6Y+hURsiKOhnxjpjnhb5lCNnQ0dsIqc8dsTXZtvO8mRyKkEJ/W9dAZNsAXYxkA7RuhOcPVoHIXaFCb0PkSH2MGFm3ppdPLkNI0t8JCKlHb88m+911/b3ewBES3xoDYiFSj95uTTblvRu5/obI9ugXt78JkRX1MGKk177mWweI3IUebishJPtnxEQSgyHLCBogZAf03ICQweyNGCnPCJoiZA10SkIk8/t2Igm5kXM+wlYVIuEkI/hNiKzI3IiRMn9HrrWEyHX8/LwyQjKeXCSS4CX5RtAMIfkrZS+EZLvYl0jCwNr4y/9SKEJ2gOOGR87yY2vESCVGEDEOIvmR0wQimzA1koA6RUYAakDkuAiQHQuRLMdNIon6a6MwWrolRO6qzw9uHtmTnTGJxE8qNYKGELkuE4QgJLvBnUSCPBX2NdcGIWQz/grEI5ndFJNIJOpMxUaQiZANuTs3RNqZGTFyporo/WiE7AB6IiSjO3eSEGeuJsOgaXuIfAAkQCSjy2QSiY6u46/m6ynjnJBti5kYSQi3OiM374XIGvwNh0PGspiWJ5E48zpqs0lqQGRVUAsiWdxw2pFgeNVG9sh2JGJfbV9z7S6IrAKmQmR3+kaSVqDByBrZjiRoZGkwuiBldbdfXp5FrpFkkWRpysAiSPnn5MBcLjo6T6YRI7UZhYEj+xIUkAtDuOUo+5B8nKwgQAUp+2I+EAfD58kwYqRWo3Axl31bDCYR+96UfUhmU5bWjMAIcluUPcEInERyH3K8GDGyt+asRWGCIX+qZsklCRrJnowkR0xzX4umagomvZwSp7okezBiZG/tRsekV8njgyWS5OO4U2aQbLveNDJUhccHRQ9inBJnNuW4MWIkFSN5EGug8JHWEknSr6R+ywySt9g3iIbR8UircHGAU+IcsfLKDJJcScnoWBxQusxiiSTZdsnljBhJyyhaZlG6YMUpcUqg83mZQdJU+9LK6o52LFilKl368xPSVHOcjBjZN5ySUbz0p3wR1RJJMkAdPZ5OEn5p9TVwWkRVsRzNKXGaarJgxMhG9Izi5Wg1C/uWSJJLm4aMJHW6UTg9Y03Rwj43cpRvkdjiSMJvGjRiJE0j6CzeIlG12WSLI6nTaSCNJKHT7GuXzSZ123a2OJLfXUCS0OkanbftVG6AckrnTHmqfe26Aap2K9kW54SkbHTdSla7KW8Tl5ioR7evy23Kqw5vsMUJSOpG1/AG9YEitrEYWY9yX0sEihTPQiE3xWqUPJK+MQKH3Igie9UHL9n42iz0jRLBSyBEfRiYbext6ucjkAwD0xJQV1hgo2+UCqgjoYn0lylVNqnQROCHgzxHmMMYLRnk6RPhsr4ReOwTIdxCMLwJImYz3QbD+0RagXkSNJrhBA3J9EWc6nLAJKku/ST/WrzSVElDbhLufCH9Skhk+9TMiWzA7gMpgVwmrVmSK/t5+Ixp0lQ9Rt0Zm/CbIivhl8vl94HUaQC6+0ASOrCUGZXO/xRJ5w/1/llfKIwgKjExUU+jshITvlGsw9iyJylyv2JcAZm/FJSyMqwUj6JCVl2vm7+okUHloeKVftW+USi0xTQEPcxRaKuB8m939YGSZb5R/E2HMnph2svo6VqQUEulTIalHf0plXYELkUyaSY/USySyQ1ycbnR+bSIdMuNcm2IqHDra1SuRiVOhVtTqPzb881fAhewLCbcimateB8oy8xfMjtdo17gekYKoN38XEqFxy3KV7D3HFiymn2pcL4VuRZdjzNd0XW+uSlf7+EMDdK7fD38NaVfBFDAvQig0JYt9H9AdoUJpc8a8yIAuMTh9pUK5+ArFbhW3eBXKvCNeznFbpO/nAINddO/5gM1W04Xk78wBfd7vsxXzySWGvyOnMIV6QXPu32Jz5wko1/iI7ocFuavEL0OaRp6HdIESsEZ/wOHYZETRHEnFQAAAABJRU5ErkJggg==">
+        <div class="popup__title gradient-text">You have successfully registered</div>
+        <div class="popup__description">We sent you an e-mail. Follow the link in the email to confirm the registration</div>
+      </div>
+    </div>
+  </div>
+</div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="js/index.b6cd6f8fa6b608257161.js"></script></body>
+</html>

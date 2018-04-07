@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="author">
+    <meta name="description">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="HandheldFriend" content="true">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- links-->
+    <link href="dns-prefetch" rel="//code.jquery.com"><!--[if IE]>
+    <style>
+      .gradient-text {
+          background: none !important;
+      }
+    </style><![endif]-->
+  <link href="./css/index.b6cd6f8fa6b608257161.css" rel="stylesheet"></head>
+  <body>
+<header class="header" id="main-header">
+  <div class="header__bg"></div>
+  <div class="header__wrapper wrapper">
+    <div class="header__container grid-container grid-container--h-between grid-container--v-center">
+      <div class="grid-col grid-col-auto">
+        <div class="header__burger-btn burger-btn burger-btn--without-text hidden-lg" id="burger-btn">
+          <div class="burger-btn__box">
+            <div class="burger-btn__line"></div>
+            <div class="burger-btn__line"></div>
+            <div class="burger-btn__line"></div>
+          </div>
+        </div><a class="header-logo" href="/" title="Home"><img class="header-logo__sign" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAuMTkgMTAwLjE5Ij48ZGVmcz48c3R5bGU+LmF7ZmlsbDojZmZmfS5ie2ZpbGw6I2ZmNGI0Yn0uY3tmaWxsOiMwMGM3ZmZ9PC9zdHlsZT48L2RlZnM+PHRpdGxlPmxvZ29fc2lnbl9saWdodDwvdGl0bGU+PHBhdGggY2xhc3M9ImEiIGQ9Ik00MC4yMiA2NS4zN3YtMzBoMjEuMjRWNDFINDYuNjF2Ni4zNEg2MS4xdjUuNjJINDYuNjF2MTIuNDF6Ii8+PHBhdGggY2xhc3M9ImIiIGQ9Ik0xMC4xIDI4LjFWMTEuOTNjMC0uOTQuNTUtMy40OS0uNTYtMi4zOHMxLjQ0LjU2IDIuMzguNTZIMjguMWM2LjQzIDAgNi40NS0xMCAwLTEwSDE2LjI5QzExLjc4LjEgNi4yMS0uNzcgMi43MiAyLjcyUy4xIDExLjQ0LjEgMTUuODVWMjguMWMwIDYuNDMgMTAgNi40NSAxMCAweiIvPjxwYXRoIGNsYXNzPSJjIiBkPSJNNzIuMSAxMC4xaDE2LjE3Yy45NCAwIDMuNDkuNTUgMi4zOC0uNTZzLS41NSAxLjQ1LS41NSAyLjM5VjI4LjFjMCA2LjQzIDEwIDYuNDUgMTAgMFYxNi4yOWMwLTQuNTEuODctMTAuMDgtMi42Mi0xMy41N1M4OC43Ni4xIDg0LjM1LjFINzIuMWMtNi40MyAwLTYuNDUgMTAgMCAxMHptLTQ0IDgwSDExLjkzYy0uOTQgMC0zLjQ5LS41NS0yLjM4LjU2cy41Ni0xLjQ0LjU2LTIuMzhWNzIuMWMwLTYuNDMtMTAtNi40NS0xMCAwdjExLjgxYzAgNC41MS0uODcgMTAuMDggMi42MiAxMy41N3M4LjcxIDIuNjIgMTMuMTIgMi42MkgyOC4xYzYuNDMgMCA2LjQ1LTEwIDAtMTB6Ii8+PHBhdGggY2xhc3M9ImIiIGQ9Ik05MC4xIDcyLjF2MTYuMTdjMCAuOTQtLjU1IDMuNDkuNTYgMi4zOHMtMS40NS0uNTUtMi4zOS0uNTVINzIuMWMtNi40MyAwLTYuNDUgMTAgMCAxMGgxMS44MWM0LjUxIDAgMTAuMDguODcgMTMuNTctMi42MnMyLjYyLTguNzIgMi42Mi0xMy4xM1Y3Mi4xYzAtNi40My0xMC02LjQ1LTEwIDB6Ii8+PC9zdmc+"><img class="header-logo__text hidden-before-sm" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNjUuNzMgMjcuNTYiPjxkZWZzPjxzdHlsZT4uYXtpc29sYXRpb246aXNvbGF0ZX0uYntmaWxsOiM2N2M2ZmZ9LmN7ZmlsbDojZjA0YzRjfTwvc3R5bGU+PC9kZWZzPjx0aXRsZT5sb2dvX3RleHQ8L3RpdGxlPjxnIGNsYXNzPSJhIj48cGF0aCBjbGFzcz0iYiIgZD0iTTAgMjMuMzJMMy4wOCAxOWExMS43IDExLjcgMCAwIDAgOC40OCAzLjYxYzMuMTIgMCA0LjYtMS40NSA0LjYtM0MxNi4xNiAxNC45Mi44NCAxOC4xNi44NCA4LjEyLjg0IDMuNjggNC42OCAwIDEwLjk2IDBhMTQuODQgMTQuODQgMCAwIDEgMTAuNCAzLjcybC0zLjIgNC4xNmExMS40NiAxMS40NiAwIDAgMC03Ljc2LTIuOTJjLTIuNDQgMC0zLjggMS4wOC0zLjggMi42OCAwIDQuMjQgMTUuMzIgMS40IDE1LjMyIDExLjM2IDAgNC44OC0zLjQ4IDguNTYtMTAuNjggOC41Ni01LjA4LS4wMS04Ljc2LTEuNzMtMTEuMjQtNC4yNHptNTUgMy43NVY4LjRsLTcuNTIgMTguNjdINDVMMzcuNDggOC40djE4LjY3SDMxLjhWLjRoOGw2LjQ4IDE2LjEyTDUyLjcyLjRoOHYyNi42N3ptMzUuNCAwbC0xLjY0LTQuNTFINzcuMzJsLTEuNjggNC41MmgtNi40OEw3OS40OC40aDcuMTJsMTAuMjggMjYuNjd6bS03LjM2LTIxbC00LjE2IDExLjQ5aDguMjh6bTM3LjQgMjFsLTUuMjgtOS40NkgxMTF2OS40OGgtNS42NFYuNGgxMi40OGM1LjU2IDAgOSAzLjY0IDkgOC42IDAgNC43Mi0zIDcuMjQtNS44NCA3LjkybDYgMTAuMTZ6TTEyMSA4Ljk5YzAtMi4yNC0xLjcyLTMuNi00LTMuNmgtNnY3LjIyaDZjMi4yOCAwIDQtMS4zNyA0LTMuNjF6bTIyLjI0IDE4LjA4VjUuNGgtNy44di01aDIxLjI4djVoLTcuNzZ2MjEuNjd6Ii8+PC9nPjxnIGNsYXNzPSJhIj48cGF0aCBjbGFzcz0iYyIgZD0iTTE2Ni45NCAyNy4wN1YuNGgxOC44OHY1aC0xMy4ydjUuNjRoMTIuOTJ2NWgtMTIuOTJ2MTF6bTI4Ljg0IDBWLjRoNS42OHYyNi42N3ptMzUuMzggMGwtMS42NC00LjUyaC0xMS40NmwtMS42OCA0LjUyaC02LjQ4TDIyMC4yMi40aDcuMTJsMTAuMjggMjYuNjh6bS03LjM2LTIxbC00LjE2IDExLjQ4aDguMzJ6bTI4LjQ2IDIxVjUuNGgtNy44di01aDIxLjI4djVoLTcuNzZ2MjEuNjd6Ii8+PC9nPjwvc3ZnPg=="></a>
+      </div>
+      <nav class="header__nav grid-col grid-col-auto hidden-before-lg">
+        <ul>
+          <li><a href="/" title="Home">Home</a></li>
+          <li><a href="/whyusesmartfiat.html" title="Why use SmartFiat">Why use SmartFiat</a></li>
+          <li class="has-dropdown"><a title="Resources">Resources</a>
+            <ul>
+              <li><a href="/faq.html">FAQs</a></li>
+              <li><a href="/api.html">API</a></li>
+              <li><a href="/whitepaper.html">Whitepaper</a></li>
+              <li><a href="/transparency.html">Transparency</a></li>
+              <li><a href="/rich-list.html">Rich List</a></li>
+              <li><a href="/legal.html">Legal</a></li>
+              <li><a href="/fees.html">Fees</a></li>
+            </ul>
+          </li>
+          <li><a href="/team.html" title="Team">Team</a></li>
+        </ul>
+      </nav>
+      <div class="grid-col grid-col-auto"><a class="header__btn btn btn--medium btn--secondary" href="/private-office.html">Sign Up</a></div>
+    </div>
+  </div>
+</header>
+<div class="burger-menu hidden-lg" id="burger-menu">
+  <div class="burger-menu__wrapper wrapper">
+    <ul class="burger-menu__list">
+      <li><a href="/" title="Home">Home</a></li>
+      <li><a href="/whyusesmartfiat.html" title="Why use SmartFiat">Why use SmartFiat</a></li>
+      <li class="has-dropdown"><a title="Resources">Resources</a>
+        <ul>
+          <li><a href="/faq.html">FAQs</a></li>
+          <li><a href="/api.html">API</a></li>
+          <li><a href="/whitepaper.html">Whitepaper</a></li>
+          <li><a href="/transparency.html">Transparency</a></li>
+          <li><a href="/rich-list.html">Rich List</a></li>
+          <li><a href="/legal.html">Legal</a></li>
+          <li><a href="/fees.html">Fees</a></li>
+        </ul>
+      </li>
+      <li><a href="/team.html" title="Team">Team</a></li>
+    </ul>
+  </div>
+</div>
+    <main class="page-main">
+      <section class="page-intro bg-secondary">
+        <div class="wrapper">
+          <div class="page-intro__container grid-container grid-container--v-center">
+            <div class="page-intro__text-col grid-col grid-col-flex">
+              <ul class="page-intro__breadcrumbs">
+                <li><a href="/">Home</a></li>
+                <li><a>Transparency</a></li>
+              </ul>
+              <h1 class="page-intro__title">Transparency</h1>
+              <div class="page-intro__description">Smartfiat converts cash into digital currency, to anchor or tether the value to the price of national currencies like the US dollar, the Euro, and the Yen.
+              </div>
+            </div>
+            <div class="page-intro__image-col phone-scheme grid-col grid-col-5 grid-col-6-lg hidden-before-lg"></div>
+          </div>
+        </div>
+      </section>
+      <section class="section section--large">
+        <div class="wrapper">
+          <h2 class="section__title">Current Balances</h2>
+          <div class="section__content">
+            <div class="grid-container grid-container--v-stretch">
+              <div class="grid-col grid-col--v-gutter grid-col-6-lg">
+                <div class="balance-block">
+                  <h3 class="balance-block__header">USD</h3>
+                  <div class="balance-block__content">
+                    <table>
+                      <tr>
+                        <th>Total Assets</th>
+                        <th>$2,248,665,722.36</th>
+                      </tr>
+                    </table>
+                    <p>Liabilities (Tether in Circulation on Omni)</p>
+                    <table class="list">
+                      <tr>
+                        <td>Total Authorized</td>
+                        <td>$2,520,000,000.00</td>
+                      </tr>
+                      <tr>
+                        <td>Less: Authorized but not issued</td>
+                        <td>- $230,960,153.48</td>
+                      </tr>
+                      <tr>
+                        <td>Less: Quarantined Tether</td>
+                        <td>- $30,950,010.00</td>
+                      </tr>
+                    </table>
+                    <p>Liabilities (Tether in Circulation on Eth)</p>
+                    <table class="list">
+                      <tr>
+                        <td>Total Authorized</td>
+                        <td>$60,109,970.00</td>
+                      </tr>
+                      <tr>
+                        <td>Less: Authorized but not issued</td>
+                        <td>- $108,983.00</td>
+                      </tr>
+                    </table>
+                    <table>  
+                      <tr>
+                        <th>Total Liabilities</th>
+                        <th>$2,318,090,823.52</th>
+                      </tr>
+                    </table>
+                    <table>
+                      <tr>
+                        <th>Shareholder Equity</th>
+                        <th>-$69,425,101.16</th>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-col grid-col--v-gutter grid-col-6-lg">
+                <div class="balance-block">
+                  <div class="balance-block__header">EUR</div>
+                  <div class="balance-block__content balance-block__content--large-padding">Tether EUR is issued by the Swiss entity <a href="#" class="accent-link">Smart Property Solutions SA</a>, please refer to the site of Smart Property Solutions SA for information on the Tether issued</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section__btn-container"><a class="link" href="#">USD issuing address on Omni</a><br><a class="link" href="#">Who's holding USD on Omni </a><br><a class="link" href="#">Ethereum Contract: USD</a></div>
+      </section>
+      <section class="section section--gray section--large">
+        <div class="wrapper">
+          <h2 class="section__title">Tether is always fully transparent</h2>
+          <div class="section__content">
+            <div class="grid-container grid-container--h-center grid-container--v-start">
+              <div class="grid-col grid-col-4-lg icon-col"><img class="icon-col__image" src="data:image/png;base64,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">
+                <div class="icon-col__description" style="color: #000;">All tethers are backed 100% by actual assets in our reserve account</div>
+              </div>
+              <div class="grid-col grid-col-4-lg icon-col"><img class="icon-col__image" src="data:image/png;base64,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">
+                <div class="icon-col__description" style="color: #000;">Our reserve account is regularly audited</div>
+              </div>
+              <div class="grid-col grid-col-4-lg icon-col"><img class="icon-col__image" src="data:image/png;base64,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">
+                <div class="icon-col__description" style="color: #000;">You always have 24/7 access to our balance</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="appeal-block section section--light bg-secondary">
+        <div class="wrapper">
+          <div class="grid-container grid-container--v-center">
+            <div class="appeal-block__text-col grid-col grid-col-flex">
+              <h2 class="appeal-block__title">Join the modern movement of money</h2>
+              <div class="appeal-block__btn-container"><a class="open-popup-btn btn btn--medium btn--primary sign-up-btn" href="#" data-popup-id="sign-up">Sign Up</a>
+              </div>
+            </div>
+            <div class="appeal-block__image-col phone-scheme grid-col grid-col-6 hidden-before-lg"></div>
+          </div>
+        </div>
+      </section>
+<footer class="footer">
+  <div class="wrapper">
+    <div class="grid-container grid-container--v-start">
+      <div class="footer__logo-col grid-col grid-col-auto">
+        <div class="footer-logo grid-container grid-container--nowrap grid-container--h-center grid-container--v-start">
+          <div class="grid-col grid-col-auto"><img class="footer-logo__sign" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAuMTkgMTAwLjE5Ij48ZGVmcz48c3R5bGU+LmF7ZmlsbDojZmY0YjRifS5ie2ZpbGw6IzAwYzdmZn08L3N0eWxlPjwvZGVmcz48dGl0bGU+bG9nb19zaWduX2Rhcms8L3RpdGxlPjxwYXRoIGQ9Ik00MC4yMiA2NS4zN3YtMzBoMjEuMjRWNDFINDYuNjF2Ni4zNEg2MS4xdjUuNjJINDYuNjF2MTIuNDF6Ii8+PHBhdGggY2xhc3M9ImEiIGQ9Ik0xMC4xIDI4LjFWMTEuOTNjMC0uOTQuNTUtMy40OS0uNTYtMi4zOHMxLjQ0LjU2IDIuMzguNTZIMjguMWM2LjQzIDAgNi40NS0xMCAwLTEwSDE2LjI5QzExLjc4LjEgNi4yMS0uNzcgMi43MiAyLjcyUy4xIDExLjQ0LjEgMTUuODVWMjguMWMwIDYuNDMgMTAgNi40NSAxMCAweiIvPjxwYXRoIGNsYXNzPSJiIiBkPSJNNzIuMSAxMC4xaDE2LjE3Yy45NCAwIDMuNDkuNTUgMi4zOC0uNTZzLS41NSAxLjQ1LS41NSAyLjM5VjI4LjFjMCA2LjQzIDEwIDYuNDUgMTAgMFYxNi4yOWMwLTQuNTEuODctMTAuMDgtMi42Mi0xMy41N1M4OC43Ni4xIDg0LjM1LjFINzIuMWMtNi40MyAwLTYuNDUgMTAgMCAxMHptLTQ0IDgwSDExLjkzYy0uOTQgMC0zLjQ5LS41NS0yLjM4LjU2cy41Ni0xLjQ0LjU2LTIuMzhWNzIuMWMwLTYuNDMtMTAtNi40NS0xMCAwdjExLjgxYzAgNC41MS0uODcgMTAuMDggMi42MiAxMy41N3M4LjcxIDIuNjIgMTMuMTIgMi42MkgyOC4xYzYuNDMgMCA2LjQ1LTEwIDAtMTB6Ii8+PHBhdGggY2xhc3M9ImEiIGQ9Ik05MC4xIDcyLjF2MTYuMTdjMCAuOTQtLjU1IDMuNDkuNTYgMi4zOHMtMS40NS0uNTUtMi4zOS0uNTVINzIuMWMtNi40MyAwLTYuNDUgMTAgMCAxMGgxMS44MWM0LjUxIDAgMTAuMDguODcgMTMuNTctMi42MnMyLjYyLTguNzIgMi42Mi0xMy4xM1Y3Mi4xYzAtNi40My0xMC02LjQ1LTEwIDB6Ii8+PC9zdmc+"></div>
+          <div class="grid-col grid-col-auto"><img class="footer-logo__text" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNjUuNzMgMjcuNTYiPjxkZWZzPjxzdHlsZT4uYXtpc29sYXRpb246aXNvbGF0ZX0uYntmaWxsOiM2N2M2ZmZ9LmN7ZmlsbDojZjA0YzRjfTwvc3R5bGU+PC9kZWZzPjx0aXRsZT5sb2dvX3RleHQ8L3RpdGxlPjxnIGNsYXNzPSJhIj48cGF0aCBjbGFzcz0iYiIgZD0iTTAgMjMuMzJMMy4wOCAxOWExMS43IDExLjcgMCAwIDAgOC40OCAzLjYxYzMuMTIgMCA0LjYtMS40NSA0LjYtM0MxNi4xNiAxNC45Mi44NCAxOC4xNi44NCA4LjEyLjg0IDMuNjggNC42OCAwIDEwLjk2IDBhMTQuODQgMTQuODQgMCAwIDEgMTAuNCAzLjcybC0zLjIgNC4xNmExMS40NiAxMS40NiAwIDAgMC03Ljc2LTIuOTJjLTIuNDQgMC0zLjggMS4wOC0zLjggMi42OCAwIDQuMjQgMTUuMzIgMS40IDE1LjMyIDExLjM2IDAgNC44OC0zLjQ4IDguNTYtMTAuNjggOC41Ni01LjA4LS4wMS04Ljc2LTEuNzMtMTEuMjQtNC4yNHptNTUgMy43NVY4LjRsLTcuNTIgMTguNjdINDVMMzcuNDggOC40djE4LjY3SDMxLjhWLjRoOGw2LjQ4IDE2LjEyTDUyLjcyLjRoOHYyNi42N3ptMzUuNCAwbC0xLjY0LTQuNTFINzcuMzJsLTEuNjggNC41MmgtNi40OEw3OS40OC40aDcuMTJsMTAuMjggMjYuNjd6bS03LjM2LTIxbC00LjE2IDExLjQ5aDguMjh6bTM3LjQgMjFsLTUuMjgtOS40NkgxMTF2OS40OGgtNS42NFYuNGgxMi40OGM1LjU2IDAgOSAzLjY0IDkgOC42IDAgNC43Mi0zIDcuMjQtNS44NCA3LjkybDYgMTAuMTZ6TTEyMSA4Ljk5YzAtMi4yNC0xLjcyLTMuNi00LTMuNmgtNnY3LjIyaDZjMi4yOCAwIDQtMS4zNyA0LTMuNjF6bTIyLjI0IDE4LjA4VjUuNGgtNy44di01aDIxLjI4djVoLTcuNzZ2MjEuNjd6Ii8+PC9nPjxnIGNsYXNzPSJhIj48cGF0aCBjbGFzcz0iYyIgZD0iTTE2Ni45NCAyNy4wN1YuNGgxOC44OHY1aC0xMy4ydjUuNjRoMTIuOTJ2NWgtMTIuOTJ2MTF6bTI4Ljg0IDBWLjRoNS42OHYyNi42N3ptMzUuMzggMGwtMS42NC00LjUyaC0xMS40NmwtMS42OCA0LjUyaC02LjQ4TDIyMC4yMi40aDcuMTJsMTAuMjggMjYuNjh6bS03LjM2LTIxbC00LjE2IDExLjQ4aDguMzJ6bTI4LjQ2IDIxVjUuNGgtNy44di01aDIxLjI4djVoLTcuNzZ2MjEuNjd6Ii8+PC9nPjwvc3ZnPg==">
+            <div class="footer-logo__copyright">2018. All rights reserved</div>
+          </div>
+        </div>
+        <div class="footer-socials"><a class="footer-social footer-social--facebook" href="#" title="Facebook"><i class="fa fa-facebook"></i></a><a class="footer-social footer-social--twitter" href="#" title="Twitter"><i class="fa fa-twitter"></i></a><a class="footer-social footer-social--linkedin" href="#" title="LinkedIn"><i class="fa fa-linkedin"></i></a></div>
+      </div>
+      <div class="footer__info-col grid-col grid-col-flex">
+        <div class="grid-container">
+          <div class="grid-col grid-col-4-sm">
+            <div class="footer-menu">
+              <div class="footer-menu__title">Resources</div>
+              <ul> 
+                <li><a href="/faq.html">FAQs</a></li>
+                <li><a href="/whitepaper.html">Whitepaper</a></li>
+                <li><a href="/transparency.html">Transparency</a></li>
+                <li><a href="/api.html">API</a></li>
+                <li><a href="/fees.html">Fees</a></li>
+                <li><a href="/legal.html">Legal</a></li>
+                <li><a href="/rich-list.html">Rich List</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="grid-col grid-col-4-sm">
+            <div class="footer-menu">
+              <div class="footer-menu__title">About</div>
+              <ul> 
+                <li><a href="/whyusesmartfiat.html">Why use Smartfiat</a></li>
+                <li><a href="/individuals.html">Tether for Individuals</a></li>
+                <li><a href="/press.html">Press</a></li>
+                <li><a href="/about.html">About us</a></li>
+                <li><a href="/branding.html">Branding</a></li>
+                <li><a href="/announcements.html">Announcements</a></li>
+                <li><a href="/team.html">Team</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="grid-col grid-col-4-sm">
+            <div class="footer-menu">
+              <div class="footer-menu__title">Connect</div>
+              <ul> 
+                <li><a href="/contact.html">Contact Us</a></li>
+                <li><a href="/media.html">Media Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+    </main>
+<div class="overlay overlay--center" id="sign-up">
+  <div class="overlay__container">
+    <div class="popup popup--small">
+      <div class="popup__container"><a class="popup__close-btn btn" href="#">X</a>
+        <div class="popup__title gradient-text">Sign up</div>
+        <form class="popup-form">
+          <div class="popup-form__input input input--text input--fullwidth">
+            <input type="text" name="user_name" id="sign_up_username" required>
+            <label class="input__label" for="sign_up_username">Username</label>
+            <div class="input__error"></div>
+          </div>
+          <div class="popup-form__input input input--text input--fullwidth">
+            <input type="email" name="user_email" id="sign_up_email" required>
+            <label class="input__label" for="sign_up_email">E-mail</label>
+            <div class="input__error"></div>
+          </div>
+          <div class="popup-form__input input input--text input--fullwidth">
+            <input type="password" name="user_password" id="sign_up_password" required>
+            <label class="input__label" for="sign_up_password">Password</label>
+            <div class="input__error"></div>
+          </div>
+          <div class="popup-form__input input input--text input--fullwidth">
+            <input type="password" name="user_confirm_password" id="sign_up_confirm_password" required>
+            <label class="input__label" for="sign_up_confirm_password">Confirm password</label>
+            <div class="input__error"></div>
+          </div>
+          <div class="popup-form__additional"><a class="open-popup-btn link" href="#" data-popup-id="login">Login</a></div>
+          <div class="popup-form__btn-container">
+            <button class="open-popup-btn btn btn--medium btn--primary" type="submit" data-popup-id="success-popup">Sign Up</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="overlay overlay--center" id="login">
+  <div class="overlay__container">
+    <div class="popup popup--small">
+      <div class="popup__container"><a class="popup__close-btn btn" href="#">X</a>
+        <div class="popup__title gradient-text">Log in to your account</div>
+        <form class="popup-form" action="/private-office.html">
+          <div class="popup-form__input input input--text input--fullwidth">
+            <input type="text" name="user_login" id="login_user_login" required>
+            <label class="input__label" for="login_user_login">Username or e-mail</label>
+            <div class="input__error"></div>
+          </div>
+          <div class="popup-form__input input input--text input--fullwidth">
+            <input type="password" name="user_password" id="login_user_password" required>
+            <label class="input__label" for="login_user_password">Password</label>
+            <div class="input__error"></div>
+          </div>
+          <div class="popup-form__additional grid-container grid-container--h-between">
+            <div class="grid-col grid-col-auto"><a class="open-popup-btn link" href="#" data-popup-id="sign-up">Sign up</a></div>
+            <div class="grid-col grid-col-auto"><a class="open-popup-btn link" href="#" data-popup-id="forgot-password">Forgot your password?</a></div>
+          </div>
+          <div class="popup-form__btn-container">
+            <button class="btn btn--medium btn--primary" type="submit">Log In</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="overlay overlay--center" id="success-popup">
+  <div class="overlay__container">
+    <div class="popup popup--small">
+      <div class="popup__container"><a class="popup__close-btn btn" href="#">X</a><img class="popup__image" src="data:image/png;base64,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">
+        <div class="popup__title gradient-text">You have successfully registered</div>
+        <div class="popup__description">We sent you an e-mail. Follow the link in the email to confirm the registration</div>
+      </div>
+    </div>
+  </div>
+</div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="js/index.b6cd6f8fa6b608257161.js"></script></body>
+</html>
