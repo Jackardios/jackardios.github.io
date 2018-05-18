@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html class="bg-dark-blue" lang="ru">
+  <head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="author">
+    <meta name="description">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="HandheldFriend" content="true">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- links-->
+    <link href="dns-prefetch" rel="//code.jquery.com"><!--[if IE]>
+    <style>
+      .gradient-text {
+          background: none !important;
+      }
+    </style><![endif]-->
+  <link href=".././css/index.ac8c814b94bbd0669c70.css" rel="stylesheet"></head>
+  <body class="without-transition bg-dark-blue fullheight header-compensate-by-padding">
+    <header class="header header--dark" id="main-header">
+      <div class="header__bg"></div>
+      <div class="header__wrapper wrapper">
+        <div class="header__container grid-container grid-container--h-between grid-container--v-center">
+          <div class="grid-col grid-col-auto">
+            <div class="header__burger-btn burger-btn burger-btn--without-text" id="burger-btn">
+              <div class="burger-btn__box">
+                <div class="burger-btn__line"></div>
+                <div class="burger-btn__line"></div>
+                <div class="burger-btn__line"></div>
+              </div>
+            </div><a class="header-logo" href="/" title="Home"><img class="header-logo__sign" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAuMTkgMTAwLjE5Ij48ZGVmcz48c3R5bGU+LmF7ZmlsbDojZmZmfS5ie2ZpbGw6I2ZmNGI0Yn0uY3tmaWxsOiMwMGM3ZmZ9PC9zdHlsZT48L2RlZnM+PHRpdGxlPmxvZ29fc2lnbl9saWdodDwvdGl0bGU+PHBhdGggY2xhc3M9ImEiIGQ9Ik00MC4yMiA2NS4zN3YtMzBoMjEuMjRWNDFINDYuNjF2Ni4zNEg2MS4xdjUuNjJINDYuNjF2MTIuNDF6Ii8+PHBhdGggY2xhc3M9ImIiIGQ9Ik0xMC4xIDI4LjFWMTEuOTNjMC0uOTQuNTUtMy40OS0uNTYtMi4zOHMxLjQ0LjU2IDIuMzguNTZIMjguMWM2LjQzIDAgNi40NS0xMCAwLTEwSDE2LjI5QzExLjc4LjEgNi4yMS0uNzcgMi43MiAyLjcyUy4xIDExLjQ0LjEgMTUuODVWMjguMWMwIDYuNDMgMTAgNi40NSAxMCAweiIvPjxwYXRoIGNsYXNzPSJjIiBkPSJNNzIuMSAxMC4xaDE2LjE3Yy45NCAwIDMuNDkuNTUgMi4zOC0uNTZzLS41NSAxLjQ1LS41NSAyLjM5VjI4LjFjMCA2LjQzIDEwIDYuNDUgMTAgMFYxNi4yOWMwLTQuNTEuODctMTAuMDgtMi42Mi0xMy41N1M4OC43Ni4xIDg0LjM1LjFINzIuMWMtNi40MyAwLTYuNDUgMTAgMCAxMHptLTQ0IDgwSDExLjkzYy0uOTQgMC0zLjQ5LS41NS0yLjM4LjU2cy41Ni0xLjQ0LjU2LTIuMzhWNzIuMWMwLTYuNDMtMTAtNi40NS0xMCAwdjExLjgxYzAgNC41MS0uODcgMTAuMDggMi42MiAxMy41N3M4LjcxIDIuNjIgMTMuMTIgMi42MkgyOC4xYzYuNDMgMCA2LjQ1LTEwIDAtMTB6Ii8+PHBhdGggY2xhc3M9ImIiIGQ9Ik05MC4xIDcyLjF2MTYuMTdjMCAuOTQtLjU1IDMuNDkuNTYgMi4zOHMtMS40NS0uNTUtMi4zOS0uNTVINzIuMWMtNi40MyAwLTYuNDUgMTAgMCAxMGgxMS44MWM0LjUxIDAgMTAuMDguODcgMTMuNTctMi42MnMyLjYyLTguNzIgMi42Mi0xMy4xM1Y3Mi4xYzAtNi40My0xMC02LjQ1LTEwIDB6Ii8+PC9zdmc+"><img class="header-logo__text hidden-before-sm" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNjUuNzMgMjcuNTYiPjxkZWZzPjxzdHlsZT4uYXtpc29sYXRpb246aXNvbGF0ZX0uYntmaWxsOiM2N2M2ZmZ9LmN7ZmlsbDojZjA0YzRjfTwvc3R5bGU+PC9kZWZzPjx0aXRsZT5sb2dvX3RleHQ8L3RpdGxlPjxnIGNsYXNzPSJhIj48cGF0aCBjbGFzcz0iYiIgZD0iTTAgMjMuMzJMMy4wOCAxOWExMS43IDExLjcgMCAwIDAgOC40OCAzLjYxYzMuMTIgMCA0LjYtMS40NSA0LjYtM0MxNi4xNiAxNC45Mi44NCAxOC4xNi44NCA4LjEyLjg0IDMuNjggNC42OCAwIDEwLjk2IDBhMTQuODQgMTQuODQgMCAwIDEgMTAuNCAzLjcybC0zLjIgNC4xNmExMS40NiAxMS40NiAwIDAgMC03Ljc2LTIuOTJjLTIuNDQgMC0zLjggMS4wOC0zLjggMi42OCAwIDQuMjQgMTUuMzIgMS40IDE1LjMyIDExLjM2IDAgNC44OC0zLjQ4IDguNTYtMTAuNjggOC41Ni01LjA4LS4wMS04Ljc2LTEuNzMtMTEuMjQtNC4yNHptNTUgMy43NVY4LjRsLTcuNTIgMTguNjdINDVMMzcuNDggOC40djE4LjY3SDMxLjhWLjRoOGw2LjQ4IDE2LjEyTDUyLjcyLjRoOHYyNi42N3ptMzUuNCAwbC0xLjY0LTQuNTFINzcuMzJsLTEuNjggNC41MmgtNi40OEw3OS40OC40aDcuMTJsMTAuMjggMjYuNjd6bS03LjM2LTIxbC00LjE2IDExLjQ5aDguMjh6bTM3LjQgMjFsLTUuMjgtOS40NkgxMTF2OS40OGgtNS42NFYuNGgxMi40OGM1LjU2IDAgOSAzLjY0IDkgOC42IDAgNC43Mi0zIDcuMjQtNS44NCA3LjkybDYgMTAuMTZ6TTEyMSA4Ljk5YzAtMi4yNC0xLjcyLTMuNi00LTMuNmgtNnY3LjIyaDZjMi4yOCAwIDQtMS4zNyA0LTMuNjF6bTIyLjI0IDE4LjA4VjUuNGgtNy44di01aDIxLjI4djVoLTcuNzZ2MjEuNjd6Ii8+PC9nPjxnIGNsYXNzPSJhIj48cGF0aCBjbGFzcz0iYyIgZD0iTTE2Ni45NCAyNy4wN1YuNGgxOC44OHY1aC0xMy4ydjUuNjRoMTIuOTJ2NWgtMTIuOTJ2MTF6bTI4Ljg0IDBWLjRoNS42OHYyNi42N3ptMzUuMzggMGwtMS42NC00LjUyaC0xMS40NmwtMS42OCA0LjUyaC02LjQ4TDIyMC4yMi40aDcuMTJsMTAuMjggMjYuNjh6bS03LjM2LTIxbC00LjE2IDExLjQ4aDguMzJ6bTI4LjQ2IDIxVjUuNGgtNy44di01aDIxLjI4djVoLTcuNzZ2MjEuNjd6Ii8+PC9nPjwvc3ZnPg=="></a>
+          </div>
+          <div class="grid-col grid-col-flex text-align-right"><a class="header-balance" href="/private-office.html" title="Balance">€0.00</a>
+            <div class="header-notifications" title="Notifications"><i class="fa fa-bell-o" aria-hidden="true"></i>
+              <div class="header-notifications__num">3</div>
+              <ul class="header-notifications__list">
+                <li><a href="#" title="Lorem ipsum">Lorem ipsum</a></li>
+                <li><a href="#" title="Dolor sit amet">Dolor sit amet</a></li>
+                <li><a href="#" title="Consectetur adipiscing elit">Consectetur adipiscing elit</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="grid-col grid-col-auto">
+            <div class="dropdown-btn"><span class="hidden-before-sm">Admin</span><i class="fa fa-user hidden-sm" aria-hidden="true"></i>
+              <ul>
+                <li><a href="/private-office.html" title="My Wallet">
+                    <div class="mini-icon-block"><i class="fa mini-icon-block__icon fa-money" aria-hidden="true"></i><span class="mini-icon-block__text">My Wallet</span>
+                    </div></a></li>
+                <li><a href="/verification/" title="Verification">
+                    <div class="mini-icon-block"><i class="fa mini-icon-block__icon fa-check-circle" aria-hidden="true"></i><span class="mini-icon-block__text">Verification</span>
+                    </div></a></li>
+                <li><a href="/settings/" title="Settings">
+                    <div class="mini-icon-block"><i class="fa mini-icon-block__icon fa-cog" aria-hidden="true"></i><span class="mini-icon-block__text">Settings</span>
+                    </div></a></li>
+                <li><a href="/" title="Logout">
+                    <div class="mini-icon-block"><i class="fa mini-icon-block__icon fa-sign-out" aria-hidden="true"></i><span class="mini-icon-block__text">Logout</span>
+                    </div></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="burger-menu" id="burger-menu">
+      <div class="burger-menu__wrapper wrapper">
+        <h3 class="burger-menu__title">Настройки профиля</h3>
+        <ul class="burger-menu__list">
+          <li><a href="/settings/notifications.html" title="Оповещения">Оповещения</a></li>
+          <li><a href="/settings/api.html" title="API">API</a></li>
+          <li><a href="/settings/ip.html" title="IP-адрес">IP-адрес</a></li>
+          <li><a href="/settings/security.html" title="Защита">Защита</a></li>
+          <li><a href="/settings/access-history.html" title="История доступа">История доступа</a></li>
+          <li><a href="/settings/password-change.html" title="Пароль">Пароль</a></li>
+        </ul>
+        <h3 class="burger-menu__title">Admin</h3>
+        <ul class="burger-menu__list">
+          <li><a href="/private-office.html" title="My Wallet">
+              <div class="mini-icon-block"><i class="fa mini-icon-block__icon fa-money" aria-hidden="true"></i><span class="mini-icon-block__text">My Wallet</span>
+              </div></a></li>
+          <li><a href="/verification/" title="Verification">
+              <div class="mini-icon-block"><i class="fa mini-icon-block__icon fa-check-circle" aria-hidden="true"></i><span class="mini-icon-block__text">Verification</span>
+              </div></a></li>
+          <li><a href="/settings/" title="Settings">
+              <div class="mini-icon-block"><i class="fa mini-icon-block__icon fa-cog" aria-hidden="true"></i><span class="mini-icon-block__text">Settings</span>
+              </div></a></li>
+          <li><a href="/" title="Logout">
+              <div class="mini-icon-block"><i class="fa mini-icon-block__icon fa-sign-out" aria-hidden="true"></i><span class="mini-icon-block__text">Logout</span>
+              </div></a></li>
+        </ul>
+        <h3 class="burger-menu__title">Menu</h3>
+        <ul class="burger-menu__list">
+          <li><a href="/" title="Home">Home</a></li>
+          <li><a href="/whyusesmartfiat.html" title="Why use SmartFiat">Why use SmartFiat</a></li>
+          <li class="has-dropdown"><a title="Resources">Resources</a>
+            <ul>
+              <li><a href="/faq.html">FAQs</a></li>
+              <li><a href="/api.html">API</a></li>
+              <li><a href="/whitepaper.html">Whitepaper</a></li>
+              <li><a href="/transparency.html">Transparency</a></li>
+              <li><a href="/rich-list.html">Rich List</a></li>
+              <li><a href="/legal.html">Legal</a></li>
+              <li><a href="/fees.html">Fees</a></li>
+            </ul>
+          </li>
+          <li><a href="/team.html" title="Team">Team</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="wrapper">
+      <div class="grid-container grid-container--v-stretch">
+        <div class="grid-col grid-col-4 hidden-before-lg">
+          <aside class="side-menu">
+            <h2 class="side-menu__title">Настройки профиля</h2>
+            <ul class="side-menu-list">
+              <li class="side-menu-list-item"><a class="side-menu-list-item__link" href="/settings/notifications.html" title="Оповещения">
+                  <div class="side-menu-list-item__title">Оповещения</div>
+                  <div class="side-menu-list-item__description">Уведомления и почтовые рассылки</div></a></li>
+              <li class="side-menu-list-item"><a class="side-menu-list-item__link" href="/settings/api.html" title="API">
+                  <div class="side-menu-list-item__title">API</div>
+                  <div class="side-menu-list-item__description">Настройка ключей</div></a></li>
+              <li class="side-menu-list-item"><a class="side-menu-list-item__link" href="/settings/ip.html" title="IP-адрес">
+                  <div class="side-menu-list-item__title">IP-адрес</div>
+                  <div class="side-menu-list-item__description">Авторизация и доступ</div></a></li>
+              <li class="side-menu-list-item"><a class="side-menu-list-item__link" href="/settings/security.html" title="Защита">
+                  <div class="side-menu-list-item__title">Защита</div>
+                  <div class="side-menu-list-item__description">Google Authentificator, SMS</div></a></li>
+              <li class="side-menu-list-item"><a class="side-menu-list-item__link" href="/settings/access-history.html" title="История доступа">
+                  <div class="side-menu-list-item__title">История доступа</div>
+                  <div class="side-menu-list-item__description">Уведомления и почтовые рассылки</div></a></li>
+              <li class="side-menu-list-item"><a class="side-menu-list-item__link" href="/settings/password-change.html" title="Пароль">
+                  <div class="side-menu-list-item__title">Пароль</div>
+                  <div class="side-menu-list-item__description">Сменить пароль</div></a></li>
+            </ul>
+          </aside>
+        </div>
+        <main class="grid-col grid-col-8-lg page-main primary-article">
+          <h2>API</h2>
+          <form>
+            <div class="input-group">
+              <div class="secondary-input-wrapper">
+                <label class="secondary-input-label" for="api-key">API key</label>
+                <div class="grid-container">
+                  <div class="grid-col grid-col-flex">
+                    <input class="secondary-input secondary-input--small secondary-input--fulwidth" id="api-key" type="text" name="api_key" value="838ece1033bf7c7468e873e79ba2a3ec">
+                  </div>
+                  <div class="grid-col grid-col-auto">
+                    <button class="btn btn--small btn--default" type="button"><span class="hidden-before-sm">Скопировать</span><i class="fa fa-clone hidden-sm" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="secondary-input-wrapper">
+                <label class="secondary-input-label" for="api-secret">API secret</label>
+                <div class="grid-container">
+                  <div class="grid-col grid-col-flex">
+                    <input class="secondary-input secondary-input--small secondary-input--fulwidth" id="api-secret" type="text" name="api_secret" value="838ece1033bf7c7468e873e79ba2a3ec">
+                  </div>
+                  <div class="grid-col grid-col-auto">
+                    <button class="btn btn--small btn--default" type="button"><span class="hidden-before-sm">Скопировать</span><i class="fa fa-clone hidden-sm" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="btn btn--small btn--primary" type="submit">Сгенерировать и сохранить</button>
+          </form>
+        </main>
+      </div>
+    </div>
+<div class="overlay overlay--center" id="sign-up">
+  <div class="overlay__container">
+    <div class="popup popup--small">
+      <div class="popup__container"><a class="popup__close-btn btn" href="#">X</a>
+        <div class="popup__title gradient-text">Sign up</div>
+        <form class="popup-form">
+          <div class="popup-form__input input input--text input--fullwidth">
+            <input type="text" name="user_name" id="sign_up_username" required>
+            <label class="input__label" for="sign_up_username">Username</label>
+            <div class="input__error"></div>
+          </div>
+          <div class="popup-form__input input input--text input--fullwidth">
+            <input type="email" name="user_email" id="sign_up_email" required>
+            <label class="input__label" for="sign_up_email">E-mail</label>
+            <div class="input__error"></div>
+          </div>
+          <div class="popup-form__input input input--text input--fullwidth">
+            <input type="password" name="user_password" id="sign_up_password" required>
+            <label class="input__label" for="sign_up_password">Password</label>
+            <div class="input__error"></div>
+          </div>
+          <div class="popup-form__input input input--text input--fullwidth">
+            <input type="password" name="user_confirm_password" id="sign_up_confirm_password" required>
+            <label class="input__label" for="sign_up_confirm_password">Confirm password</label>
+            <div class="input__error"></div>
+          </div>
+          <div class="popup-form__additional"><a class="open-popup-btn link" href="/login.html" data-popup-id="login">Login</a></div>
+          <div class="popup-form__btn-container">
+            <button class="open-popup-btn btn btn--medium btn--primary" type="submit" data-popup-id="success-popup">Sign Up</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="overlay overlay--center" id="login">
+  <div class="overlay__container">
+    <div class="popup popup--small">
+      <div class="popup__container"><a class="popup__close-btn btn" href="#">X</a>
+        <div class="popup__title gradient-text">Log in to your account</div>
+        <form class="popup-form" action="/private-office.html">
+          <div class="popup-form__input input input--text input--fullwidth">
+            <input type="text" name="user_login" id="login_user_login" required>
+            <label class="input__label" for="login_user_login">Username or e-mail</label>
+            <div class="input__error"></div>
+          </div>
+          <div class="popup-form__input input input--text input--fullwidth">
+            <input type="password" name="user_password" id="login_user_password" required>
+            <label class="input__label" for="login_user_password">Password</label>
+            <div class="input__error"></div>
+          </div>
+          <div class="popup-form__additional grid-container grid-container--h-between">
+            <div class="grid-col grid-col-auto"><a class="open-popup-btn link" href="#" data-popup-id="sign-up">Sign up</a></div>
+            <div class="grid-col grid-col-auto"><a class="open-popup-btn link" href="#" data-popup-id="forgot-password">Forgot your password?</a></div>
+          </div>
+          <div class="popup-form__btn-container">
+            <button class="btn btn--medium btn--primary" type="submit">Log In</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="overlay overlay--center" id="success-popup">
+  <div class="overlay__container">
+    <div class="popup popup--small">
+      <div class="popup__container"><a class="popup__close-btn btn" href="#">X</a><img class="popup__image" src="data:image/png;base64,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">
+        <div class="popup__title gradient-text">You have successfully registered</div>
+        <div class="popup__description">We sent you an e-mail. Follow the link in the email to confirm the registration</div>
+      </div>
+    </div>
+  </div>
+</div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="../js/index.ac8c814b94bbd0669c70.js"></script></body>
+</html>
